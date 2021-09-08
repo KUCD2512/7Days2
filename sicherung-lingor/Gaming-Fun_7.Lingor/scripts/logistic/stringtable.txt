@@ -1,0 +1,96 @@
+	<Package name="LiftandTow">
+		<Key ID="STR_LOG_LIFT">
+			<English>LIFT OBJECT</English>
+			<German>OBJEKT KOPPELN</German>
+			<French>Hélitreuiller l'objet</French>
+		</Key>
+		<Key ID="STR_LOG_DROP">
+			<English>DROP OBJECT</English>
+			<German>OBJEKT ABKOPPELN</German>
+			<French>Détacher l'objet</French>
+		</Key>
+		<Key ID="STR_LOG_ATTACHED">
+			<English>'%1' is now being towed</English>
+			<German>'%1' ist gekoppelt</German>
+			<French>Véhicule '%1' attaché.</French>
+		</Key>
+		<Key ID="STR_LOG_DROPPED">
+			<English>'%1' has been dropped</English>
+			<German>'%1' ist abgekoppelt</German>
+			<French>Véhicule '%1' détaché.</French>
+		</Key>
+		<Key ID="STR_LOG_CANT_LIFT_TOWING">
+			<English>Cannot lift '%1', because it's towing another object</English>
+			<German>'%1' kann nicht gekoppelt werden, weil es bereits ein anderes Objekt abschleppt.</German>
+			<French>Véhicule non hélitreuillable '%1' car il tracte un autre objet.</French>
+		</Key>
+		<Key ID="STR_LOG_CANT_LIFT_MOVING">
+			<English>OBJECT '%1' IS BEING TOWED BY A PLAYER.</English>
+			<German>'%1' ist zu Nahe an einem Spieler.</German>
+			<French>Remorquage du véhicule '%1' en cours par un autre joueur.</French>
+		</Key>
+		<Key ID="STR_LOG_CANT_LIFT_PLAYER">
+			<English>There is a player inside '%1'.</English>
+			<German>Ein Spieler befindet sich in '%1'.</German>
+			<French>Il y a un joueur dans le véhicule '%1'.</French>
+		</Key>
+		<Key ID="STR_LOG_ALREADY">
+			<English>'%1' is already being towed by another object.</English>
+			<German>'%1' wird bereits von einem anderen Objekt abgeschleppt.</German>
+			<French>Véhicule '%1' est déjà transporté par un autre véhicule.</French>
+		</Key>
+		<Key ID="STR_LOG_NOW_SELECT">
+			<English>Select the vehicle that you want to tow '%1' with</English>
+			<German>Wähle ein Fahrzeug, welches '%1' abschleppen soll </German>
+			<French>Sélectionner l'objet à remorquer avec '%1'.</French>
+		</Key>
+		<Key ID="STR_TOW_THIS">
+			<English>TOW this vehicle</English>
+			<German>Dieses Fahrzeug koppeln</German>
+			<French>Remorquer l'objet</French>
+		</Key>
+		<Key ID="STR_LOG_TUG_SELECT">
+			<English>Tow selected vehicle behind this vehicle</English>
+			<German>Ausgewähltes Fahrzeug mit diesem Fahrzeug abschleppen</German>
+			<French>... remorquer le véhicule sélectionné à ce véhicule</French>
+		</Key>
+		<Key ID="STR_LOG_TOW">
+			<English>TOW</English>
+			<German>ABSCHLEPPEN</German>
+			<French>Remorquage...</French>
+		</Key>
+		<Key ID="STR_LOG_UNTOW">
+			<English>UNTOW</English>
+			<German>ABKOPPELN</German>
+			<French>Détacher l'objet</French>
+		</Key>
+		<Key ID="STR_LOG_TOO_FAR">
+			<English>'%1' is too far from the towing vehicle to be towed</English>
+			<German>'%1' ist zuweit entfernt zum Abschleppen</German>
+			<French>Le véhicule '%1' est trop loin du véhicule à remorquer.</French>
+		</Key>
+		<Key ID="STR_LOG_IMPOSSIBLE_VEHICLE">
+			<English>Only the pilot can detach this vehicle</English>
+			<German>Nur der Pilot kann das Fahrzeug abkoppeln</German>
+			<French>Seulement le conducteur peut détacher ce véhicule.</French>
+		</Key>
+		<Key ID="STR_LOG_IN_TRANSIT">
+			<English>'%1' is in transit.</English>
+			<German>'%1' ist in Bewegung.</German>
+			<French>Véhicule '%1' est en mouvement.</French>
+		</Key>
+		<Key ID="STR_LOG_INPROGRESS">
+			<English>The current operation is not finished yet.</English>
+			<German>Die laufende Aktion ist noch nicht beendet.</German>
+			<French>L'opération n'est pas encore terminée!</French>
+		</Key>
+		<Key ID="STR_LOG_UNTOWED">
+			<English>'%1' has been untowed.</English>
+			<German>'%1' wurde abgekoppelt.</German>
+			<French>Véhicule '%1' détaché.</French>
+		</Key>
+		<Key ID="STR_LOG_UNTOWED_TOO_FAR">
+			<English>Untowing canceled, the vehicle is too far from player!</English>
+			<German>Abkoppeln abgebrochen, das Fahrzeug ist zu weit vom Spieler entfernt!</German>
+		</Key>
+	</Package>

@@ -1,0 +1,30 @@
+class Category_33 {
+	class ItemAntibiotic {type = "trade_items";buy[] = {2500,"worth"};sell[] = {100,"worth"};};
+	class ItemBandage {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
+	class ItemSepsisBandage {type = "trade_items";buy[] = {5000,"worth"};sell[] = {100,"worth"};};
+	class ItemAntibacterialWipe {type = "trade_items";buy[] = {3000,"worth"};sell[] = {100,"worth"};};
+	// bloodBagONEG is automatically swapped with ItemBloodbag if dayz_classicBloodBagSystem = true; Other typed bags and bloodTester are ignored.
+	class bloodBagONEG {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class bloodBagANEG {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class bloodBagAPOS {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class bloodBagBNEG {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class bloodBagBPOS {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class bloodBagABNEG {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class bloodBagABPOS {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class bloodBagOPOS {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class bloodTester {type = "trade_items";buy[] = {100,"worth"};sell[] = {50,"worth"};};
+	class transfusionKit {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class emptyBloodBag {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class ItemEpinephrine {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class ItemHeatPack {type = "trade_items";buy[] = {3000,"worth"};sell[] = {100,"worth"};};
+	class ItemMorphine {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
+	class equip_woodensplint {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
+	class ItemPainkiller {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
+	class equip_gauze {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
+	class equip_gauzepackaged {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
+	class equip_rag {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
+	class equip_string {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
+	class equip_herb_box {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
+	class ItemKiloHemp {type = "trade_items";buy[] = {-1,"worth"};sell[] = {3000,"worth"};};
+	class FoodBioMeat {type = "trade_items";buy[] = {500,"worth"};sell[] = {50,"worth"};};
+};

@@ -4,7 +4,7 @@
 		<Name value="Allocs MapRendering and Webinterface" />
 		<Description value="Render the game map to image map tiles as it is uncovered" />
 		<Author value="Christian 'Alloc' Illy" />
-		<Version value="35" />
+		<Version value="39" />
 		<Website value="http://7dtd.illy.bz" />
 	</ModInfo>
 </xml>

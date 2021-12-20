@@ -7,7 +7,7 @@ L.Control.Coordinates = L.Control.extend({
 		var name = 'control-coordinates',
 		    container = L.DomUtil.create('div', name + ' webmap-control');
 	
-		container.innerHTML = "Mouse pos: - N / - E<br/>Last click: - N / - E"
+		container.innerHTML = "Mouse pos: - E / - N<br/>Last click: - E / - N"
 		L.DomEvent.on (container, 'mousemove', L.DomEvent.stopPropagation);
 
 		this._map = map;
@@ -45,11 +45,11 @@ L.Control.Coordinates = L.Control.extend({
 
 	_formatCoord: function(latlng) {
 		if (latlng == false)
-			return "- N / - E";
+			return "- E / - N";
 		else
 			return "" +
-				Math.abs(latlng.lng).toFixed(0) + (latlng.lng>=0 ? " N" : " S") + " / " +
-				Math.abs(latlng.lat).toFixed(0) + (latlng.lat>=0 ? " E" : " W");
+				Math.abs(latlng.lat).toFixed(0) + (latlng.lat>=0 ? " E" : " W") + " / " +
+				Math.abs(latlng.lng).toFixed(0) + (latlng.lng>=0 ? " N" : " S");
 	},
 	
 	lastPos: false,

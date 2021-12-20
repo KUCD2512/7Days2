@@ -46,8 +46,6 @@
     <!-- <group steamID="103582791434672565" name="Steam Universe" permission_level_default="1000" permission_level_mod="0" /> -->
     <user steamID="76561197982198403" name="Hint on who this user is" permission_level="0" />
     <user steamID="76561199104741041" name="Hint on who this user is" permission_level="0" />
-    <user steamID="76561197982264331" name="Hint on who this user is" permission_level="0" />
-    <user steamID="76561199105688880" name="Hint on who this user is" permission_level="0" />
     <user steamID="76561198084410324" name="Hint on who this user is" permission_level="0" />
   </admins>
   <permissions>

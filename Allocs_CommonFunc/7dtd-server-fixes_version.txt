@@ -1,4 +1,4 @@
-Allocs command extensions: 20
-Allocs server fixes: 23
-Allocs MapRendering and Webinterface: 35
-Combined: 20_23_35
+Allocs command extensions: 22
+Allocs server fixes: 24
+Allocs MapRendering and Webinterface: 39
+Combined: 22_24_39

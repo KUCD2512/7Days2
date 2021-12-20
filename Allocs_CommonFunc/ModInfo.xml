@@ -4,7 +4,7 @@
 		<Name value="Allocs server fixes" />
 		<Description value="Common functions" />
 		<Author value="Christian 'Alloc' Illy" />
-		<Version value="23" />
+		<Version value="24" />
 		<Website value="http://7dtd.illy.bz" />
 	</ModInfo>
 </xml>

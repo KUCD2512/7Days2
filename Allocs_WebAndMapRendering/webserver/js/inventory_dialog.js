@@ -2,7 +2,7 @@ var ITEMICONBASEURL = "../itemicons/";
 
 var BAG_COLS = 9;
 var BAG_ROWS = 5;
-var BELT_COLS = 8;
+var BELT_COLS = 10;
 var INV_ITEM_WIDTH = 58;
 var INV_ITEM_HEIGHT = 40;
 

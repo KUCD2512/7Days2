@@ -14,12 +14,8 @@ class Category_49 {
 	class Fishing_Boat_DZE {type = "trade_any_boat";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class PBX_DZE {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
 	class Zodiac_DZE {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
-	class JetSkiYanahui_Case_Red {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
-	class JetSkiYanahui_Case_Yellow {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
-	class JetSkiYanahui_Case_Green {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
-	class JetSkiYanahui_Case_Blue {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
-	class ori_ScrapRaft {type = "trade_any_boat";buy[] = {500,"worth"};sell[] = {250,"worth"};};
-	class ori_smallRaft {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
-	class ori_bigRaft {type = "trade_any_boat";buy[] = {1000,"worth"};sell[] = {500,"worth"};};
-	class ori_submarine {type = "trade_any_boat";buy[] = {10000,"worth"};sell[] = {3000,"worth"};};	
+	class JetSkiYanahui_Case_Red {type = "trade_any_boat";buy[] = {800,"worth"};sell[] = {300,"worth"};};
+	class JetSkiYanahui_Case_Yellow {type = "trade_any_boat";buy[] = {800,"worth"};sell[] = {300,"worth"};};
+	class JetSkiYanahui_Case_Green {type = "trade_any_boat";buy[] = {800,"worth"};sell[] = {300,"worth"};};
+	class JetSkiYanahui_Case_Blue {type = "trade_any_boat";buy[] = {800,"worth"};sell[] = {300,"worth"};};
 };

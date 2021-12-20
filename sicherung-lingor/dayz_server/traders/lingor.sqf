@@ -1,25 +1,32 @@
 [
-	// Hero Vendor
+	/******************Bandit*******************/
+	["GUE_Commander",[2847.86, 9258.80,0],-35.77],
+	/***************** Bandit Waffen*****************/
+	//["Ins_Woodlander3",[7115.72,4609.01,0.576435],273.014],
+	
+	/************** Hero Waffen Fahrzeuge*************/
+	// Hero Fahrzeuge und Waffen
 	["FR_AC",[4682.89, 4098.08,0],177.9],
-	// Bandit Vendor umbau auf Schwarzmarkt
-	//["GUE_Commander",[2847.86, 9258.80,0],-35.77],// Orginal
+	// Hero Waffen
+	//["US_Delta_Force_AR_EP1",[1089.45,7181.02,0.00150633],102.053],
+	
+	
+	/****************Scharzmarkt***********************/
+	["GUE_Woodlander2",[3425.58,5552.41,0],100.242],//Schwarzmarkt
 
-	/******************Motodrom************************/
-	//Black Market
-	//["GUE_Woodlander2",[2359.11, 4178.96,0],-268.02],
-	["GUE_Woodlander2",[2847.86, 9258.80,0],-35.77],//Schwarzmarkt
+	/******************Calamar************************/
 	//Weapons
-	["RU_Citizen4",[2365.94, 4191.84,0],-231],
+	["RU_Citizen4",[3737.9,2062.98,0],48.8539],
 	//Ammunition
-	["Profiteer1",[2368.34,4193.23,0],150],
+	["Profiteer1",[3735.06,2069.2,0],104.455],
 	//General Store
-	["Rita_Ensler_EP1",[2402.41, 4165.27,0],267],
+	["Rita_Ensler_EP1",[3743.45,2057.59,0],40.4898],
 	//Medical Supplies
-	["Dr_Hladik_EP1",[2372.39, 4139.26,0],0],
+	["Dr_Hladik_EP1",[3784.24,2061.44,0],262.589],
 	//Building/Parts
-	["Worker2",[2402.69, 4177.35,0],244],
+	["Worker2",[3771.5,2046.6,0],342.974],
 	//Vehicles
-	["Villager1",[2399.04, 4143.42,0],275],
+	["Villager1",[3741.22,2075.78,0],136.149],
 	/***********************************************/
 	/******************El Villon************************/
 	//Weapons
@@ -58,14 +65,27 @@
 	//Wholesaler
 	["Profiteer2",[1431.42, 1173.83,0],0],
 	//Wholesaler
-	["Profiteer3",[9082.1, 8675.91,0],256.14]
+	["Profiteer3",[9082.1, 8675.91,0],256.14],
+	//Lotto Trader	
+    ["Hooker4",[7621.25,2065.76,0.00143862],26.7733], // El Villon
+    ["Hooker4",[3773.67,2077,0.00143814],262.016], // Calamar
+    ["Hooker4",[5180.7,7717.37,0.00143862],159.38] // San Isabel
+    
+    /*********Gold Bücher Kleidung*********/
+    // Gold Diamanten
+	//["Soldier_Bodyguard_AA12_PMC",[3771.5,2046.6,0.00143862],342.974],
+	// KLeindung
+	//["CZ_Special_Forces_GL_DES_EP1",[3743.45,2057.59,0.00143862],40.4898],
+	//Bücher Hanf
+	//["FR_OHara",[3741.22,2075.78,0.00143862],136.149]
+
 ] call server_spawnTraders;
 
 // Bankers
 if (Z_singleCurrency && {Z_globalBanking && Z_globalBankingTraders}) then {
 	[
 		["Functionary1_EP1",[5168.35,7707.74,0.00143909],128.441],
-		["Functionary1_EP1",[2358.93,4178.14,0.00143814],88.2628],
-		["Functionary1_EP1",[7623.41,2065.48,0.00143909],7.27719]
+		["Functionary1_EP1",[7623.41,2065.48,0.00143909],7.27719],
+		["Functionary1_EP1",[3755.19,2049.62,0],39.8555] // Calamar
 	] call server_spawnTraders;
 };

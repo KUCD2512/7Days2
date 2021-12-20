@@ -96,7 +96,7 @@ class Category_22 {
 	class 20Rnd_762x51_DMR {type = "trade_items";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 	class 20Rnd_762x51_DMRSD {type = "trade_items";buy[] = {1000,"worth"};sell[] = {500,"worth"};};
 	class 20Rnd_762x51_B_SCAR {type = "trade_items";buy[] = {600,"worth"};sell[] = {300,"worth"};};
-	class 20Rnd_762x51_SB_SCAR {type = "trade_items";buy[] = {800,"worth"};sell[] = {50,"worth"};};
+	class 20Rnd_762x51_SB_SCAR {type = "trade_items";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 	class 20Rnd_762x51_HK417 {type = "trade_items";buy[] = {-1,"worth"};sell[] = {300,"worth"};};
 	class 20Rnd_762x51_HK417SD {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
 	class 20Rnd_9x19_EVO {type = "trade_items";buy[] = {-1,"worth"};sell[] = {200,"worth"};};
@@ -117,16 +117,16 @@ class Category_23 {
 
 //Light Machine Gun Ammo
 class Category_24 {
-	class 100Rnd_556x45_BetaCMag {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
-	class 100Rnd_556x45_M249 {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
-	class 200Rnd_556x45_M249 {type = "trade_items";buy[] = {2000,"worth"};sell[] = {200,"worth"};};
-	class 200Rnd_556x45_L110A1 {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
-	class 100Rnd_762x51_M240 {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
-	class 200Rnd_762x51_M240 {type = "trade_items";buy[] = {2000,"worth"};sell[] = {200,"worth"};};
-	class 50Rnd_762x54_UK59 {type = "trade_items";buy[] = {500,"worth"};sell[] = {100,"worth"};};
-	class 75Rnd_545x39_RPK {type = "trade_items";buy[] = {500,"worth"};sell[] = {100,"worth"};};
-	class 75Rnd_762x39_RPK {type = "trade_items";buy[] = {500,"worth"};sell[] = {100,"worth"};};
-	class 100Rnd_762x54_PK {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
+	class 100Rnd_556x45_BetaCMag {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
+	class 100Rnd_556x45_M249 {type = "trade_items";buy[] = {1000,"worth"};sell[] = {300,"worth"};};
+	class 200Rnd_556x45_M249 {type = "trade_items";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
+	class 200Rnd_556x45_L110A1 {type = "trade_items";buy[] = {1000,"worth"};sell[] = {300,"worth"};};
+	class 100Rnd_762x51_M240 {type = "trade_items";buy[] = {1000,"worth"};sell[] = {300,"worth"};};
+	class 200Rnd_762x51_M240 {type = "trade_items";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
+	class 50Rnd_762x54_UK59 {type = "trade_items";buy[] = {800,"worth"};sell[] = {200,"worth"};};
+	class 75Rnd_545x39_RPK {type = "trade_items";buy[] = {800,"worth"};sell[] = {200,"worth"};};
+	class 75Rnd_762x39_RPK {type = "trade_items";buy[] = {800,"worth"};sell[] = {200,"worth"};};
+	class 100Rnd_762x54_PK {type = "trade_items";buy[] = {1000,"worth"};sell[] = {300,"worth"};};
 };
 
 //Smoke Grenades

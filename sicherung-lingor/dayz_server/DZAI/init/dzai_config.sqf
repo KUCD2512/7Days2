@@ -77,7 +77,7 @@ DZAI_radioMsgs = true;
 DZAI_lastManStanding = true;
 
 //If enabled, dead AI bodies have coins. From 100 - 2000 coins on each AI. Works only if Z_SingleCurrency = true; (Default: [false,[100,2000]])
-DZAI_hasCoins = [true,[50,100]];
+DZAI_hasCoins = [True,[100,150]];
 
 /*DZAI client-side addon settings. 
 **NOTE**: These settings require the DZAI client-side addon to be installed to your mission pbo file in order to work.
@@ -170,7 +170,7 @@ DZAI_randAreaBlacklist = [];
 --------------------------------------------------------------------------------------------------------------------*/		
 
 //Global maximum number of active AI air vehicle patrols. Set at 0 to disable (Default: 0).							
-DZAI_maxHeliPatrols = 1;
+DZAI_maxHeliPatrols = 2;
 
 //Set minimum and maximum wait time in seconds to respawn an AI vehicle patrol after vehicle is destroyed or disabled. (Default: Min 600, Max 900).
 DZAI_respawnTMinA = 600;
@@ -181,15 +181,14 @@ DZAI_heliList = [
 	["UH1H_DZ",5],
 	["Mi17_DZ",5],
 	["CH_47F_EP1_DZ",5],
-	["AW159_Lynx_BAF_DZ",5],
-	["UH60M_EP1_DZ",5]
+	["AW159_Lynx_BAF_DZ",5]
 ];
 
 //Difficulty level of air vehicle patrol units. Difficulty level also affects unit loadout and loot. Possible values: 0 to 3 (Default: 3)
 DZAI_heliUnitLevel = 3;
 
 //Maximum number of gunner units per air vehicle. Limited by actual number of available gunner positions. (Default: 2)
-DZAI_heliGunnerUnits = 3;
+DZAI_heliGunnerUnits = 2;
 
 //Specify vehicle weapon for air vehicles that are unarmed by default. DZAI will arm these air vehicles with the specified weapons upon spawning each vehicle.
 //Weapon classnames are verified. If the classname is invalid (banned or nonexistent), it will not be added to the vehicle.
@@ -207,7 +206,7 @@ DZAI_airWeapons = [
 --------------------------------------------------------------------------------------------------------------------*/	
 
 //Global maximum number of active AI land vehicle patrols. Set at 0 to disable (Default: 0).	
-DZAI_maxLandPatrols = 3;
+DZAI_maxLandPatrols = 0;
 
 //Set minimum and maximum wait time in seconds to respawn an AI vehicle patrol after vehicle is destroyed or disabled. (Default: Min 600, Max 900).
 DZAI_respawnTMinL = 600;
@@ -218,7 +217,8 @@ DZAI_vehList = [
 	["ArmoredSUV_PMC_DZ",5],
 	["GAZ_Vodnik_DZ",5],
 	["Pickup_PK_GUE_DZ",5],
-	["Offroad_DSHKM_Gue_DZ",5]
+	["Offroad_DSHKM_Gue_DZ",5],
+	["BTR40_MG_TK_INS_EP1_DZ",4]
 ];
 
 //Difficulty level of land vehicle patrol units. Difficulty level also affects unit loadout and loot. Possible values: 0 to 3 (Default: 3)
@@ -278,7 +278,7 @@ DZAI_invmedicals = 1;
 DZAI_invedibles = 1;	
 
 //Number of selections of medical items (Backpack)									
-DZAI_bpmedicals = 0; 	
+DZAI_bpmedicals = 1; 	
 
 //Number of selections of edible items (Backpack)									
 DZAI_bpedibles = 1;	
@@ -434,7 +434,7 @@ DZAI_Pistols2 = ["M9_SD_DZ","Makarov_SD_DZ","PDW_DZ","G17_FL_DZ"]; 		//Weapongra
 DZAI_Pistols3 = ["M9_SD_DZ","Makarov_SD_DZ","PDW_DZ","G17_FL_DZ"]; 		//Weapongrade 3 pistols
 
 DZAI_Rifles0 = ["LeeEnfield_DZ","Winchester1866_DZ","MR43_DZ","CZ550_DZ","LeeEnfield_DZ","Winchester1866_DZ","MR43_DZ"]; //Weapongrade 0 rifles
-DZAI_Rifles1 = ["M16A2_DZ","M16A2_GL_DZ","AK74_DZ","M4A1_CCO_DZ","AK74_Kobra_DZ","AKS74U_DZ","AKM_DZ","M24_DZ","M1014_DZ","DMR_DZ","M4A1_DZ","M14_CCO_DZ","Remington870_FL_DZ","MP5_DZ","MP5_SD_DZ","M4A3_CCO_EP1"]; //Weapongrade 1 rifles
+DZAI_Rifles1 = ["M16A2_DZ","M16A2_GL_DZ","AK74_DZ","M4A1_CCO_DZ","AK74_Kobra_DZ","AKS74U_DZ","AKM_DZ","M24_DZ","M1014_DZ","DMR_DZ","M4A1_DZ","M14_CCO_DZ","Remington870_FL_DZ","MP5_DZ","MP5_SD_DZ","M4A3_DES_CCO_DZ"]; //Weapongrade 1 rifles
 DZAI_Rifles2 = ["M16A2_DZ","M16A2_GL_DZ","M249_DZ","AK74_DZ","M4A1_CCO_DZ","AK74_Kobra_DZ","AKS74U_DZ","AKM_DZ","M24_DZ","SVD_Gh_DZ","M1014_DZ","DMR_DZ","M4A1_DZ","M14_CCO_DZ","Remington870_FL_DZ","M240_DZ","M4A1_Camo_CCO_SD_DZ","M16A4_ACOG_DZ","M4A1_Camo_Holo_GL_DZ","Mk48_CCO_DZ","M4A3_DES_CCO_DZ","Sa58V_Camo_ACOG_DZ","Sa58V_Camo_CCO_DZ","M40A3_Gh_DZ","SA58_DZ","SA58_DZ"]; //Weapongrade 2 rifles
 DZAI_Rifles3 = ["FNFAL_DZ","FN_FAL_ANPVS4_DZE","Mk48_CCO_DZ","M249_DZ","L85_Holo_DZ","G36C_DZ","G36C_Camo_DZ","G36A_Camo_DZ","G36K_Camo_DZ","AKM_DZ","AKS74U_DZ","M14_CCO_DZ","Bizon_SD_DZ","DMR_DZ","RPK74_DZ"]; //Weapongrade 3 rifles
 

@@ -127,57 +127,60 @@
 	["Land_A_tent",[4682.69,4101.46,0.00890446],354.486],
 	["Land_A_tent",[4691.91,4065.24,0.00218487],180.885],
 	["Land_A_tent",[4675.01,4064.68,6.67572e-005],154.064],
-	["CDF_WarfareBFieldhHospital",[2369.36,4140.18,-0.127533],0],
-	["MAP_Misc_Cargo1A",[2405.28,4151.78,-0.0115967],0],
-	["MAP_Misc_Cargo1E",[2360.03,4169.19,1.90735e-005],0],
-	["MAP_Misc_Cargo1F",[2384.61,4133.32,3.8147e-006],88],
-	["MAP_Misc_Cargo1B",[2375.75,4195.82,0],89],
-	["Land_aif_hlaska",[2361.24,4151.92,-0.182365],270,[0,0,1]],
-	["MAP_Ind_TankSmall",[2402.67,4134.46,0],0],
-	["Land_Campfire_burning",[2364.92,4179.11,0],0],
-	["Land_Fire_barrel_burning",[2398.44,4179.49,0],320],
-	["Land_Fire_barrel_burning",[2371.17,4192.07,0],255],
-	["Land_Fire_barrel_burning",[2357.65,4164.84,0],286],
-	["Land_Fire_barrel_burning",[2357.84,4154.63,0],125],
-	["Land_Fire_barrel_burning",[2400.75,4163.63,0],96],
-	["Land_Fire_barrel_burning",[2398.08,4141.51,0],53],
-	["Land_Fire_barrel_burning",[2375.17,4138.97,0],249],
-	["MAP_Heli_H_civil",[2391.54,4144.06,0],0],
-	["VaultStorageLocked",[2404.94,4177.93,0],86.3427],
-	["AmmoCrates_NoInteractive_Medium",[2365.73,4193.7,0],146.063],
-	["AmmoCrates_NoInteractive_Large",[2364.7,4192.82,0],315.725],
-	["Misc_Backpackheap",[2404.1,4167.87,0],145.308],
-	["PowGen_Big",[2361.9,4183.93,0.00571442],268.868],
-	["Info_Board_EP1",[2375.11,4142.9,0],267.919],
-	["Misc_cargo_cont_tiny",[2363.08,4191.26,0],354.21],
-	["Misc_cargo_cont_small",[2370.57,4194.54,0],66.0421],
-	["MAP_Camo_Box",[2402.16,4145.59,0],180.299],
-	["MAP_hromada_beden_dekorativniX",[2367.53,4193.93,0],334.603],
-	["LADAWreck",[2402.35,4144.2,0],119.304],
-	["Misc_palletsfoiled",[2404.63,4171.8,0],257.799],
-	["MAP_Misc_palletsfoiled_heap",[2402.49,4179.62,0],270],
-	["MAP_paletyD",[2402.83,4161.52,0],241.449],
-	["Land_Carpet_EP1",[2362.73,4179.41,0],0],
-	["Land_Pillow_EP1",[2364.6,4177.25,0],0],
-	["Land_Water_pipe_EP1",[2366.99,4179.24,0],0],
-	["Land_Shelf_EP1",[2403.77,4163.91,0],89],
-	["Land_Carpet_2_EP1",[2366.76,4177.81,0],293.359],
-	["Misc_cargo_cont_net2",[2366.97,4185.87,0],279.736],
-	["Land_CamoNet_EAST",[2364.32,4191.9,0],316.228,[0,0,1]],
-	["Land_Cabinet_EP1",[2404.53,4165.84,0],179],
-	["Land_Barrel_water",[2366.11,4180.54,0],0],
-	["Land_Market_shelter_EP1",[2403.46,4168.77,-0.400002],268.565],
-	["Misc_cargo_cont_net3",[2362.66,4187.56,0],86],
-	["MAP_Barels3",[2402.07,4141.66,0],278],
-	["Land_bags_stack_EP1",[2403.19,4174.19,0],97.9315],
-	["Land_Crates_stack_EP1",[2405.02,4169.26,0],257.593],
-	["Misc_TyreHeapEP1",[2403.32,4186.37,-0.00659561],145.819],
-	["Land_tires_EP1",[2404.37,4176.48,0],145.308],
-	["Land_Wheel_cart_EP1",[2401.07,4174.47,0],34.6695],
-	["Land_transport_crates_EP1",[2403.95,4161.47,0],85.6069],
-	["Land_Crates_EP1",[2402.6,4171.72,0],145.308],
-	["ClutterCutter_EP1",[2364.38,4185.72,0],0],
-	["MAP_vending_machine",[2358.7,4180.61,0],267.878],
+	//Trader Clalamar
+	["HeliHCivil",[3760.13,2065.83,0],0],
+	//Trader Motodrom
+	//["CDF_WarfareBFieldhHospital",[2369.36,4140.18,-0.127533],0],
+	//["MAP_Misc_Cargo1A",[2405.28,4151.78,-0.0115967],0],
+	//["MAP_Misc_Cargo1E",[2360.03,4169.19,1.90735e-005],0],
+	//["MAP_Misc_Cargo1F",[2384.61,4133.32,3.8147e-006],88],
+	//["MAP_Misc_Cargo1B",[2375.75,4195.82,0],89],
+	//["Land_aif_hlaska",[2361.24,4151.92,-0.182365],270,[0,0,1]],
+	//["MAP_Ind_TankSmall",[2402.67,4134.46,0],0],//mapMototrom
+	//["Land_Campfire_burning",[2364.92,4179.11,0],0],
+	//["Land_Fire_barrel_burning",[2398.44,4179.49,0],320],
+	//["Land_Fire_barrel_burning",[2371.17,4192.07,0],255],
+	//["Land_Fire_barrel_burning",[2357.65,4164.84,0],286],
+	//["Land_Fire_barrel_burning",[2357.84,4154.63,0],125],
+	//["Land_Fire_barrel_burning",[2400.75,4163.63,0],96],
+	//["Land_Fire_barrel_burning",[2398.08,4141.51,0],53],
+	//["Land_Fire_barrel_burning",[2375.17,4138.97,0],249],
+	//["MAP_Heli_H_civil",[2391.54,4144.06,0],0],
+	//["VaultStorageLocked",[2404.94,4177.93,0],86.3427],
+	//["AmmoCrates_NoInteractive_Medium",[2365.73,4193.7,0],146.063],
+	//["AmmoCrates_NoInteractive_Large",[2364.7,4192.82,0],315.725],
+	//["Misc_Backpackheap",[2404.1,4167.87,0],145.308],
+	//["PowGen_Big",[2361.9,4183.93,0.00571442],268.868],
+	//["Info_Board_EP1",[2375.11,4142.9,0],267.919],
+	//["Misc_cargo_cont_tiny",[2363.08,4191.26,0],354.21],
+	//["Misc_cargo_cont_small",[2370.57,4194.54,0],66.0421],
+	//["MAP_Camo_Box",[2402.16,4145.59,0],180.299],
+	//["MAP_hromada_beden_dekorativniX",[2367.53,4193.93,0],334.603],
+	//["LADAWreck",[2402.35,4144.2,0],119.304],
+	//["Misc_palletsfoiled",[2404.63,4171.8,0],257.799],
+	//["MAP_Misc_palletsfoiled_heap",[2402.49,4179.62,0],270],
+	//["MAP_paletyD",[2402.83,4161.52,0],241.449],
+	//["Land_Carpet_EP1",[2362.73,4179.41,0],0],
+	//["Land_Pillow_EP1",[2364.6,4177.25,0],0],
+	//["Land_Water_pipe_EP1",[2366.99,4179.24,0],0],
+	//["Land_Shelf_EP1",[2403.77,4163.91,0],89],
+	//["Land_Carpet_2_EP1",[2366.76,4177.81,0],293.359],
+	//["Misc_cargo_cont_net2",[2366.97,4185.87,0],279.736],
+	//["Land_CamoNet_EAST",[2364.32,4191.9,0],316.228,[0,0,1]],
+	//["Land_Cabinet_EP1",[2404.53,4165.84,0],179],
+	//["Land_Barrel_water",[2366.11,4180.54,0],0],
+	//["Land_Market_shelter_EP1",[2403.46,4168.77,-0.400002],268.565],
+	//["Misc_cargo_cont_net3",[2362.66,4187.56,0],86],
+	//["MAP_Barels3",[2402.07,4141.66,0],278],
+	//["Land_bags_stack_EP1",[2403.19,4174.19,0],97.9315],
+	//["Land_Crates_stack_EP1",[2405.02,4169.26,0],257.593],
+	//["Misc_TyreHeapEP1",[2403.32,4186.37,-0.00659561],145.819],
+	//["Land_tires_EP1",[2404.37,4176.48,0],145.308],
+	//["Land_Wheel_cart_EP1",[2401.07,4174.47,0],34.6695],
+	//["Land_transport_crates_EP1",[2403.95,4161.47,0],85.6069],
+	//["Land_Crates_EP1",[2402.6,4171.72,0],145.308],
+	//["ClutterCutter_EP1",[2364.38,4185.72,0],0],
+	//["MAP_vending_machine",[2358.7,4180.61,0],267.878],
 	["Land_HBarrier_large",[7619.48,2107.52,-0.0832205],338.148],
 	["Land_HBarrier_large",[7627.3,2110.69,-0.0896559],342.207],
 	["Land_HBarrier_large",[7611.77,2104.22,-0.0413027],340.495],
@@ -347,5 +350,25 @@
 	["Land_Fire_barrel_burning",[9075.68,8682.13,0.298271],334.454,[0,0,1]],
 	["Land_Fire_barrel_burning",[9066.72,8683.39,0.666585],246.935,[0,0,1]],
 	["Land_Fire_barrel_burning",[9069.77,8664.76,0.00095582],0.0617507],
-	["Land_Fire_barrel_burning",[9077.95,8666.58,0.00111794],77.8782]	
+	["Land_Fire_barrel_burning",[9077.95,8666.58,0.00111794],77.8782],
+	["Billboard_Hero_DZ",[1164.33,7199.81,0.00138712],208.764], // Hero Waffen Trader Schild
+	["Billboard_Hero_DZ",[4732.58,4125.38,0.00139523],219.871], // Hero Fahrzeuge Trader Schild
+	["Billboard_Wholesale_DZ",[1406.03,1173.17,0.00149012],82.9578], // Baumaterial Süd
+	["Billboard_Wholesale_DZ",[9080.64,8661.67,0.00153136],340.598], // Baumaterial Nord
+	["Billboard_Black_Market_DZ",[2868.12,9306.04,0.001297],207.298], // Schwarzmarkt
+	//Tankstellen Bug+Markierung
+	["Land_ibr_FuelStation_Feed",[9386.41,5070.53,0.00125599],266.09], // Insel mitte rechts
+	["Land_ibr_FuelStation_Feed",[8329.54,8296.74,0.00143814],201.349], // Villa Gomez
+	["Land_ibr_FuelStation_Feed",[6659.79,6840.59,0.00143909],87.5982], // Airfeld bei Maruko
+	["Land_ibr_FuelStation_Feed",[6964.61,4756.28,0.00143909],85.0722], // Manteria
+	["Land_ibr_FuelStation_Feed",[7409.99,1810.13,0.0014472],167.736], // El Villon
+	["Land_ibr_FuelStation_Feed",[3891.08,1415.22,0.00143909],269.595], // Calamar
+	["Land_ibr_FuelStation_Feed",[4123.36,1365.72,0.00143814],181.799], // Calamar Airfeld
+	["Land_ibr_FuelStation_Feed",[3304.74,1630.23,0.00144196],257.38], //Ralon
+	["Land_ibr_FuelStation_Feed",[1328.18,1452.86,0.00143909],179.348], //Pintosa
+	["Land_ibr_FuelStation_Feed",[2864.9,3536.99,0.00143433],68.1547], // Los Peligron
+	["Land_ibr_FuelStation_Feed",[1924.59,8815.88,0.00143909],137.527], //bei 019/088
+	["Land_ibr_FuelStation_Feed",[4163.63,7528.77,0.00143814],42.9029], //bei 041/075
+	["Land_ibr_FuelStation_Feed",[4414.18,6799.06,0.00144196],296.093], // Research Lab 101
+	["Land_ibr_FuelStation_Feed",[3101.47,6560.12,0.00143909],263.978] // Aircraft Trader
 ],true,false,true] call fnc_spawnObjects;

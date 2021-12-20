@@ -16,7 +16,7 @@ class Category_33 {
 	class transfusionKit {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
 	class emptyBloodBag {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
 	class ItemEpinephrine {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
-	class ItemHeatPack {type = "trade_items";buy[] = {3000,"worth"};sell[] = {100,"worth"};};
+	class ItemHeatPack {type = "trade_items";buy[] = {4000,"worth"};sell[] = {100,"worth"};};
 	class ItemMorphine {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
 	class equip_woodensplint {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};
 	class ItemPainkiller {type = "trade_items";buy[] = {1000,"worth"};sell[] = {100,"worth"};};

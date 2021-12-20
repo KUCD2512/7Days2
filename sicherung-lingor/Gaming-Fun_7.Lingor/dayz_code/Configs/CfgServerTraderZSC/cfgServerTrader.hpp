@@ -1,5 +1,5 @@
 class CfgTraderCategory {
-	#include "Category\Hero.hpp"
+	#include "Category\MiniHubi.hpp" //kleine heli beim fahrzeughändler
 	#include "Category\Bandit.hpp"
 	#include "Category\BlackMarket.hpp"
 	#include "Category\Weapons.hpp"

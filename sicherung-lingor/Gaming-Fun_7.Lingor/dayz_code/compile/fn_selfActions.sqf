@@ -5,6 +5,9 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- [] call fnc_usec_selfActions;
 ************************************************************/
 
+if (isNil "DZE_prevTarget") then {DZE_prevTarget = objNull};
+if (isNil "DZE_prevDistance") then {DZE_prevDistance = 0};
+
 local _vehicle = vehicle player;
 local _inVehicle = (_vehicle != player);
 local _cursorTarget = cursorTarget;
@@ -91,6 +94,23 @@ if (_canDo && !_inVehicle && !dayz_isSwimming && ((call fn_nearWaterHole) select
 */
 
 if (_inVehicle) then {
+	//Nitro action
+	if ((_vehicle isKindOf "Car") && {(speed _vehicle >= 1) && {driver _vehicle == player}}) then {
+		local _hasNitro = _vehicle getVariable['hasNitro',0];
+		if (_hasNitro == 1) then {
+			if (s_player_nitrobooston < 0) then {
+				if (NitroBoostOn) then {
+					s_player_nitrobooston = _vehicle addAction [localize "STR_NITRO_BOOST_OFF","scripts\NitroBoost\NitroOn.sqf", _vehicle, 999, false,true];
+				} else {
+					s_player_nitrobooston = _vehicle addAction [localize "STR_NITRO_BOOST_ON","scripts\NitroBoost\NitroOn.sqf", _vehicle, 999, false,true];
+				};
+			};
+		} else {
+			_vehicle removeAction s_player_nitrobooston;
+			s_player_nitrobooston = -1;
+		};
+	};
+
 	DZE_myVehicle = _vehicle;
 	if ((_vehicleOwnerID != "0") && _canDo) then {
 		if (s_player_lockUnlockInside_ctrl < 0) then {
@@ -216,11 +236,14 @@ if (_isPZombie) then {
 };
 
 // Increase distance only if AIR, SHIP or TANK
-local _allowedDistance = [4, 8] select ((_cursorTarget isKindOf "Air") || {_cursorTarget isKindOf "Ship"} || {_cursorTarget isKindOf "Tank"});
+local _typeOfCursorTarget = typeOf _cursorTarget;
+local _allowedDistance = [5, 9] select ((_typeOfCursorTarget in DZE_largeObjects) || {_cursorTarget isKindOf "Air" || {_cursorTarget isKindOf "Ship" || {_cursorTarget isKindOf "Tank"}}});
+local _distance = floor((player distance _cursorTarget) * 100) / 100;		// truncate to 2 decimal places for stationary objects
+local _isVehicle = _cursorTarget isKindOf "AllVehicles";
+if (_isVehicle) then {_distance = floor(player distance _cursorTarget)};	// truncate to 0 decimal places for jittery vehicles
+local _noChange = ((_cursorTarget == DZE_prevTarget) && (_distance == DZE_prevDistance));
 
-if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player distance _cursorTarget < _allowedDistance}) then {
-	local _typeOfCursorTarget = typeOf _cursorTarget;
-	local _isVehicle = _cursorTarget isKindOf "AllVehicles";
+if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo && (_distance <= _allowedDistance)) then {
 	local _isBicycle = _cursorTarget isKindOf "Bicycle";
 	local _isDestructable = _cursorTarget isKindOf "BuiltItems";
 	local _isGenerator = _typeOfCursorTarget == "Generator_DZ";
@@ -240,21 +263,12 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	local _isPlant = _typeOfCursorTarget in Dayz_plants;
 	local _istypeTent = (_cursorTarget isKindOf "TentStorage_base") or (_cursorTarget isKindOf "IC_Tent");
 	local _characterID = _cursorTarget getVariable ["CharacterID","0"];
-	local _id = "";
-	local _ownerID = "";
-	local _hasAccess = [];	
-
-	if (DZE_permanentPlot) then {
-		_id = _uid;
-		_ownerID = _cursorTarget getVariable ["ownerPUID","0"];
-	} else {
-		_id = _myCharID;
-		_ownerID = _characterID;
-	};
-
+	local _id = _uid;
+	local _ownerID = _cursorTarget getVariable ["ownerPUID","0"];
+	local _hasAccess = [];
 	local _isDog = (_cursorTarget isKindOf "Pastor" || _cursorTarget isKindOf "Fin");
-	local _isModular = _cursorTarget isKindOf "ModularItems";
-	local _isModularDoor = _typeOfCursorTarget in ["Land_DZE_WoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_GarageWoodDoor","CinderWallDoor_DZ","CinderWallDoorSmall_DZ","WoodenGate_foundation_DZ","WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ","Land_DZE_WoodGate","Land_DZE_WoodOpenTopGarageDoor","CinderGate_DZ","CinderGarageOpenTop_DZ","CinderDoorHatch_DZ","Door_DZ","Concrete_Bunker_DZ","Metal_Drawbridge_DZ"];
+	local _isModular = (_cursorTarget isKindOf "ModularItems" || {_typeOfCursorTarget in DZE_modularDoors});
+	local _hasDeconstructAccess = false;
 	local _player_deleteBuild = false;
 	local _player_lockUnlock_crtl = false;
 
@@ -372,20 +386,22 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 		};
 	};
 
+	// Remove Object
 	if (_isAlive) then {
 		local _restrict = _typeOfCursorTarget in DZE_restrictRemoval;
 
-		//Allow player to remove objects with no ownership or access required
-		if (!_restrict && {_isDestructable || {_typeOfCursorTarget in DZE_isWreck} || {_typeOfCursorTarget in DZE_isWreckBuilding} || {_typeOfCursorTarget in DZE_isRemovable}}) then {
+		// Allow player to remove objects with no ownership or access required
+		if (!_restrict && (_isDestructable || {_typeOfCursorTarget in DZE_isWreck || {_typeOfCursorTarget in DZE_isWreckBuilding || {_typeOfCursorTarget in DZE_isRemovable}}})) then {
 			if (_hasToolbox && _hasCrowbar) then {
 				_player_deleteBuild = true;
 			};
 		};
-		//Allow player to remove objects only if they have proper ownership or access
-		if (_restrict || _isModular || _isModularDoor || _isGenerator || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
+		// Allow player to remove objects only if they have proper ownership or access
+		if (_restrict || _isModular || _isGenerator || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
 			if (_hasToolbox && _hasCrowbar) then {
 				_hasAccess = [player, _cursorTarget] call FNC_check_access;
-				if ((_hasAccess select 0) || {_hasAccess select 2} || {_hasAccess select 3}) then {
+				if ((_hasAccess select 0) || (_hasAccess select 2) || (_hasAccess select 3)) then {
+					_hasDeconstructAccess = true;
 					_player_deleteBuild = true;
 				};
 			};
@@ -396,14 +412,27 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 			};
 		};
 	};
-
 	if (_player_deleteBuild) then {
 		if (s_player_deleteBuild < 0) then {
-			s_player_deleteBuild = player addAction [format[localize "STR_EPOCH_REMOVE",_text], "\z\addons\dayz_code\actions\remove.sqf",_cursorTarget, 1, false, true];
+
+			s_player_deleteBuild = player addAction [format[localize "STR_EPOCH_REMOVE", _text], "\z\addons\dayz_code\actions\remove.sqf",[_cursorTarget, 2, _isModular], -3, false, true];
 		};
 	} else {
 		player removeAction s_player_deleteBuild;
 		s_player_deleteBuild = -1;
+		
+	};
+
+	// Deconstruct Modular Object
+	if (DZE_refundModular && DZE_allowDeconstruct && _hasDeconstructAccess && _isModular && !((DZE_RefundDamageLimit > 0) && (damage _cursorTarget > DZE_RefundDamageLimit))) then {
+		if !(_typeOfCursorTarget in DZE_modularExclude) then {	// check if class allows refunds
+			if (s_player_deconstruct < 0) then {
+				s_player_deconstruct = player addAction [format[localize "STR_EPOCH_DECONSTRUCT", _text], "\z\addons\dayz_code\actions\remove.sqf",[_cursorTarget, 3, _isModular], -4, false, true];
+			};
+		};
+	} else {
+		player removeAction s_player_deconstruct;
+		s_player_deconstruct = -1;
 	};
 
 	//remove Own objects
@@ -500,16 +529,8 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	if ((_typeOfCursorTarget == "Plastic_Pole_EP1_DZ") && {speed player <= 1}) then {
 		_hasAccess = [player, _cursorTarget] call FNC_check_access;
 		local _allowed = ((_hasAccess select 0) || _hasAccess select 2 || _hasAccess select 3 || _hasAccess select 4);
-		if (DZE_permanentPlot) then {
-			if (s_player_plotManagement < 0 && _allowed) then {
-				s_player_plotManagement = player addAction [format["<t color='#b3e6ff'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
-			};
-		} else {
-			if (s_player_maintain_area < 0) then {
-				s_player_maintain_area = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTAREA"], "\z\addons\dayz_code\actions\maintain_area.sqf", "maintain", 5, false];
-				s_player_maintain_area_force = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_FORCE_MAINTAREA"], "\z\addons\dayz_code\actions\maintain_area.sqf", "force", 5, false];
-				s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\maintain_area.sqf", "preview", 5, false];
-			};
+		if (s_player_plotManagement < 0 && _allowed) then {
+			s_player_plotManagement = player addAction [format["<t color='#b3e6ff'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
 		};
 		if (s_player_plot_boundary < 0 && {_allowed || (_hasAccess select 1)}) then {
 			s_player_plot_boundary = player addAction [localize "STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY", "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf", "", 1, false];
@@ -887,6 +908,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 			s_garage_dialog = -1;
 		};
 	};
+	//Gamble
 _isGamble = _cursorTarget isKindOf "Hooker4"; // Define here the trader or the building where you get the gambling dialog
 	if (isNil "CurrencyName") then { _gambleCurrency = "Coins"; } else { _gambleCurrency = CurrencyName;};
 	if (Z_singleCurrency && _isGamble && _isAlive) then {
@@ -1013,7 +1035,19 @@ _isGamble = _cursorTarget isKindOf "Hooker4"; // Define here the trader or the b
 		{player removeAction _x} count s_player_parts;s_player_parts = [];
 		s_player_parts_crtl = -1;
 	};
-
+	
+	//Nitro
+    local _isCar = _cursorTarget isKindOf "Car";	
+    local _hasNitro = _cursorTarget getVariable['hasNitro',0];
+    if (_isCar && (!locked _cursorTarget) && (_hasNitro == 0)) then {
+        if (s_player_nitroInstall < 0) then {
+            s_player_nitroInstall = player addAction [localize "STR_INSTALL_NITRO_BOOST", "scripts\NitroBoost\NitroInstall.sqf",_cursorTarget, 999, true, false];
+        };
+    } else {
+        player removeAction s_player_nitroInstall;
+        s_player_nitroInstall = -1;
+    };
+	
 	//Dog
 	if (dayz_tameDogs) then {
 		local _hasRawMeat = {_x in Dayz_meatraw} count _magazinesPlayer > 0;
@@ -1071,6 +1105,7 @@ _isGamble = _cursorTarget isKindOf "Hooker4"; // Define here the trader or the b
 		};
 	};
 } else {
+	DZE_prevDistance = _distance;
 	//Engineering
 	player removeAction s_player_plot_boundary;
 	s_player_plot_boundary = -1;
@@ -1086,6 +1121,8 @@ _isGamble = _cursorTarget isKindOf "Hooker4"; // Define here the trader or the b
 	s_player_sleep = -1;
 	player removeAction s_player_deleteBuild;
 	s_player_deleteBuild = -1;
+	player removeAction s_player_deconstruct;
+	s_player_deconstruct = -1;
 	player removeAction s_player_cook;
 	s_player_cook = -1;
 	player removeAction s_player_boil;
@@ -1161,8 +1198,6 @@ _isGamble = _cursorTarget isKindOf "Hooker4"; // Define here the trader or the b
 	s_player_maint_build = -1;
 	player removeAction s_player_downgrade_build;
 	s_player_downgrade_build = -1;
-	player removeAction s_player_towing;
-	s_player_towing = -1;
 	player removeAction s_player_fuelauto;
 	s_player_fuelauto = -1;
 	player removeAction s_player_fuelauto2;
@@ -1207,6 +1242,8 @@ _isGamble = _cursorTarget isKindOf "Hooker4"; // Define here the trader or the b
 	s_player_claimVehicle = -1;	
 	player removeAction s_garage_dialog;
 	s_garage_dialog = -1;	
+    player removeAction s_player_nitroInstall;
+    s_player_nitroInstall = -1;	
 };
 
 //Dog actions on player self
@@ -1237,5 +1274,6 @@ if (_dogHandle > 0) then {
 	s_player_calldog = -1;
 };
 
+DZE_prevTarget = _cursorTarget;
 //Monitor
 player setVariable ["selfActions", diag_ticktime, false];

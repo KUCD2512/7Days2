@@ -2,7 +2,7 @@ Industrial[] =
 {
 	//Tools
 	{Loot_GROUP,		15,		ToolsBuilding},
-	{Loot_VEHICLE,		8,		WeaponHolder_ItemCrowbar},
+	{Loot_VEHICLE,		5,		WeaponHolder_ItemCrowbar},
 	{Loot_VEHICLE,		3,		WeaponHolder_ItemGenerator},
 	
 	//Items
@@ -16,7 +16,7 @@ Industrial[] =
 	//Other
 	//{Loot_GROUP,		15,		Parts},
 	{Loot_GROUP,		6,		VanillaConstruction},
-	{Loot_PILE,			10,		Trash, 1, 3},
+	//{Loot_PILE,			10,		Trash, 1, 3},
 	{Loot_PILE,			3,		Consumable, 1, 2},
 	{Loot_GROUP,		4,		JerryCan},
 	{Loot_GROUP,		3,		FuelBarrel},
@@ -27,7 +27,7 @@ Industrial[] =
 IndustrialSmall[] =
 {
 	{Loot_GROUP,		2,		VanillaSurvival},
-	{Loot_GROUP,		10,		Trash},
+	//{Loot_GROUP,		10,		Trash},
 	{Loot_GROUP,		3,		Consumable},
 	{Loot_GROUP,		5,		GenericSmall}
 };

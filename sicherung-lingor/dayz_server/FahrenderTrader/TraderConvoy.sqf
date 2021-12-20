@@ -9,15 +9,15 @@ if (!isServer) exitWith{};
 //Config//
 _typeCar = "HMMWV_Ambulance"; //The convoy vehicle
 _typeDriver = "UN_CDF_Soldier_Pilot_EP1"; // Vehicle crew
-_typeCargo = ["Profiteer1","RU_Citizen4","Dr_Hladik_EP1","Villager1"]; //Array of trader units
+_typeCargo = ["Graves"]; // eigener hero
+//_typeCargo = ["Profiteer1","RU_Citizen4","Dr_Hladik_EP1","Villager1"]; //Array of trader units Graves
 _StayTime = 1200; //How long they open trader city in seconds
 _TradePosition = [ //Where they open trader city
-[2668.1,6860.87, 0],//Aircraft Trader
-[1151.39,5768.83,0],//Pista
-[3672.86,2099.85,0],//Calamar
-[653.548,1030.14,0],//Mercardio
-[6902.99,4336.72,0],//Sanvigado
-[8824.31,7564.21,0]//Conoteta
+[7050.39,5227.33,0],//Palida
+[2292.19,8764.94,0],//in der Nähe BlackMarket
+[2423.02,4800.56,0],//Morada
+[2123.73,1718.12,0] //mitte unten
+
 ];
 
 ////////////////////////////////////////////////////
@@ -125,7 +125,7 @@ diag_log format["TraderConvoy: %1",_Traders];
   //Create Marker
   _marker = createMarker ["TraderConvoy", getPos _vehicle];
   _marker setMarkerColor "ColorBlue";
-  _marker setMarkerText "Trader Convoy";
+  _marker setMarkerText "Special Hero Trader";
   if (!DZTR_TraderInMove) then { // Deployed
    _marker setMarkerType "mil_circle";
    sleep 25;

@@ -7,7 +7,7 @@
 dayz_infectiouswaterholes = true; //Enable infected waterholes
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
 dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
-DZE_HeliLift = true; // Enable Epoch heli lift system
+DZE_HeliLift = false; // Enable Epoch heli lift system
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
 DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in positions listed in DZE_SafeZonePosArray?
@@ -44,7 +44,7 @@ DZE_Virtual_Garage = true; // Enable the Virtual Garage to store vehicles.
 
 // Plot Management and Plot for Life
 DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
-DZE_isRemovable = ["Plastic_Pole_EP1_DZ"]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove plot pole from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
+DZE_isRemovable = [""]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove plot pole from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
 
 // Door Management
 DZE_doorManagement = true; // Enable Door Management by @DevZupa.
@@ -71,12 +71,12 @@ DZE_WeatherVariables = [
 	.2, // Maximum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0.8).
 	0, // Minimum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 0). Note: Rain and snow will not occur when overcast is less than 0.70.
 	.75, // Maximum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 1).
-	1, // Minimum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
+	.5, // Minimum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
 	1, // Maximum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
-	3, // Minimum wind strength (default value: 0).
-	5, // Maximum wind strength (default value: 5).
-	.35, // Probability for wind to change when weather changes. (default value: .25).
-	0, // Minimum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
+	0, // Minimum wind strength (default value: 0).
+	3, // Maximum wind strength (default value: 5).
+	.25, // Probability for wind to change when weather changes. (default value: .25).
+	1, // Minimum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
 	1, // Maximum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
 	.2,// Probability for a blizzard to occur when it is snowing. (0 = no blizzards, 1 = blizzard all the time). (default value: .2).
 	10, // Blizzard interval in minutes. Set to zero to have the blizzard run for the whole interval, otherwise you can set a custom time interval for the blizzard.
@@ -108,7 +108,7 @@ if (isServer) then {
 	Z_globalBankingTraders = true; // Enable banking NPCs at trader cities.
 	
 	// Safe Zone Relocating
-	DZE_SafeZone_Relocate = false; //Enables relocating of vehicles left in Safe Zones over a server restart.
+	DZE_SafeZone_Relocate = true; //Enables relocating of vehicles left in Safe Zones over a server restart.
 	
 	if (DZE_VehicleKey_Changer) then {
 		vkc_clearAmmo = true; // Clear the ammo of vehicles after they have been rekeyed/claimed? (stops users getting a free rearm)
@@ -134,33 +134,33 @@ if (!isDedicated) then {
 	DZE_NameTags = 1; // Name displays when looking at player up close  0 = Off, 1= On, 2 = Player choice
 	DZE_ForceNameTagsInTrader = false; // Force name display when looking at player up close in traders. Overrides player choice.
 	DZE_HumanityTargetDistance = 25; // Distance to show name tags (red for bandit, blue for hero, green for friend)
-	DZE_HeartBeat = false; // Enable heartbeat sound when looking at bandit (<= -3000 humanity) up close
+	DZE_HeartBeat = true; // Enable heartbeat sound when looking at bandit (<= -3000 humanity) up close
 	DZE_RestrictSkins = []; // Clothes that players are not allowed to wear. i.e. ["Skin_GUE_Soldier_CO_DZ","Skin_GUE_Soldier_2_DZ"] etc.
 	DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI = "vanilla"; otherwise it has no affect.
 	timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 	dayz_maxGlobalZeds = 1000; // Maximum allowed zeds on the map
 	dayz_quickSwitch = false; //Enable quick weapon switch,
 	dayz_paraSpawn = false; // Helo jump spawn
-	DZE_SelfTransfuse = false; // Allow players to give themselves blood transfusions
+	DZE_SelfTransfuse = true; // Allow players to give themselves blood transfusions
 	DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount, infection chance, cool-down (seconds)]
 	dayz_DamageMultiplier = 2.6; // Increases the damage to the player by zombie attacks	
 	dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
-	DZE_BackpackAntiTheft = false; // Prevents accessing backpack gear of non-friendly players in trader cities
+	DZE_BackpackAntiTheft = true; // Prevents accessing backpack gear of non-friendly players in trader cities
 	DZE_StaticConstructionCount = 1; // Number of animations required for building an object. Leaving set at zero will default to the construction count in the configs for each object.
 	dayz_maxMaxWeaponHolders = 200; // Maximum number of loot piles that can spawn within 200 meters of a player.
 	dayz_bleedingeffect = 2; //1 = blood on the ground (negatively impacts FPS), 2 = partical effect, 3 = both
 	dayz_temperature_override = false; // Set to true to disable all temperature changes.
-	dayz_nutritionValuesSystem = false; //true, Enables nutrition system, false, disables nutrition system.
+	dayz_nutritionValuesSystem = true; //true, Enables nutrition system, false, disables nutrition system.
 	DZE_DisableVehicleUpgrade = []; // List of vehicles that cannot be upgraded with manuals E.g.: ["ArmoredSUV_PMC_DZE","LandRover_CZ_EP1_DZE"]
 
 	// Build restrictions
-	DZE_NoBuildNear = ["Land_Mil_ControlTower","Land_SS_hangar"]; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
-	DZE_NoBuildNearDistance = 1000; // Distance from blacklisted objects to disallow building near.
+	DZE_NoBuildNear = ["Map_fuelstation","Land_fuelstation","Land_fuelstation_army","Map_A_FuelStation_Feed","Land_A_FuelStation_Feed","Land_ibr_FuelStation_Feed","Map_ibr_FuelStation_Feed","Land_A_Office01","Land_A_MunicipalOffice","Land_kotel3","Land_kotel","Land_A_BuildingWIP","Land_Tovarna2","Land_Hangar_2","Land_Mil_Barracks_i","Land_Mil_Barracks","Land_Mil_Barracks_L","Land_Mil_ControlTower","Land_army_hut_int","Land_army_hut2_long_int","Land_army_hut3_long_int","Land_Mil_ControlTower","Land_SS_hangar"]; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
+	DZE_NoBuildNearDistance = 800; // Distance from blacklisted objects to disallow building near.
 	DZE_BuildHeightLimit = 0; // 0 = No building height limit | >0 = Height limit in meters | Changing this to 30 would limit the maximum built height to 30 meters.
 	DZE_requireplot = 1; // Players require a plot to build
-	DZE_PlotPole = [70,85]; // Plot radius, minimum distance between plots
+	DZE_PlotPole = [50,150]; // Plot radius, minimum distance between plots
 	DZE_BuildOnRoads = false; // Allow building on roads
-	DZE_BuildingLimit = 250; // Maximum allowed objects per plot
+	DZE_BuildingLimit = 300; // Maximum allowed objects per plot
 
 	DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
 	DZE_DisabledChannels = [(localize "str_channel_side"),(localize "str_channel_global"),(localize "str_channel_command")]; //List of disabled voice channels. Other channels are: "str_channel_group","str_channel_direct","str_channel_vehicle"
@@ -169,7 +169,7 @@ if (!isDedicated) then {
 	DZE_ZombieHumanity = 5;
 	DZE_lockablesHarderPenalty = true; // Enforce an exponential wait on attempts between unlocking a safe/lockbox from a failed code.
 	DZE_Hide_Body = true; //Enable hide dead bodies. Hiding a dead body removes the corpse marker from the map too. Default = true
-	DZE_PVE_Mode = true; //Disable the PvP damage on the server. If DZE_BackpackAntiTheft = true, the backpack anti theft is active on the whole server. This is just a basic support for PVE Servers. Default = false
+	DZE_PVE_Mode = false; //Disable the PvP damage on the server. If DZE_BackpackAntiTheft = true, the backpack anti theft is active on the whole server. This is just a basic support for PVE Servers. Default = false
 
 	// SafeZone
 	DZE_SafeZoneNoBuildItems = []; // Array of object class names not allowed to be built near the zones in DZE_SafeZonePosArray (see mission\init.sqf). Can be nested arrays for custom distances. i.e ["VaultStorageLocked","LockboxStorageLocked",["Plastic_Pole_EP1_DZ",1300]] etc.
@@ -195,9 +195,9 @@ if (!isDedicated) then {
 	DZE_plotManagementMustBeClose = false; //Players must be within 10m of pole to be added as a plot friend.
 	DZE_PlotManagementAdmins = ["76561197982198403","76561199104741041"]; //Array of admin PlayerUIDs. UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby.
 	DZE_MaxPlotFriends = 10; //Max friends allowed on a plot. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
-	DZE_maintainCurrencyRate = 100; //The currency rate of what maintaining an item will be, for instance: at 100, 10 items will have a worth of 1000 (1 10oz gold or 1k coins) see actions/maintain_area.sqf for more examples.
+	DZE_maintainCurrencyRate = 200; //The currency rate of what maintaining an item will be, for instance: at 100, 10 items will have a worth of 1000 (1 10oz gold or 1k coins) see actions/maintain_area.sqf for more examples.
 	DZE_limitPlots = 1; // Limit the amount of plot poles per person, Use 0 to disable. UIDS in the DZE_PlotManagementAdmins array are exempt.
-	DZE_restrictRemoval = ["Fence_corrugated_DZ","M240Nest_DZ","ParkBench_DZ","FireBarrel_DZ","Scaffolding_DZ","CanvasHut_DZ","LightPole_DZ","DeerStand_DZ","MetalGate_DZ","StickFence_DZ","Garage_Green_DZ","Garage_White_DZ","Garage_Brown_DZ","Garage_Grey_DZ","CCTV_DZ","Notebook_DZ","Water_Pump_DZ","Greenhouse_DZ","Bed_DZ","Table_DZ","Office_Chair_DZ"]; //Items that can be removed with a crowbar only with proper ownership or access. It is not necessary to add doors, storage or items that inherit from 'ModularItems' to this list. Items that inherit from 'BuiltItems' can be added to this list if desired.
+	DZE_restrictRemoval = ["Plastic_Pole_EP1_DZ","Fence_corrugated_DZ","M240Nest_DZ","ParkBench_DZ","FireBarrel_DZ","Scaffolding_DZ","CanvasHut_DZ","LightPole_DZ","DeerStand_DZ","MetalGate_DZ","StickFence_DZ","Garage_Green_DZ","Garage_White_DZ","Garage_Brown_DZ","Garage_Grey_DZ","CCTV_DZ","Notebook_DZ","Water_Pump_DZ","Greenhouse_DZ","Bed_DZ","Table_DZ","Office_Chair_DZ"]; //Items that can be removed with a crowbar only with proper ownership or access. It is not necessary to add doors, storage or items that inherit from 'ModularItems' to this list. Items that inherit from 'BuiltItems' can be added to this list if desired.
 	DZE_DisableUpgrade = []; //Array of buildables that are not allowed to be upgraded. For example: DZE_DisableUpgrade = ["WoodShack_DZ","StorageShed_DZ"];
 
 	// Snap Build and Build Vectors
@@ -207,8 +207,8 @@ if (!isDedicated) then {
 	DZE_vectorDegrees = [0.01, 0.1, 1, 5, 15, 45, 90]; // Degree positions players are able to rotate buildables with using the build vectors action menu.
 	DZE_curDegree = 45; // Starting rotation angle. Prefer any value in the array above.
 	DZE_dirWithDegrees = true; // When rotating objects with Q&E, use the custom degrees.
-	DZE_buildMaxMoveDistance = 10; // Max distance player can walk from start position when building. Anything >= the differnce between DZE_PlotPole values is not recommended (allows walking into other plots).
-	DZE_buildMaxHeightDistance = 10; // Max distance player can raise or lower object from start position when building.
+	DZE_buildMaxMoveDistance = 20; // Max distance player can walk from start position when building. Anything >= the differnce between DZE_PlotPole values is not recommended (allows walking into other plots).
+	DZE_buildMaxHeightDistance = 30; // Max distance player can raise or lower object from start position when building.
 
 	DZE_modularConfig = [];
 	/*
@@ -236,11 +236,11 @@ if (!isDedicated) then {
 	dayz_markGroup = 1; // Players can see their group members on the map 0=never, 1=always, 2=With GPS only
 	dayz_markSelf = 1; // Players can see their own position on the map 0=never, 1=always, 2=With GPS only
 	dayz_markBody = 1; // Players can see their corpse position on the map 0=never, 1=always, 2=With GPS only
-	dayz_requireRadio = false; // Require players to have a radio on their toolbelt to create a group, be in a group and receive invites.
+	dayz_requireRadio = true; // Require players to have a radio on their toolbelt to create a group, be in a group and receive invites.
 
 	// Humanity System
-	DZE_Hero = 5000; // Defines the value at how much humanity the player is classed as a hero.
-	//DZE_Bandit =-5000; // Defines the value at how much humanity the player is classed as a bandit.
+	DZE_Hero = 8000; // Defines the value at how much humanity the player is classed as a hero.
+	DZE_Bandit = -8000; // Defines the value at how much humanity the player is classed as a bandit.
 
 	// ZSC
 	if (Z_SingleCurrency) then {		
@@ -248,11 +248,11 @@ if (!isDedicated) then {
 		Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
 		ZSC_bankTraders = ["Functionary1_EP1"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1), do not use _DZ classes - they are used as player skins
 		ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
-		ZSC_bankObjects = ["Info_Board_EP1","Laptop_EP1"]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
-		ZSC_maxBankMoney = 5000000; // Default limit for bank objects.
+		ZSC_bankObjects = ["Laptop_EP1"]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
+		ZSC_maxBankMoney = 100000000; // Default limit for bank objects.
 		ZSC_defaultStorageMultiplier = 200; // Default magazine count for bank objects that don't have storage slots i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
-		ZSC_MaxMoneyInStorageMultiplier = 5000; // Multiplier for how much money a bank object can hold, example: 200 magazine slots in the object (or the default value above ^^) multiplied by the 5000 multiplier is 1 million coin storage. (200 * 5000 = 1,000,000 coins)
-		ZSC_ZombieCoins = [true,[20,50]]; // First value activate coins on zombies, second value from 0 - 1000 coins on each zombie. Coin for zombies are handled directly in check wallet.
+		ZSC_MaxMoneyInStorageMultiplier = 35000; // Multiplier for how much money a bank object can hold, example: 200 magazine slots in the object (or the default value above ^^) multiplied by the 5000 multiplier is 1 million coin storage. (200 * 5000 = 1,000,000 coins)
+		ZSC_ZombieCoins = [true,[50,150]]; // First value activate coins on zombies, second value from 0 - 1000 coins on each zombie. Coin for zombies are handled directly in check wallet.
 	};
 
 	// Loot system
@@ -289,18 +289,18 @@ if (!isDedicated) then {
 		["ItemGPS",localize "STR_CL_CA_SCAN_NEARBY","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_ZOMBIE_COUNT = count ((position player) nearEntities ['zZombie_Base',CA_GPS_RANGE]); CA_MAN_COUNT = count ((position player) nearEntities ['CAManBase',CA_GPS_RANGE]); format[localize 'STR_CL_CA_SCAN',CA_GPS_RANGE,CA_MAN_COUNT - CA_ZOMBIE_COUNT,count ((position player) nearEntities ['zZombie_Base',CA_GPS_RANGE]),count ((position player) nearEntities ['allVehicles',CA_GPS_RANGE]) - CA_MAN_COUNT] call dayz_rollingMessages;","true"],
 		["ItemGPS",localize "STR_CL_CA_RANGE_UP","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_GPS_RANGE = (CA_GPS_RANGE + 100) min 2500; format[localize 'STR_CL_CA_RANGE_GPS',CA_GPS_RANGE] call dayz_rollingMessages;","true"],
 		["ItemGPS",localize "STR_CL_CA_RANGE_DOWN","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_GPS_RANGE = (CA_GPS_RANGE - 100) max 1000; format[localize 'STR_CL_CA_RANGE_GPS',CA_GPS_RANGE] call dayz_rollingMessages;","true"],
-	  ["ItemBinocular","Set View Distance","execVM 'scripts\setview.sqf';","true"],
+		["ItemGPS","Where is my Base","[] spawn FUN_LocatePlot;","true"],
     ["Binocular_Vector","View Distance 500m","setViewDistance 500;","true"],
-    ["Binocular_Vector","View Distance 1000m","setViewDistance 1000;","true"],
-    ["Binocular_Vector","View Distance 1500m","setViewDistance 1500;","true"],
-    ["Binocular_Vector","View Distance 2000m","setViewDistance 2000;","true"],
-    ["Binocular_Vector","View Distance 2500m","setViewDistance 2500;","true"],
-    ["Binocular_Vector","View Distance 3000m","setViewDistance 3000;","true"],
-    ["Binocular_Vector","View Distance 4000m","setViewDistance 4000;","true"],
-    ["Binocular_Vector","View Distance 5000m","setViewDistance 5000;","true"],
-    ["Binocular_Vector","View Distance 6000m","setViewDistance 6000;","true"],
-    ["Binocular_Vector","View Distance 7000m","setViewDistance 7000;","true"],
-    ["Binocular_Vector","View Distance 8000m","setViewDistance 8000;","true"]	
+		["Binocular_Vector","View Distance 1000m","setViewDistance 1000;","true"],
+		["Binocular_Vector","View Distance 1500m","setViewDistance 1500;","true"],
+		["Binocular_Vector","View Distance 2000m","setViewDistance 2000;","true"],
+		["Binocular_Vector","View Distance 2500m","setViewDistance 2500;","true"],
+		["Binocular_Vector","View Distance 3000m","setViewDistance 3000;","true"],
+		["Binocular_Vector","View Distance 4000m","setViewDistance 4000;","true"],
+		["Binocular_Vector","View Distance 5000m","setViewDistance 5000;","true"],
+		["Binocular_Vector","View Distance 6000m","setViewDistance 6000;","true"],
+		["Binocular_Vector","View Distance 7000m","setViewDistance 7000;","true"],
+		["Binocular_Vector","View Distance 8000m","setViewDistance 8000;","true"]
 	];	
 	
 	DZE_Remote_Vehicle = true;	//	Enable/Disable the Remote Vehicle options like ejecting players from a vehicle or lock/unlock the vehicle from the distance just by the key.
@@ -320,12 +320,13 @@ if (!isDedicated) then {
 	if (DZE_LocateVehicle) then {
 		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
 			["ItemGPS",localize "STR_CL_LV_LOCATE_VEHICLES","[] spawn locateVehicle;","true"]
+			
 		];
 	};
 	
 	if (DZE_VehicleKey_Changer) then {
-		vkc_claimPrice = 1000; // Amount in worth for claiming a vehicle. See the top of this script for an explanation.
-		vkc_changePrice = 5000; // Amount in worth for changing the key for a vehicle. See the top of this script for an explanation.
+		vkc_claimPrice = 3000; // Amount in worth for claiming a vehicle. See the top of this script for an explanation.
+		vkc_changePrice = 8000; // Amount in worth for changing the key for a vehicle. See the top of this script for an explanation.
 	};
 	
 	if (DZE_Virtual_Garage) then {
@@ -337,8 +338,8 @@ if (!isDedicated) then {
 		vg_requireKey = true; // Require the player to have the key when storing a locked vehicle.
 		vg_storeWithGear = true; // Allow storing vehicles with gear?
 		vg_tiedToPole = true; // Tie the virtual garage to a local plot pole? If no plot pole is present (i.e a communal garage at a trader etc) the players UID will be used.
-		vg_pricePer = 100; // Price in worth to store a vehicle per gear item, use 0 if you want it to be free.
-		vg_maintainCost = 10000; //cost is 1000 per 10oz gold, gem cost is as defined in DZE_GemWorthArray; if you use ZSC then this is an amount of coins. This is a flate rate for all vehicles in the garage/per player depending on vg_tiedToPole
+		vg_pricePer = 50; // Price in worth to store a vehicle per gear item, use 0 if you want it to be free.
+		vg_maintainCost = 15000; //cost is 1000 per 10oz gold, gem cost is as defined in DZE_GemWorthArray; if you use ZSC then this is an amount of coins. This is a flate rate for all vehicles in the garage/per player depending on vg_tiedToPole
 		vg_price = [["Land",500],["Air",500],["Ship",500]];
 		/*
 			vg_price can be an array of vehicle config classes as well as vehicle classnames, you need to put these in order of what you prefer to get checked first.
@@ -356,7 +357,7 @@ if (!isDedicated) then {
 			i.e:
 			vg_limit = [["Land",5],["Air",3],["Ship",1]];
 			vg_limit = [["350z_red",2],["Land",5],["AH1Z",1],["Air",3],["Ship",1]];
-			vg_limit = 5;
+			vg_limit = 8;
 		*/
 	};
 	
@@ -386,7 +387,7 @@ if (!isDedicated) then {
 	
 	if (DZE_Service_Points) then {
 		// Valid vehicle config classes as an example: "Air", "AllVehicles", "All", "APC", "Bicycle", "Car", "Helicopter", "Land", "Motorcycle", "Plane", "Ship", "Tank"
-		DZE_SP_Classes = ["Land_fuelstation_army","Map_A_FuelStation_Feed","Land_A_FuelStation_Feed","Land_ibr_FuelStation_Feed","Map_ibr_FuelStation_Feed"]; // service point classes, You can also use dayz_fuelpumparray by its self for all the default fuel pumps.
+		DZE_SP_Classes = ["Map_fuelstation","Land_fuelstation","Land_fuelstation_army","Map_A_FuelStation_Feed","Land_A_FuelStation_Feed","Land_ibr_FuelStation_Feed","Map_ibr_FuelStation_Feed"]; // service point classes, You can also use dayz_fuelpumparray by its self for all the default fuel pumps.
 		DZE_SP_MaxDistance = 50; // maximum distance from a service point for the options to be shown
 		
 		// Refuel Settings
@@ -395,8 +396,8 @@ if (!isDedicated) then {
 			DZE_SP_Refuel_Costs = [
 				//["Ship",localize "str_temp_param_disabled"], // All vehicles are disabled to refuel.
 				//["Land",localize "strwffree"], // All vehicles are free to refuel.
-				["Land",1000],
-				["Air",2000] //1000 worth is 1 10oz gold for all air vehicles
+				["Land",3000],
+				["Air",5000] //1000 worth is 1 10oz gold for all air vehicles
 			];
 			DZE_SP_Refuel_UpdateInterval = 1; // update interval (in seconds)
 			DZE_SP_Refuel_Amount = 0.05; // amount of fuel to add with every update (in percent)
@@ -408,8 +409,8 @@ if (!isDedicated) then {
 		if (DZE_SP_Repair_Enable) then {
 			DZE_SP_Repair_RepairTime = 2; // time needed to repair each damaged part (in seconds)
 			DZE_SP_Repair_Costs = [
-				["Air",4000], // 4000 worth is 4 10oz gold.
-				["AllVehicles",2000] // 2000 worth is 2 10oz gold for all other vehicles
+				["Air",10000], // 4000 worth is 4 10oz gold.
+				["AllVehicles",8000] // 2000 worth is 2 10oz gold for all other vehicles
 			];
 		};
 		

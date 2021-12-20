@@ -18,6 +18,7 @@ class Mission
 		"ibr_plants",
 		"ibr_hangars",
 		"ibr_airports",
+		"ibr_lingorfuel",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
@@ -37,6 +38,7 @@ class Mission
 		"csj_gyroac",
 		"jetskiyanahuiaddon",
 		"redryder",
+		"mbg_african_buildings",
 		"Anzio_20"
 	};
 	addOnsAuto[]=
@@ -48,8 +50,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="DayZ Epoch Lingor";
-		briefingDescription="Version 1.0.7";
+		briefingName="Gaming-Fun Epoch PVP Map:Lingor";
+		briefingDescription="Version 1.0.7.1";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
@@ -202,7 +204,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=23;
+		items=38;
 		class Item0
 		{
 			position[]={4078,0,4757};
@@ -307,26 +309,26 @@ class Mission
 		class Item16
 		{
 			position[]={2847.81,0,9259.68}; 
-			name="Schwarzmarkt";
-			text="Schwarzmarkt";
-			type="mil_objective";
-			colorName="ColorBlack";
+			name="Bandit";
+			text="Bandit";
+			type="mil_dot";
+			colorName="ColorRed";
 		};
 		class Item17
 		{
 			position[]={4682.73,0,4097.22};
-			name="HeroVendor";
-			text="Hero Vendor";
+			name="Hero";
+			text="Hero";
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
 		class Item18
 		{
-			position[]={2382.54,0,4163.14}; 
-			name="TradercityMotodrom";
-			text="Trader City Motodrom";
-			type="mil_circle";
-			colorName="ColorGreen";
+			position[]={3425.58,0,5552.41}; 
+			name="Schwarzmarkt";
+			text="Schwarzmarkt";
+			type="mil_objective";
+			colorName="ColorBlack";
 		};	
 		class Item19
 		{
@@ -334,7 +336,7 @@ class Mission
 			name="TradercityElVillon";
 			text="Trader City El Villon";
 			type="mil_circle";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};	
 		class Item20
 		{
@@ -342,13 +344,13 @@ class Mission
 			name="TradercitySanIsabel";
 			text="Trader City San Isabel";
 			type="mil_circle";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};	
 		class Item21
 		{
 			position[]={1428.51,0,1178.64};
 			name="DockTraderSouth";
-			text="South West Dock Trader";
+			text="South Boat and Wholesale Trader";
 			type="mil_box";
 			colorName="ColorBlack";
 		};
@@ -356,21 +358,142 @@ class Mission
 		{
 			position[]={9071.49,0,8678.36};
 			name="DockTraderNorth";
-			text="North East Dock Trader";
+			text="North Boat and Wholesale Trader";
 			type="mil_box";
 			colorName="ColorBlack";
-		};		
+		};
+		class Item23
+		{
+			position[]={3770.14,0,2063.84};
+			name="Tradercityclamar";
+			text="Trader City Calamar";
+			type="mil_circle";
+			colorName="ColorBlack";
+		};
+		
+		class Item24
+		{
+			position[]={9386,0,5070};
+			name="Service";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item25
+		{
+			position[]={8329,0,8296};
+			name="Service1";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item26
+		{
+			position[]={6659,0,6840};
+			name="Service2";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item27
+		{
+			position[]={6964,0,4756};
+			name="Service3";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item28
+		{
+			position[]={7409,0,1810};
+			name="Service4";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item29
+		{
+			position[]={3891,0,1415};
+			name="Service5";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item30
+		{
+			position[]={4123,0,1365};
+			name="Service6";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item31
+		{
+			position[]={3304,0,1630};
+			name="Service7";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item32
+		{
+			position[]={1328,0,1452};
+			name="Service8";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item33
+		{
+			position[]={2864,0,3536};
+			name="Service9";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};
+		class Item34
+		{
+			position[]={1924,0,8815};
+			name="Service10";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};	
+		class Item35
+		{
+			position[]={4163,0,7528};
+			name="Service11";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};	
+		class Item36
+		{
+			position[]={4414,0,6799};
+			name="Service12";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};	
+		class Item37
+		{
+			position[]={3101,0,6560};
+			name="Service13";
+			text="Fuel and Repair";
+			type="RepairVehicle";
+			colorName="ColorGreen";
+		};	
 	};
 	class Sensors
 	{
-		items=8;
+		items=12;
 		#define TRGDEF a=100;b=100;activationBy="WEST";repeating=1;interruptable=1;age="UNKNOWN";class Effects{};
 		class Item0
 		{
 			position[]={2382.54,0,4163.14}; 
 			TRGDEF
 			name="zonemotodrom";
-			expCond="(player distance zonemotodrom) < 100;";
+			expCond="(player distance zonemotodrom) < 80;";
 			expActiv="[""Trader City Motodrom"",true,""enter""] call player_traderCity;";
 			expDesactiv="[""Trader City Motodrom"",true,""leave""] call player_traderCity;";
 		};
@@ -379,7 +502,7 @@ class Mission
 			position[]={7639.03,0,2088.31};
 			TRGDEF
 			name="zoneellvillon";
-			expCond="(player distance zoneellvillon) < 100;";
+			expCond="(player distance zoneellvillon) < 80;";
 			expActiv="[""Trader City El Villon"",true,""enter""] call player_traderCity;";
 			expDesactiv="[""Trader City El Villon"",true,""leave""] call player_traderCity;";
 		};
@@ -388,34 +511,34 @@ class Mission
 			position[]={5186.06,0,7694.74};
 			TRGDEF
 			name="zonesanisabel";
-			expCond="(player distance zonesanisabel) < 100;";
+			expCond="(player distance zonesanisabel) < 80;";
 			expActiv="[""Trader City San Isabel"",true,""enter""] call player_traderCity;";
 			expDesactiv="[""Trader City San Isabel"",true,""leave""] call player_traderCity;";
 		};
 		class Item3
 		{
-			position[]={2834.25,0,9282.13}; 
+			position[]={2847,0,9259}; 
 			TRGDEF
-			name="zonebandit";
-			expCond="(player distance zonebandit) < 100;";
-			expActiv="[""Bandit Vendor"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""Bandit Vendor"",v,""leave""] call player_traderCity;";
+			name="zoneschwarzmarkt";
+			expCond="(player distance zoneschwarzmarkt) < 80;";
+			expActiv="[""Black Market"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Black Market"",v,""leave""] call player_traderCity;";
 		};
 		class Item4
 		{
 			position[]={4678.09,0,4084.89};
 			TRGDEF
 			name="zonehero";
-			expCond="(player distance zonehero) < 100;";
-			expActiv="[""Hero Vendor"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""Hero Vendor"",true,""leave""] call player_traderCity;";
+			expCond="(player distance zonehero) < 80;";
+			expActiv="[""Hero Fahrzeuge"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Hero Fahrzeuge"",true,""leave""] call player_traderCity;";
 		};
 		class Item5
 		{
 			position[]={3012.5,0,7137}; 
 			TRGDEF
 			name="zoneaircraft";
-			expCond="(player distance zoneaircraft) < 100;";
+			expCond="(player distance zoneaircraft) < 80;";
 			expActiv="[""Aircraft Trader"",true,""enter""] call player_traderCity;";
 			expDesactiv="[""Aircraft Trader"",true,""leave""] call player_traderCity;";
 		};
@@ -424,7 +547,7 @@ class Mission
 			position[]={1428.51,0,1178.64};
 			TRGDEF
 			name="zonedock1";
-			expCond="(player distance zonedock1) < 100;";
+			expCond="(player distance zonedock1) < 80;";
 			expActiv="[""Dock Trader"",true,""enter""] call player_traderCity;";
 			expDesactiv="[""Dock Trader"",true,""leave""] call player_traderCity;";
 		};
@@ -433,10 +556,46 @@ class Mission
 			position[]={9071.49,0,8678.36}; 
 			TRGDEF
 			name="zonedock2";
-			expCond="(player distance zonedock2) < 100;";
+			expCond="(player distance zonedock2) < 80;";
 			expActiv="[""Dock Trader"",true,""enter""] call player_traderCity;";
 			expDesactiv="[""Dock Trader"",true,""leave""] call player_traderCity;";
-		};		
+		};
+		class Item8
+		{
+			position[]={3770.14,0,2063.84}; 
+			TRGDEF
+			name="zonecalamar";
+			expCond="(player distance zonecalamar) < 80;";
+			expActiv="[""Gem Book Clothes"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Gem Book Clothes"",true,""leave""] call player_traderCity;";
+		};
+		class Item9
+		{
+			position[]={1119.63,0,7178.42};
+			TRGDEF
+			name="zonehero1";
+			expCond="(player distance zonehero1) < 80;";
+			expActiv="[""Hero Waffen"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Hero Waffen"",true,""leave""] call player_traderCity;";
+		};
+		class Item10
+		{
+			position[]={7115,0,4609};
+			TRGDEF
+			name="zonebandit";
+			expCond="(player distance zonebandit) < 80;";
+			expActiv="[""Bandit Waffen"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Bandit Waffen"",true,""leave""] call player_traderCity;";
+		};
+		class Item11
+		{
+			position[]={5038,0,1562};
+			TRGDEF
+			name="zonebandit1";
+			expCond="(player distance zonebandit1) < 80;";
+			expActiv="[""Bandit Fahrzeuge"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Bandit Fahrzeuge"",true,""leave""] call player_traderCity;";
+		};				
 	};	
 };
 class Intro

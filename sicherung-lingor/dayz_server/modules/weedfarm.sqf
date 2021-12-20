@@ -3,10 +3,10 @@
 	Credit to original author Halv: https://pastebin.com/juMsuJ1r
 */
 
-#define LOCATIONS	2			// number of concurrent farm locations
+#define LOCATIONS	6			// number of concurrent farm locations
 #define NUM_PLANTS	[4,5]		// random number of plants per location [minimum,maximum]
 #define SPACING		5			// number of meters between plant groupings, no not use less than 5
-#define ALLOW_NEW	false		// allow new farms to spawn when existing ones are cleared
+#define ALLOW_NEW	true		// allow new farms to spawn when existing ones are cleared
 #define DEBUG		true		// turning this to true will turn on rpt entries
 #define MARKER		"Select"	// list of different marker types: https://community.bistudio.com/wiki/cfgMarkers
 #define COLOR		"ColorYellow"// list of marker colors: https://community.bistudio.com/wiki/CfgMarkerColors_Arma_3

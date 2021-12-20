@@ -29,8 +29,8 @@ class Category_38 {
 	class VolhaLimo_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {5000,"worth"};sell[] = {1000,"worth"};};
 	class Volha_1_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {5000,"worth"};sell[] = {1000,"worth"};};
 	class Volha_2_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {5000,"worth"};sell[] = {1000,"worth"};};
-	class VWGolf_DZE {type = "trade_any_vehicle";buy[] = {6000,"worth"};sell[] = {1000,"worth"};};
-	class Mini_Cooper_DZE {type = "trade_any_vehicle";buy[] = {6000,"worth"};sell[] = {1000,"worth"};};
+	class VWGolf_DZE {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {1000,"worth"};};
+	class Mini_Cooper_DZE {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {1000,"worth"};};
 	class car_hatchback_DZE {type = "trade_any_vehicle";buy[] = {5000,"worth"};sell[] = {1000,"worth"};};
 	class car_hatchback_red_DZE {type = "trade_any_vehicle";buy[] = {5000,"worth"};sell[] = {1000,"worth"};};
 	class car_sedan_DZE {type = "trade_any_vehicle";buy[] = {5000,"worth"};sell[] = {1000,"worth"};};
@@ -40,13 +40,7 @@ class Category_38 {
 	class Lada1_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {5000,"worth"};sell[] = {1000,"worth"};};
 	class Lada2_DZE {type = "trade_any_vehicle";buy[] = {5000,"worth"};sell[] = {1000,"worth"};};
 	class Lada2_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {5000,"worth"};sell[] = {1000,"worth"};};
-	class LadaLM_DZE {type = "trade_any_vehicle";buy[] = {6000,"worth"};sell[] = {400,"worth"};};
-	//class ori_vil_lada_2105_rust {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {500,"worth"};};
-	//class ori_poldek {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {500,"worth"};};
-	//class ori_poldek_black {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {500,"worth"};};
-	//class ori_ZAZ968M {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {500,"worth"};};	
-	//class ori_taviander {type = "trade_any_vehicle";buy[] = {30000,"worth"};sell[] = {500,"worth"};};
-	//class ori_m3 {type = "trade_any_vehicle";buy[] = {30000,"worth"};sell[] = {500,"worth"};};		
+	class LadaLM_DZE {type = "trade_any_vehicle";buy[] = {6000,"worth"};sell[] = {400,"worth"};};	
 };
 
 //Pick-ups
@@ -59,9 +53,6 @@ class Category_39 {
 	class hilux1_civil_1_open_DZE {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {800,"worth"};};
 	class hilux1_civil_3_open_DZE {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {800,"worth"};};
 	class hilux1_civil_2_covered_DZE {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {800,"worth"};};
-	//class ori_p85_originsmod_cucv_pickup {type = "trade_any_vehicle";buy[] = {10000,"worth"};sell[] = {800,"worth"};};	
-	//class ori_p85_originsmod_CUCV {type = "trade_any_vehicle";buy[] = {10000,"worth"};sell[] = {800,"worth"};};
-	//class ori_originsmod_pickupoldfuel {type = "trade_any_vehicle";buy[] = {10000,"worth"};sell[] = {800,"worth"};};
 };
 
 //UAZs
@@ -102,24 +93,24 @@ class Category_41 {
 
 //Cargo Trucks
 class Category_42 {
-	class Ural_INS_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};	
-	class Ural_CDF_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class UralOpen_CDF_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class Ural_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class Ural_TK_CIV_EP1 {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class Ural_UN_EP1_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
+	class Ural_INS_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};	
+	class Ural_CDF_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class UralOpen_CDF_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class Ural_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class Ural_TK_CIV_EP1 {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class Ural_UN_EP1_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
 	class Ural_UN_EP1 {type = "trade_any_vehicle";buy[] = {-1,"worth"};sell[] = {8000,"worth"};};
-	class UralCivil_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class UralCivil2_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class UralSupply_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};	
-	class UralReammo_CDF_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class UralReammo_INS_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class UralRepair_CDF_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class UralRepair_INS_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};	
-	class V3S_Open_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class V3S_Open_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
-	class V3S_Civ_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};	
-	class V3S_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {8000,"worth"};};
+	class UralCivil_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class UralCivil2_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class UralSupply_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};	
+	class UralReammo_CDF_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class UralReammo_INS_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class UralRepair_CDF_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class UralRepair_INS_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};	
+	class V3S_Open_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class V3S_Open_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
+	class V3S_Civ_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};	
+	class V3S_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {8000,"worth"};};
 	class V3S_Camper_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {10000,"worth"};};
 	class V3S_RA_TK_GUE_EP1_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {10000,"worth"};};
 	class Kamaz_DZE {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {10000,"worth"};};
@@ -140,10 +131,6 @@ class Category_42 {
 	class T810_ACR_REAMMO_DES_DZE {type = "trade_any_vehicle";buy[] = {80000,"worth"};sell[] = {10000,"worth"};};
 	class T810_ACR_REPAIR_DZE {type = "trade_any_vehicle";buy[] = {80000,"worth"};sell[] = {10000,"worth"};};
 	class T810_ACR_REPAIR_DES_DZE {type = "trade_any_vehicle";buy[] = {80000,"worth"};sell[] = {10000,"worth"};};
-	//class ori_vil_originsmod_lublin_truck {type = "trade_any_vehicle";buy[] = {30000,"worth"};sell[] = {10000,"worth"};};
-	//class ori_vil_originsmod_truck_civ {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {10000,"worth"};};
-	//class ori_vil_originsmod_volvo_fl290 {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {10000,"worth"};};	
-	//class ori_maniac {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {10000,"worth"};};
 };
 
 //Fuel Trucks
@@ -187,18 +174,10 @@ class Category_45 {
 	class Ikarus_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {15000,"worth"};sell[] = {4000,"worth"};};
 	class Ikarus_White_DZE {type = "trade_any_vehicle";buy[] = {15000,"worth"};sell[] = {4000,"worth"};};
 	class Ikarus_Armored_DZE {type = "trade_any_vehicle";buy[] = {-15000,"worth"};sell[] = {6000,"worth"};};
-	//class ori_buchanka {type = "trade_any_vehicle";buy[] = {10000,"worth"};sell[] = {4000,"worth"};};	
 	class S1203_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {10000,"worth"};sell[] = {1000,"worth"};};
 	class S1203_ambulance_EP1_DZE {type = "trade_any_vehicle";buy[] = {10000,"worth"};sell[] = {1000,"worth"};};
 	class Tractor_DZE {type = "trade_any_vehicle";buy[] = {15000,"worth"};sell[] = {1000,"worth"};};	
 	class TractorOld_DZE {type = "trade_any_vehicle";buy[] = {15000,"worth"};sell[] = {1000,"worth"};};
 	class Tractor_Armored_DZE {type = "trade_any_vehicle";buy[] = {-15000,"worth"};sell[] = {6000,"worth"};};
 	class ScrapAPC_DZE {type = "trade_any_vehicle";buy[] = {20000,"worth"};sell[] = {3000,"worth"};};
-	//class ori_rth_originsmod_bathmobile {type = "trade_any_vehicle";buy[] = {20000,"worth"};sell[] = {600,"worth"};};
-	//class ori_scrapTank {type = "trade_any_vehicle";buy[] = {20000,"worth"};sell[] = {750,"worth"};};
-	//class ori_ScrapBuggy {type = "trade_any_vehicle";buy[] = {20000,"worth"};sell[] = {500,"worth"};};
-	//class ori_titanic {type = "trade_any_vehicle";buy[] = {-1,"worth"};sell[] = {1250,"worth"};};		
-	//class ori_excavator {type = "trade_any_vehicle";buy[] = {20000,"worth"};sell[] = {1250,"worth"};};	
-	//class ori_transit {type = "trade_any_vehicle";buy[] = {25000,"worth"};sell[] = {1250,"worth"};};	
-	//class ori_survivorBus {type = "trade_any_vehicle";buy[] = {20000,"worth"};sell[] = {1250,"worth"};};		
 };

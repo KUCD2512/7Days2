@@ -8,7 +8,6 @@ _messages = [
 	["Server Rules", "Duping, glitching or using any<br />exploit will result in a<br />permanent ban."],
 	["Server Rules", "No talking in side."],
 	["Server Rules", "Hackers will be banned permanently<br />Respect others"],
-	["Server Rules", "No Base Raiding <br />No PVP "],
 	["News", "Bitte Regeln lesen www.gaming-fun.de"]
 ];
  

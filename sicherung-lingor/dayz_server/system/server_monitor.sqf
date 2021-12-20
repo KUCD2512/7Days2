@@ -13,6 +13,7 @@ sm_done = false;
 _legacyStreamingMethod = false; //use old object streaming method, more secure but will be slower and subject to the callExtension return size limitation.
 
 dayz_serverIDMonitor = [];
+DZE_LockedSafes = [];
 dayz_versionNo = getText (configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = getNumber (configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 _hiveLoaded = false;
@@ -209,9 +210,10 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 
 		if (!_wsDone) then {[_object,"position",true] call server_updateObject;};
 		if (_type == "Base_Fire_DZ") then {_object spawn base_fireMonitor;};
-
+    if (_type in ["VaultStorageLocked","VaultStorage2Locked","TallSafeLocked"]) then {DZE_LockedSafes set [count DZE_LockedSafes, _object];};
 		_isTrapItem = _object isKindOf "TrapItems";
 		_isSafeObject = _type in DayZ_SafeObjects;
+		
 
 		//Dont add inventory for traps.
 		if (!_isTrapItem) then {

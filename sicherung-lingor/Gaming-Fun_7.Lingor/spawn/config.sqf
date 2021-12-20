@@ -5,8 +5,8 @@
 	https://github.com/ebayShopper/ESSV3/blob/master/DOCUMENTATION.md
 */
 
-class_selection = false; //Enable class selection dialog
-#define START_ITEMS "ItemBandage","ItemBandage","ItemBandage","ItemBandage","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","ItemWaterbottleBoiled","FoodCanSardines","15Rnd_W1866_Slug","15Rnd_W1866_Slug"
+class_selection = true; //Enable class selection dialog
+#define START_ITEMS "ItemBandage",3,"ItemPainkiller","8Rnd_9x18_Makarov",3,"ItemWaterbottleBoiled","FoodCanSardines"
 class_public = [ // These are visible to anyone on the server
 	[(localize "str_playerstats_bandit")+" Lvl1","Bandit1_DZ","BanditW1_DZ",[START_ITEMS,"17Rnd_9x19_glock17",2],["G17_DZ"],"",[],[],0,-5000,0,""],
 	[(localize "str_playerstats_bandit")+" Lvl2","Bandit1_DZ","BanditW1_DZ",[START_ITEMS,"17Rnd_9x19_glock17",3,"ItemMorphine"],["G17_DZ"],if (class_epoch) then {"Assault_Pack_DZE1"} else {"DZ_Assault_Pack_EP1"},[],[],0,-10000,0,""],
@@ -14,12 +14,12 @@ class_public = [ // These are visible to anyone on the server
 	[(localize "str_playerstats_hero")+" Lvl1",if (class_epoch) then {"Soldier_Sniper_PMC_DZ"} else {"Survivor3_DZ"},"SurvivorW2_DZ",[START_ITEMS,"6Rnd_45ACP",2],["Revolver_DZ"],"",[],[],0,5000,0,""],
 	[(localize "str_playerstats_hero")+" Lvl2",if (class_epoch) then {"Soldier_Sniper_PMC_DZ"} else {"Survivor3_DZ"},"SurvivorW2_DZ",[START_ITEMS,"6Rnd_45ACP",3,"ItemMorphine"],["Revolver_DZ"],if (class_epoch) then {"Assault_Pack_DZE1"} else {"DZ_Assault_Pack_EP1"},[],[],0,10000,0,""],
 	[(localize "str_playerstats_hero")+" Lvl3",if (class_epoch) then {"Soldier_Sniper_PMC_DZ"} else {"Survivor3_DZ"},"SurvivorW2_DZ",[START_ITEMS,"6Rnd_45ACP",4,"ItemMorphine"],["Revolver_DZ"],if (class_epoch) then {"TK_Assault_Pack_DZE1"} else {"DZ_TK_Assault_Pack_EP1"},[],[],0,15000,0,"MeleeHatchet"],
-	[localize "str_playerstats_survivor","Survivor2_DZ","SurvivorW2_DZ",[START_ITEMS,"15Rnd_W1866_Slug",2],["Winchester1866_DZ","Makarov_DZ","ItemGPS","ItemHatchet","ItemToolbox"],"",[],[],0,0,0]
+	[localize "str_playerstats_survivor","Survivor2_DZ","SurvivorW2_DZ",[START_ITEMS,"15Rnd_W1866_Slug",2],["Winchester1866_DZ","Makarov_DZ","ItemMap","ItemHatchet","ItemToolbox","ItemRadio","NVGoggles"],"Patrol_Pack_DZE1",["15Rnd_W1866_Slug",2],[],0,0,0]
 ];
 
 halo_selection = true; // Enable HALO selection dialog
 halo_force = false; // Skip HALO selection dialog and force HALO spawn.
-halo_type = "AN2_DZ"; // Type of plane. Tested with C130J_US_EP1_DZ, AN2_DZ, MV22_DZ. Use "" to disable the plane and use regular HALO.
+halo_type = ""; // Type of plane. Tested with C130J_US_EP1_DZ, AN2_DZ, MV22_DZ. Use "" to disable the plane and use regular HALO.
 
 spawn_selection = true; // Enable spawn selection dialog
 spawn_bodyCheck = 1000; // If a player has a body within this distance of a spawn that spawn will be blocked. Set to -1 to disable.

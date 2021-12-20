@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Motds>
+<ST Version="19.6.9" />
+    <!-- Possible variables {EntityId} {SteamId} {PlayerName} -->
+    <Server Message="Willkommen bei Gaming-Fun viel Spaß" /> 
+	<Server Message="Mods:12-slot Crafting,60-slot Rucksack,Essen Trinken HUD,mit E Sammeln,Fahrzeug Respawner,Loot Bags liegen länger,Optimierte Ratsche,Schlagschrauber,Bäume respawnen" /> 
+
+
+</Motds>

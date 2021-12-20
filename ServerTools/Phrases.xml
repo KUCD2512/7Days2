@@ -1,0 +1,845 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Phrases>
+<ST Version="19.6.9" />
+
+
+    <!-- ******************************************************** -->
+    <!-- ******************** High_Ping_Kicker ****************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="HighPing1" Message="Auto Kicking {PlayerName} for high ping of {PlayerPing}. Maxping is {MaxPing}" />
+    <Phrase Name="HighPing2" Message="Auto Kicked: Ping is too high at {PlayerPing}. Max ping is {MaxPing}" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************** Invalid_Items ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="InvalidItem1" Message="You have a invalid item stack: {ItemName} {ItemCount}. Max per stack: {MaxPerStack}" />
+    <Phrase Name="InvalidItem2" Message="Cheat Detected: Auto banned {PlayerName} for having a invalid item: {ItemName}" />
+    <Phrase Name="InvalidItem3" Message="Cheat Detected: Auto kicked {PlayerName} for having a invalid item: {ItemName}" />
+    <Phrase Name="InvalidItem4" Message="Automatic detection: Invalid item {ItemName}" />
+    <Phrase Name="InvalidItem5" Message="Cheat Detected: {PlayerName} you are holding a invalid item: {ItemName}. You have 30 seconds to drop it" />
+    <Phrase Name="InvalidItem6" Message="Cheat Detected: {PlayerName} you are holding a invalid item: {ItemName}. Final warning, drop it!" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************* Gimme ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Gimme1" Message="You can only use {Command_Prefix1}{Command_gimme} once every {DelayBetweenUses} minute. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="Gimme2" Message="Received {ItemCount} {ItemName} from gimme" />
+    <Phrase Name="Gimme3" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="Gimme4" Message="OH NO! How did that get in there? You have received a zombie" />
+    <Phrase Name="Gimme5" Message="Unable to give WalletCoin for Gimme reward because Wallet is not enabled" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Suicide ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Suicide1" Message="You can only use {Command_Prefix1}{Command_killme}, {Command_Prefix1}{Command_wrist}, {Command_Prefix1}{Command_hang}, or {Command_Prefix1}{Command_suicide} once every {DelayBetweenUses} minute. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="Suicide2" Message="You are too close to a player that is not a friend. Command unavailable" />
+    <Phrase Name="Suicide3" Message="You are too close to a zombie. Command unavailable" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************** Fps ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Fps1" Message="Server FPS: {Fps}" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Whisper ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Whisper1" Message="{PlayerName} was not found" />
+    <Phrase Name="Whisper2" Message="No one has pm'd you" />
+    <Phrase Name="Whisper3" Message="Invalid message used to whisper" />
+    <Phrase Name="Whisper4" Message="The player is not online" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************** Reserved_Slots ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Reserved1" Message="{ServerResponseName} - The server is full. You were kicked by the reservation system to open a slot" />
+    <Phrase Name="Reserved2" Message="Sorry {PlayerName} you have been kicked with the longest session time. Please wait {TimeRemaining} minute before rejoining" />
+    <Phrase Name="Reserved3" Message="The player is not online" />
+    <Phrase Name="Reserved4" Message="Your reserved status expires on {DateTime}" />
+    <Phrase Name="Reserved5" Message="Your reserved status has expired on {DateTime}" />
+    <Phrase Name="Reserved6" Message="You are not on the reservation list" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Clan_Manager ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Clan1" Message="You have already created the clan {ClanName}" />
+    <Phrase Name="Clan2" Message="Can not add the clan {ClanName} because it already exists" />
+    <Phrase Name="Clan3" Message="You are currently a member of the clan {ClanName}" />
+    <Phrase Name="Clan4" Message="You have added the clan {ClanName}" />
+    <Phrase Name="Clan5" Message="You are not the owner of any clans" />
+    <Phrase Name="Clan6" Message="You have removed the clan {ClanName}" />
+    <Phrase Name="Clan7" Message="You do not have permissions to use this command" />
+    <Phrase Name="Clan8" Message="The player {PlayerName} was not found" />
+    <Phrase Name="Clan9" Message="{PlayerName} is already a member of a clan named {ClanName}" />
+    <Phrase Name="Clan10" Message="{PlayerName} already has a clan invitation" />
+    <Phrase Name="Clan11" Message="You have been invited to join the clan {ClanName}. Type {Command_Prefix1}{Command_accept} to join or {Command_Prefix1}{Command_decline} to decline the offer" />
+    <Phrase Name="Clan12" Message="You have invited {PlayerName} to the clan {ClanName}" />
+    <Phrase Name="Clan13" Message="You have not been invited to any clans" />
+    <Phrase Name="Clan14" Message="The clan could not be found" />
+    <Phrase Name="Clan15" Message="{PlayerName} has declined the invite to the clan" />
+    <Phrase Name="Clan16" Message="You have declined the invite to the clan" />
+    <Phrase Name="Clan17" Message="{PlayerName} is not a member of your clan" />
+    <Phrase Name="Clan18" Message="Only the clan owner can remove officers" />
+    <Phrase Name="Clan19" Message="Clan owners can not be removed" />
+    <Phrase Name="Clan20" Message="You have removed {PlayerName} from clan {ClanName}" />
+    <Phrase Name="Clan21" Message="You have been removed from the clan {ClanName}" />
+    <Phrase Name="Clan22" Message="{PlayerName} is already a officer" />
+    <Phrase Name="Clan23" Message="{PlayerName} has been promoted to an officer" />
+    <Phrase Name="Clan24" Message="{PlayerName} is not an officer" />
+    <Phrase Name="Clan25" Message="{PlayerName} has been demoted" />
+    <Phrase Name="Clan26" Message="You can not leave the clan because you are the owner. You can only delete the clan" />
+    <Phrase Name="Clan27" Message="You do not belong to any clans" />
+    <Phrase Name="Clan28" Message="The clan {ClanName} was not found" />
+    <Phrase Name="Clan29" Message="{PlayerName} has joined the clan" />
+    <Phrase Name="Clan30" Message="You have changed your clan name to {ClanName}" />
+    <Phrase Name="Clan31" Message="Your clan name has been changed by the owner to {ClanName}" />
+    <Phrase Name="Clan32" Message="{PlayerName} has left the clan" />
+    <Phrase Name="Clan33" Message="The player is not online" />
+    <Phrase Name="Clan34" Message="Clan names are:" />
+    <Phrase Name="Clan35" Message="No clans were found" />
+    <Phrase Name="Clan36" Message="The clan name is too short or too long. It must be 2 to {MaxLength} characters" />
+    <Phrase Name="Clan37" Message="{PlayerName} has joined another clan. Request removed" />
+    <Phrase Name="Clan38" Message="There is a request to join the clan from {PlayerName}. Type {Command_Prefix1}{Command_accept} to join or {Command_Prefix1}{Command_decline} to decline the offer" />
+    <Phrase Name="Clan39" Message="There are no requests to join the clan" />
+    <Phrase Name="Clan40" Message="You have sent a request to join the clan" />
+    <Phrase Name="Clan41" Message="You have already sent a request to join this clan" />
+    <Phrase Name="Clan42" Message="That clan name was not found on the list" />
+    <Phrase Name="Clan43" Message="Available clan commands are:" />
+    <Phrase Name="Clan44" Message="Usage: {Command_Prefix1}{Command_add} playerName" />
+    <Phrase Name="Clan45" Message="Usage: {Command_Prefix1}{Command_invite} playerName" />
+    <Phrase Name="Clan46" Message="Usage: {Command_Prefix1}{Command_remove} playerName" />
+    <Phrase Name="Clan47" Message="Usage: {Command_Prefix1}{Command_promote} playerName" />
+    <Phrase Name="Clan48" Message="Usage: {Command_Prefix1}{Command_demote} playerName" />
+    <Phrase Name="Clan49" Message="Usage: {Command_Prefix1}{Command_chat} message or {Command_Prefix1}{Command_cc}" />
+    <Phrase Name="Clan50" Message="Usage: {Command_Prefix1}{Command_rename} Name" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Watchlist ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Watchlist1" Message="{PlayerName} is on the watchlist for {Reason}." />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Reset_Player ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="ResetPlayer1" Message="Reseting your player profile" />
+    <Phrase Name="ResetPlayer2" Message="You have reset the profile for player {SteamId}" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Stop_Server ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="StopServer1" Message="Server Shutdown In {Value} Minute" />
+    <Phrase Name="StopServer2" Message="Saving World. Exchanging items and new construction risks being lost from this point" />
+    <Phrase Name="StopServer3" Message="Shutdown is in 30 seconds. Please come back after the server restarts" />
+    <Phrase Name="StopServer4" Message="Loot, storage, trader, vendor and workstations will close and lock in 15 seconds" />
+    <Phrase Name="StopServer5" Message="Loot, storage, trader, vendor and workstations are now locked" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Jail ************************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Jail1" Message="You have been sent to jail" />
+    <Phrase Name="191" Message="You have been released from jail" />
+    <Phrase Name="Jail3" Message="You have set the jail position as {JailPosition}" />
+    <Phrase Name="Jail4" Message="The jail position has not been set" />
+    <Phrase Name="Jail5" Message="Player {PlayerName} is already in jail" />
+    <Phrase Name="Jail6" Message="You have put {PlayerName} in jail." />
+    <Phrase Name="Jail7" Message="Player {PlayerName} is not in jail" />
+    <Phrase Name="Jail8" Message="The jail is electrified. Do not try to leave it" />
+    <Phrase Name="Jail9" Message="Do not pee on the electric fence" />
+    <Phrase Name="Jail10" Message="You do not have permission to use this command" />
+    <Phrase Name="Jail11" Message="Player {PlayerName} was not found" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************** New_Spawn_Tele ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="NewSpawnTele1" Message="You have set the new spawn position as {Position}" />
+    <Phrase Name="NewSpawnTele2" Message="You have been teleported to the new spawn location" />
+    <Phrase Name="NewSpawnTele3" Message="Type {Command_Prefix1}{Command_ready} when you are prepared to leave. You will teleport back to your spawn location" />
+    <Phrase Name="NewSpawnTele4" Message="You have no saved return point or you have used it" />
+    <Phrase Name="NewSpawnTele5" Message="You have left the new player area. Return to it before using {Command_Prefix1}{Command_ready}" />
+    <Phrase Name="NewSpawnTele6" Message="You have been sent back to your original spawn location. Good luck" />
+    <Phrase Name="NewSpawnTele7" Message="You do not have permissions to use this command" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Lottery ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Lottery1" Message="There is no open lottery. Type {Command_Prefix1}{Command_lottery} # to open a new lottery at that buy in price. You must have enough in your wallet" />
+    <Phrase Name="Lottery2" Message="A lottery is open for {Value} {CoinName}. Minimum buy in is {BuyIn}. Enter it by typing {Command_Prefix1}{Command_lottery_enter}" />
+    <Phrase Name="Lottery3" Message="You must type a valid integer above zero for the lottery #" />
+    <Phrase Name="Lottery4" Message="You have opened a new lottery for {Value} {CoinName}" />
+    <Phrase Name="Lottery5" Message="A lottery has opened for {Value} {CoinName} and will draw soon. Type {Command_Prefix1}{Command_lottery_enter} to join" />
+    <Phrase Name="Lottery6" Message="You do not have enough {CoinName}. Earn some more and enter the lottery before it ends" />
+    <Phrase Name="Lottery7" Message="You have entered the lottery, good luck in the draw" />
+    <Phrase Name="Lottery8" Message="You are already in the lottery, good luck in the draw" />
+    <Phrase Name="Lottery9" Message="A lottery draw will begin in five minutes. Type {Command_Prefix1}{Command_lottery_enter} to join the draw" />
+    <Phrase Name="Lottery10" Message="Winner! {PlayerName} has won the lottery and received {Value} {CoinName}" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Lobby ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Lobby1" Message="You can only use {Command_Prefix1}{Command_lobby} once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="Lobby2" Message="You have set the lobby position as {LobbyPosition}" />
+    <Phrase Name="Lobby3" Message="You can go back by typing {Command_Prefix1}{Command_lobbyback} when you are ready to leave the lobby" />
+    <Phrase Name="Lobby4" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="Lobby5" Message="The lobby position is not set" />
+    <Phrase Name="Lobby6" Message="You have no return point saved" />
+    <Phrase Name="Lobby7" Message="You have left the lobby" />
+    <Phrase Name="Lobby8" Message="You do not have permissions to use this command" />
+    <Phrase Name="Lobby9" Message="This command is locked to donors only" />
+    <Phrase Name="Lobby10" Message="You are already inside the lobby. Unable to run command" />
+    <Phrase Name="Lobby11" Message="Do not attack this player. Your PvP mode does not match" />
+    <Phrase Name="Lobby12" Message="You can not damage zombies while inside the lobby on bloodmoon" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Market ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Market1" Message="You can only use {Command_Prefix1}{Command_market} once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="Market2" Message="You can go back by typing {Command_Prefix1}{Command_marketback} when you are ready to leave the market" />
+    <Phrase Name="Market3" Message="You have no saved return point" />
+    <Phrase Name="Market4" Message="The market position is not set" />
+    <Phrase Name="Market5" Message="You have left the market space. {Command_Prefix1}{Command_marketback} command is no longer available" />
+    <Phrase Name="Market6" Message="You have set the market position as {MarketPosition}" />
+    <Phrase Name="Market7" Message="You do not have permissions to use this command" />
+    <Phrase Name="Market8" Message="This command is locked to donors only" />
+    <Phrase Name="Market9" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="Market10" Message="Do not attack this player. Your PvP mode does not match" />
+    <Phrase Name="Market11" Message="You are already inside the market. Unable to run command" />
+    <Phrase Name="Market12" Message="You can not damage zombies while inside the market on bloodmoon" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************** Waypoints *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Waypoints1" Message="You can only use {Command_Prefix1}{Command_waypoint} once every {DelayBetweenUses} minutes. Time remaining: {Value} minutes" />
+    <Phrase Name="Waypoints2" Message="You can only use a waypoint that is outside of a claimed space" />
+    <Phrase Name="Waypoints3" Message="Traveling to waypoint {Waypoint}" />
+    <Phrase Name="Waypoints4" Message="That waypoint name was not found" />
+    <Phrase Name="Waypoints5" Message="You have a maximum {Value} waypoints" />
+    <Phrase Name="Waypoints6" Message="" />
+    <Phrase Name="Waypoints7" Message="Waypoint {Name} has been deleted" />
+    <Phrase Name="Waypoints8" Message="Saved waypoint as {Name} at position {Position}" />
+    <Phrase Name="Waypoints9" Message="Could not find a waypoint with this name on the list" />
+    <Phrase Name="Waypoints10" Message="You can only save a waypoint that is outside of a claimed space" />
+    <Phrase Name="Waypoints11" Message="The waypoint name you are saving is blank. Unable to save" />
+    <Phrase Name="Waypoints12" Message="Waypoint {Name} @ {Position} for {Cost} {CoinName}" />
+    <Phrase Name="Waypoints13" Message="You can not use waypoint commands while in a event" />
+    <Phrase Name="Waypoints14" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="Waypoints15" Message="This waypoint already exists. Choose another name" />
+    <Phrase Name="Waypoints16" Message="Your friend {PlayerName} has invited you to their saved waypoint. Type {Command_Prefix1}{Command_go_way} to accept the request" />
+    <Phrase Name="Waypoints17" Message="Invited your friend {PlayerName} to your saved waypoint" />
+    <Phrase Name="Waypoints18" Message="You have run out of time to accept your friend's waypoint invitation" />
+    <Phrase Name="Waypoints19" Message="You have no waypoints saved" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************* Animal_Tracking ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="AnimalTracking1" Message="You have taxed your tracking ability. Wait {TimeRemaining} minute and try again" />
+    <Phrase Name="AnimalTracking2" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="AnimalTracking3" Message="You have tracked down an animal to within {Radius} metres {Direction}" />
+    <Phrase Name="AnimalTracking4" Message="Animal list is empty. Contact an administrator" />
+    <Phrase Name="AnimalTracking5" Message="Could not locate a suitable spawn location near by" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Vote_Reward ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="VoteReward1" Message="You can only use {Command_Prefix1}{Command_reward} once every {DelayBetweenRewards} hour. Time remaining: {TimeRemaining} hour" />
+    <Phrase Name="VoteReward2" Message="No items found on the vote reward list. Contact an administrator" />
+    <Phrase Name="VoteReward3" Message="Unable to get a result from the website, {PlayerName}. Please try {Command_Prefix1}{Command_reward} again" />
+    <Phrase Name="VoteReward4" Message="Your vote has not been located {PlayerName}. Make sure you voted @ {VoteSite} and try again" />
+    <Phrase Name="VoteReward5" Message="You have reached the votes needed in a week. Thank you! Sent you an extra reward and reset your weekly votes to 1" />
+    <Phrase Name="VoteReward6" Message="You have voted {Value} time since {Date}. You need {Value2} more votes before {Date2} to reach the bonus" />
+    <Phrase Name="VoteReward7" Message="Thank you for your vote. You can vote and receive another reward in {Value} hours" />
+    <Phrase Name="VoteReward8" Message="Reward items were sent to your inventory. If it is full, check the ground" />
+    <Phrase Name="VoteReward9" Message="Spawned a {EntityName} near you" />
+    <Phrase Name="VoteReward10" Message="No spawn point was found near you. Please move locations and try again" />
+    <Phrase Name="VoteReward11" Message="{PlayerName} received an amazing reward because they are also amazing and voted for the server. Yippy!" />
+    <Phrase Name="VoteReward12" Message="Unable to give WalletCoin for Vote reward because Wallet is not enabled" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Zones ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Zones1" Message="You can only use {Command_Prefix1}{Command_return} for {Time} minutes after being killed in a pve zone. Time has expired" />
+    <Phrase Name="Zones2" Message="You can not set your home inside a zone" />
+    <Phrase Name="Zones3" Message="No damage. This player is in an area that does not match your player killing mode" />
+    <Phrase Name="Zones4" Message="[FF0000]{PlayerName} has been executed for attempted murder in a pve zone" />
+    <Phrase Name="Zones5" Message="[FF0000]{PlayerName} has been kicked for attempted murder in a pve zone" />
+    <Phrase Name="Zones6" Message="Auto detection has kicked you for attempted murder in a pve zone" />
+    <Phrase Name="Zones7" Message="[FF0000]{PlayerName} has been banned for attempted murder in a pve zone" />
+    <Phrase Name="Zones8" Message="Auto detection has banned you for murder in a pve zone" />
+    <Phrase Name="Zones9" Message="No damage. The player is inside a pve zone" />
+    <Phrase Name="Zones10" Message="No damage. The player is inside a ally damage zone" />
+    <Phrase Name="Zones11" Message="No damage. The player is inside a stranger damage zone" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************* Custom_Commands ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="CustomCommands1" Message="You can only use {Command_Prefix1}{CommandCustom} once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="CustomCommands2" Message="You do not have permission to use {Command}" />
+    <Phrase Name="CustomCommands3" Message="You do not have enough {CoinName} in your wallet to run this command" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************* Shop ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Shop1" Message="The shop categories are:" />
+    <Phrase Name="Shop2" Message="Type {Command_Prefix1}{Command_shop} 'category' to view that list" />
+    <Phrase Name="Shop3" Message="You are not inside a trader area. Find a trader and use this command again" />
+    <Phrase Name="Shop4" Message="" />
+    <Phrase Name="Shop5" Message="You do not have enough {CoinName}. Your wallet balance is {Value}" />
+    <Phrase Name="Shop6" Message="There was no item # matching the shop. Check the shop category again" />
+    <Phrase Name="347" Message="There was an error in the shop list. Unable to buy this item. Please alert an administrator" />
+    <Phrase Name="Shop8" Message="The shop does not contain any items. Contact an administrator" />
+    <Phrase Name="Shop9" Message="You are not inside a market and trader area. Find one and use this command again" />
+    <Phrase Name="Shop10" Message="You are outside the market. Get inside it and try again" />
+    <Phrase Name="Shop11" Message="# {Id}: {Count} {Item} {Quality} quality for {Price} {Name}" />
+    <Phrase Name="Shop12" Message="# {Id}: {Count} {Item} for {Price} {Name}" />
+    <Phrase Name="Shop13" Message="Type {Command_Prefix1}{Command_shop_buy} # to purchase the shop item. You can add how many times you want to buy it with {Command_Prefix1}{Command_shop_buy} # #" />
+    <Phrase Name="Shop14" Message="This category is missing. Check {Command_Prefix1}{Command_shop}" />
+    <Phrase Name="Shop15" Message="Item not found for shop purchase" />
+    <Phrase Name="Shop16" Message="{Count} {Item} was purchased through the shop. If your bag is full, check the ground" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************** Friend_Teleport ******************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="FriendTeleport1" Message="Friend = {FriendName}, Id = {EntityId}" />
+    <Phrase Name="FriendTeleport2" Message="This {EntityId} is not valid. Only integers accepted" />
+    <Phrase Name="FriendTeleport3" Message="Sent your friend {PlayerName} a teleport request" />
+    <Phrase Name="FriendTeleport4" Message="{PlayerName} would like to teleport to you. Type {Command_Prefix1}{Command_friend} in chat to accept the request" />
+    <Phrase Name="FriendTeleport5" Message="Did not find EntityId {EntityId}. No teleport request sent" />
+    <Phrase Name="FriendTeleport6" Message="You can only teleport to a friend once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="FriendTeleport7" Message="Your request was accepted. Teleporting you to your friend" />
+    <Phrase Name="FriendTeleport8" Message="No friends found online" />
+    <Phrase Name="FriendTeleport9" Message="This player is not your friend. You can not request teleport to them" />
+    <Phrase Name="FriendTeleport10" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="FriendTeleport11" Message="Unable to complete request. Friend was not found online" />
+    <Phrase Name="FriendTeleport12" Message="Your friend's teleport request has expired" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Admin_List *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="AdminList1" Message="Server admins in game: [FF8000]" />
+    <Phrase Name="AdminList2" Message="Server moderators in game: [FF8000]" />
+    <Phrase Name="AdminList3" Message="No admins or moderators are online" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Shutdown ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Shutdown1" Message="The next auto shutdown is in [FF8000]{TimeLeft}" />
+    <Phrase Name="Shutdown2" Message="A event is currently active. The server can not shutdown until it completes" />
+    <Phrase Name="Shutdown3" Message="Loot, storage, vehicles, traders and workstations are locked until shutdown completes" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************* Died ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Died1" Message="You can only use {Command_Prefix1}{Command_died} once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="Died2" Message="Your last death occurred too long ago. Command unavailable" />
+    <Phrase Name="Died3" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="Died4" Message="You have no saved death position" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Restart_Vote ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="RestartVote1" Message="A vote to restart the server has opened and will close in 60 seconds. Type {Command_Prefix1}{Command_yes} to cast your vote" />
+    <Phrase Name="RestartVote2" Message="There are not enough players online to start a restart vote" />
+    <Phrase Name="RestartVote3" Message="Players voted yes to a server restart. Shutdown has been initiated" />
+    <Phrase Name="RestartVote4" Message="Players voted yes but not enough votes were cast to restart" />
+    <Phrase Name="RestartVote5" Message="Players voted no to a server restart. A new vote can open in {RestartDelay} minutes" />
+    <Phrase Name="RestartVote6" Message="The restart vote was a tie. A new vote can open in {RestartDelay} minutes" />
+    <Phrase Name="RestartVote7" Message="No votes were cast to restart the server" />
+    <Phrase Name="RestartVote8" Message="You started the last restart vote. Another player must initiate the next vote" />
+    <Phrase Name="RestartVote9" Message="{PlayerName} has requested a restart vote" />
+    <Phrase Name="RestartVote10" Message="A administrator is currently online. They have been alerted" />
+    <Phrase Name="RestartVote11" Message="There is a vote already open" />
+    <Phrase Name="RestartVote12" Message="You must wait thirty minutes after the server starts before opening a restart vote" />
+    <Phrase Name="RestartVote13" Message="There are now {Value} of {VotesNeeded} votes" />
+    <Phrase Name="RestartVote14" Message="You have already voted" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Location *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Location1" Message="Your current position is {Position}. Zone: {Name}, set to {Mode}" />
+    <Phrase Name="Location2" Message="Your current position is {Position}" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************* Real_World_Time ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="RealWorldTime1" Message="The real world time is {Time} {TimeZone}" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************** Day7 ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Day7_1" Message="Server FPS:{Value}" />
+    <Phrase Name="Day7_2" Message="Next horde night: {Value} days" />
+    <Phrase Name="Day7_3" Message="Total Players:{Players} Total Zombies:{Zombies} Total Animals:{Animals}" />
+    <Phrase Name="Day7_4" Message="Bicycles:{Bicycles} Minibikes:{Minibikes} Motorcycles:{Motorcycles} 4x4:{4x4} Gyros:{Gyros}" />
+    <Phrase Name="Day7_5" Message="Supply Crates:{Value}" />
+    <Phrase Name="Day7_6" Message="The horde is here!" />
+    <Phrase Name="Day7_7" Message="Next horde night is today" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************** Vehicle_Recall ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="VehicleRecall1" Message="Vehicle {Id}, {Type}" />
+    <Phrase Name="VehicleRecall2" Message="You do not have any vehicles in your list" />
+    <Phrase Name="VehicleRecall3" Message="Invalid vehicle Id provided. Requires a valid number" />
+    <Phrase Name="VehicleRecall4" Message="You can only use {Command_Prefix1}{Command_recall} once every {DelayBetweenUses} minutes for each vehicle you have saved. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="VehicleRecall5" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="VehicleRecall6" Message="You are outside of your claimed space or a friends. Command is unavailable" />
+    <Phrase Name="VehicleRecall7" Message="Saved {Type} for recall with Id {Value}" />
+    <Phrase Name="VehicleRecall8" Message="You are at the maximum vehicle count. Remove one from your list before saving more" />
+    <Phrase Name="VehicleRecall9" Message="This vehicle has already been saved" />
+    <Phrase Name="VehicleRecall10" Message="Someone is using this vehicle. Unable to recall it" />
+    <Phrase Name="VehicleRecall11" Message="Vehicle has been recalled to your location" />
+    <Phrase Name="VehicleRecall12" Message="This vehicle is out of range. Unable to recall" />
+    <Phrase Name="VehicleRecall13" Message="This id is not on your vehicle list" />
+    <Phrase Name="VehicleRecall14" Message="Unable to locate this vehicle" />
+    <Phrase Name="VehicleRecall15" Message="Removed {Id} from your vehicle list" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* World_Radius ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="WorldRadius1" Message="You have reached the world border" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Report ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Report1" Message="You can only make a report once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="Report2" Message="Report @ position {Position} from {PlayerName}: {Message}" />
+    <Phrase Name="Report3" Message="Your report has been sent to online administrators and logged" />
+    <Phrase Name="Report4" Message="Your report is too long. Please reduce it to {Length} characters" />
+    <Phrase Name="Report5" Message="Your report has been sent to online administrators and logged" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Bounties *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Bounties1" Message="{PlayerName} has collected {Value} bounties without dying! Their bounty has increased" />
+    <Phrase Name="Bounties2" Message="Player {Victim}' kill streak has come to an end by {Killer}" />
+    <Phrase Name="Bounties3" Message="Player {Killer}' has collected the bounty of {Victim}" />
+    <Phrase Name="Bounties4" Message="You do not have enough in your wallet for this bounty: {Value}" />
+    <Phrase Name="Bounties5" Message="A bounty of {Value} has been added to {PlayerName}" />
+    <Phrase Name="Bounties6" Message="You input an invalid integer" />
+    <Phrase Name="Bounties7" Message="Type {Command_Prefix1}{Command_bounty} Id# Value or {Command_Prefix1}{Command_bounty} Id# for the minimum bounty against this player" />
+    <Phrase Name="Bounties8" Message="{PlayerName}. Id: {EntityId}. Bounty: {CurrentBounty}. Minimum: {Minimum} {CoinName}" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Kill_Notice ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="KillNotice1" Message="{Name1} has killed {Name2} using {Item}. {Value} damage" />
+    <Phrase Name="KillNotice2" Message="{Name1} ({Level1}) has killed {Name2} ({Level2}) using {Item}" />
+    <Phrase Name="KillNotice3" Message="{Name1} ({Level1}) has killed {Name2} ({Level2}) using {Item}. {Value} damage" />
+    <Phrase Name="KillNotice4" Message="{Name1} has killed {Name2} using {Item}" />
+    <Phrase Name="KillNotice5" Message="{PlayerName} ({Level}) has been ate by {ZombieName}. {Value} damage. Nom nom nom" />
+    <Phrase Name="KillNotice6" Message="{PlayerName} ({Level}) has been ate by {ZombieName}. Nom nom nom" />
+    <Phrase Name="KillNotice7" Message="{PlayerName} has been ate by {ZombieName}. {Value} damage. Nom nom nom" />
+    <Phrase Name="KillNotice8" Message="{PlayerName} has been ate by {ZombieName}. Nom nom nom" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Stuck ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Stuck1" Message="You can only use {Command_Prefix1}{Command_stuck} once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="Stuck2" Message="You are outside of your claimed space or a friends. Command is unavailable" />
+    <Phrase Name="Stuck3" Message="Sent you to the world surface. If you are still stuck, contact an administrator" />
+    <Phrase Name="Stuck4" Message="You do not seem to be stuck" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Poll ************************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Poll1" Message="Poll results: Yes {YesVote} / No {NoVote}" />
+    <Phrase Name="Poll2" Message="Poll: {Message}" />
+    <Phrase Name="Poll3" Message="Type {Command_Prefix1}{Command_poll_yes} or {Command_Prefix1}{Command_poll_no} to vote" />
+    <Phrase Name="Poll4" Message="You have cast a vote for yes in the poll" />
+    <Phrase Name="Poll5" Message="You have cast a vote for no in the poll" />
+    <Phrase Name="Poll6" Message="You have already voted on the poll" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************** Hardcore ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Hardcore1" Message="Hardcore Top Players" />
+    <Phrase Name="Hardcore2" Message="Playtime 1 {Name1}, {Session1}. Playtime 2 {Name2}, {Session3}. Playtime 3 {Name3}, {Session3}" />
+    <Phrase Name="Hardcore3" Message="Score 1 {Name1}, {Score1}. Score 2 {Name2}, {Score2}. Score 3 {Name3}, {Score3}" />
+    <Phrase Name="Hardcore4" Message="Hardcore: Name {PlayerName}, Playtime {PlayTime}, Player Kills {PlayerKills}, Zombie Kills {ZombieKills}, Deaths {Deaths}, Score {Score}" />
+    <Phrase Name="Hardcore5" Message="Hardcore mode is enabled! You have {Value} lives remaining..." />
+    <Phrase Name="Hardcore6" Message="There are no hardcore records" />
+    <Phrase Name="Hardcore7" Message="You have bought one extra life" />
+    <Phrase Name="Hardcore8" Message="You do not have enough to buy a life" />
+    <Phrase Name="Hardcore9" Message="You are at the maximum extra lives" />
+    <Phrase Name="Hardcore10" Message="You have not turned on hardcore mode" />
+    <Phrase Name="Hardcore11" Message="You are now in hardcore mode with limited lives remaining. Type {Command_Prefix1}{Command_hardcore} to check how many lives remain" />
+    <Phrase Name="Hardcore12" Message="You are already signed up for hardcore mode. Type {Command_Prefix1}{Command_hardcore} to check how many lives remain" />
+
+    <!-- ******************************************************** -->
+    <!-- **************** Chat_Flood_Protection ***************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="ChatFloodProtection1" Message="You have sent too many messages in one minute. Your chat function is locked temporarily" />
+    <Phrase Name="ChatFloodProtection2" Message="Message is too long" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Auction ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Auction1" Message="Your auction item {Name} has been removed from the secure loot and added to the auction as id {value}" />
+    <Phrase Name="Auction2" Message="You have the max auction items already listed. Wait for one to sell or cancel it with {Command_Prefix1}{Command_auction_cancel} #" />
+    <Phrase Name="Auction3" Message="You need to input a price greater than zero. This is not a transfer system" />
+    <Phrase Name="Auction4" Message="Your sell price must be an integer and greater than zero" />
+    <Phrase Name="Auction5" Message="# {Id}: {Count} {Item} at {Quality} quality, {Durability} percent durability for {Price} {Coin}" />
+    <Phrase Name="Auction6" Message="No items are currently for sale" />
+    <Phrase Name="Auction7" Message="You can not make this purchase. You need {Value} more {Name}" />
+    <Phrase Name="Auction8" Message="This # could not be found. Please check the auction list by typing {Command_Prefix1}{Command_auction}" />
+    <Phrase Name="Auction9" Message="You have purchased {Count} {ItemName} from the auction for {Value} {CoinName}" />
+    <Phrase Name="Auction10" Message="Your auction item was purchased and the value placed in your wallet" />
+    <Phrase Name="Auction11" Message="Your auction item has returned to you" />
+    <Phrase Name="Auction12" Message="Could not find this id listed in the auction. Unable to cancel" />
+    <Phrase Name="Auction13" Message="The auction is disabled for your admin tier" />
+    <Phrase Name="Auction14" Message="You have used an auction item # that does not exist or has sold" />
+    <Phrase Name="Auction15" Message="Command is disabled. Wallet is not enabled" />
+    <Phrase Name="Auction16" Message="Unable to set a unique id for your auction item. Try again" />
+    <Phrase Name="Auction17" Message="# {Id}: {Count} {Item} for {Price} {Coin}" />
+    <Phrase Name="Auction18" Message="You must remove modifications and cosmetics from the item you wish to enter the auction" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************* Bank ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Bank1" Message="Your bank account is worth {Value}. Transfer Id is {Id}" />
+    <Phrase Name="Bank2" Message="You can not use this command here. Stand in your own or a friend's claimed space" />
+    <Phrase Name="Bank3" Message="Deposited {Value} {Name} from your bag to your bank account. {Percent}% deposit fee was applied" />
+    <Phrase Name="Bank4" Message="Deposited {Value} {Name} from your bag to your bank account" />
+    <Phrase Name="Bank5" Message="You do not have enough {CoinName} to transfer to your bank" />
+    <Phrase Name="Bank6" Message="You input an invalid integer" />
+    <Phrase Name="Bank7" Message="The bank coin is not setup correctly, contact a server Admin" />
+    <Phrase Name="Bank8" Message="You have received the {CoinName} from your bank. If your bag is full, check the ground at your feet" />
+    <Phrase Name="Bank10" Message="You can only withdraw a full stack at a time. The maximum stack size is {Max}" />
+    <Phrase Name="Bank11" Message="You do not have this much in your bank" />
+    <Phrase Name="Bank11" Message="Id not found. Ask for the transfer Id from the player you want to transfer to" />
+    <Phrase Name="Bank12" Message="Your command format was invalid. Type {Command_Prefix1}{Command_transfer} # #" />
+    <Phrase Name="Bank13" Message="Transfer id not found. Request the id from the player you intend to transfer to" />
+    <Phrase Name="Bank14" Message="Could not find this player online" />
+    <Phrase Name="Bank15" Message="You have made a bank transfer of {Value} to player {PlayerName}" />
+    <Phrase Name="Bank16" Message="You have received a bank transfer of {Value} from player {PlayerName}" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Exit_Command ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="ExitCommand1" Message="You moved and need to restart your countdown" />
+    <Phrase Name="ExitCommand2" Message="Type {Command_Prefix1}{Command_exit} to quit the game or you may drop items" />
+    <Phrase Name="ExitCommand3" Message="You have disconnected. Thank you for playing with us. Come back soon" />
+    <Phrase Name="ExitCommand4" Message="Please wait {Time} seconds for disconnection and do not move" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Bloodmoon ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Bloodmoon1" Message="Next horde night is in {Value} days" />
+    <Phrase Name="Bloodmoon2" Message="Next horde night is today. It will start at {Time}:00" />
+    <Phrase Name="Bloodmoon3" Message="The horde is here! Hold out until {Time}:00" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************* Bloodmoon_Warrior ****************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="BloodmoonWarrior1" Message="Hades has called upon you. Survive this night and kill {Count} zombies to be rewarded by the king of the underworld." />
+    <Phrase Name="BloodmoonWarrior2" Message="You have survived and been rewarded by hades himself. Your death count was reduced by one." />
+    <Phrase Name="BloodmoonWarrior3" Message="You have survived and been rewarded by hades himself." />
+
+    <!-- ******************************************************** -->
+    <!-- ******************* First_Claim_Block ****************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="FirstClaimBlock1" Message="Claim block has been added to your inventory or if inventory is full, it dropped at your feet" />
+    <Phrase Name="FirstClaimBlock2" Message="You have already received your first claim block. Contact an administrator if you require help" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Kick_Vote ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="KickVote1" Message="A vote to kick {PlayerName} has begun and will close in 30 seconds" />
+    <Phrase Name="KickVote2" Message="This player id was not found" />
+    <Phrase Name="KickVote3" Message="Not enough players are online to start a vote to kick" />
+    <Phrase Name="KickVote4" Message="PlayerName = {PlayerName}, # = {Id}" />
+    <Phrase Name="KickVote5" Message="Type {Command_Prefix1}{Command_yes} to vote kick the player" />
+    <Phrase Name="KickVote6" Message="Can not start a vote for yourself" />
+    <Phrase Name="KickVote7" Message="Players voted to kick but not enough votes were cast" />
+    <Phrase Name="KickVote8" Message="No votes were cast to kick the player" />
+    <Phrase Name="KickVote9" Message="Type {Command_Prefix1}{Command_kickvote} # to start a vote to kick that player" />
+    <Phrase Name="KickVote10" Message="The players voted to kick you from the game" />
+    <Phrase Name="KickVote11" Message="No other users were found online" />
+    <Phrase Name="KickVote12" Message="There is a vote already open" />
+    <Phrase Name="KickVote13" Message="There are now {Value} of {VotesNeeded} votes" />
+    <Phrase Name="KickVote14" Message="You have already voted" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Homes ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Homes1" Message="You have no homes saved" />
+    <Phrase Name="Homes2" Message="Home {Name} @ {Position} for {Cost} {CoinName}" />
+    <Phrase Name="Homes3" Message="You can not use home commands while in a event" />
+    <Phrase Name="Homes4" Message="You can only use {Command_Prefix1}{Command_home} once every {DelayBetweenUses} minutes. Time remaining: {Value} minutes" />
+    <Phrase Name="Homes5" Message="You can only teleport to a home that is inside of a claimed space" />
+    <Phrase Name="Homes6" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="Homes7" Message="This home was not found on your list" />
+    <Phrase Name="Homes8" Message="You can only save a home that is inside of a claimed space" />
+    <Phrase Name="Homes9" Message="Saved home as {Name} at position {Position}" />
+    <Phrase Name="Homes10" Message="This home already exists. Choose another name" />
+    <Phrase Name="Homes11" Message="You have a maximum {Value} homes" />
+    <Phrase Name="Homes12" Message="Saved home as {Name} at position {Position}" />
+    <Phrase Name="Homes13" Message="Home {Name} has been deleted" />
+    <Phrase Name="Homes14" Message="Your friend {PlayerName} has invited you to their saved home. Type {Command_Prefix1}{Command_go} to accept the request" />
+    <Phrase Name="Homes15" Message="Invited your friend {PlayerName} to your saved home" />
+    <Phrase Name="Homes16" Message="You have run out of time to accept your friend's home invitation" />
+    <Phrase Name="Homes17" Message="The home name you are saving is blank. Unable to save" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************* Mute ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Mute1" Message="Could not mute. {PlayerName} was not found" />
+    <Phrase Name="Mute2" Message="You have muted player {PlayerName}" />
+    <Phrase Name="Mute3" Message="You have already muted player {PlayerName}" />
+    <Phrase Name="Mute4" Message="You have removed {PlayerName} with id {EntityId} from your mute list" />
+    <Phrase Name="Mute5" Message="You have removed player with id {EntityId} from your mute list" />
+    <Phrase Name="Mute6" Message="This player is not on your mute list" />
+    <Phrase Name="Mute7" Message="Muted: Unknown name with id {EntityId}" />
+    <Phrase Name="Mute8" Message="Invalid id: {EntityId}" />
+    <Phrase Name="Mute9" Message="Muted: {PlayerName} with id {EntityId}" />
+    <Phrase Name="Mute10" Message="You are muted and blocked from commands" />
+    <Phrase Name="Mute11" Message="You are muted" />
+    <Phrase Name="Mute12" Message="You have no muted players" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Event ************************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Event1" Message="Not enough players signed up for the event. The invitation and setup has been cleared" />
+    <Phrase Name="Event2" Message="The event did not have enough players join. It has been cancelled" />
+    <Phrase Name="Event3" Message="The event is full. Unable to join" />
+    <Phrase Name="Event4" Message="You have signed up for the event and your current location has been saved for return" />
+    <Phrase Name="Event5" Message="You are on team {Value}" />
+    <Phrase Name="Event6" Message="{EventName} has now started" />
+    <Phrase Name="Event7" Message="{EventName} still has space for more players. Type {Command_Prefix1}{Command_join} to join" />
+    <Phrase Name="Event8" Message="{Value} of {PlayerTotal} have joined the event" />
+    <Phrase Name="Event9" Message="You have already joined this event. It will start when enough players sign up" />
+    <Phrase Name="Event10" Message="The event is at half time" />
+    <Phrase Name="Event11" Message="The event has five minutes remaining" />
+    <Phrase Name="Event12" Message="If you need to extend the time remaining, use the console to type event extend #. The time is in minutes" />
+    <Phrase Name="Event13" Message="The event has ended and all players have been sent to their return positions" />
+    <Phrase Name="Event14" Message="The event ended while you were offline or not spawned. You have been sent to your return position" />
+    <Phrase Name="Event15" Message="You have been sent to your event spawn point" />
+    <Phrase Name="Event16" Message="The event ended while you were offline or not spawned" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Session *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Session1" Message="Your current session is at {TimePassed} minutes. Your total session time is at {TotalTimePassed} minutes" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************** Night_Alert ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="NightAlert1" Message="{Value} hours until night time" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************** Player_List ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="PlayerList1" Message="Player = {PlayerName}, Id = {EntityId}" />
+    <Phrase Name="PlayerList2" Message="No other players found" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Prayer ************************ -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Prayer1" Message="You can only use {Command_Prefix1}{Command_pray} once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="Prayer2" Message="You do not have enough {CoinName} in your wallet to run this command" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Scout_Player ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="ScoutPlayer1" Message="You can only use {Command_Prefix1}{Command_scoutplayer} once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="ScoutPlayer2" Message="You do not have enough {CoinName} in your wallet to run this command" />
+    <Phrase Name="ScoutPlayer3" Message="You have scouted a trail to a hostile player in the area with in {Value} blocks" />
+    <Phrase Name="ScoutPlayer4" Message="No trails or tracks were detected to a nearby hostile player" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************** Starting_Items ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="StartingItems1" Message="You have received the starting items. Check your inventory. If full, check the ground" />
+    <Phrase Name="StartingItems2" Message="Unable to give WalletCoin for Starting items because Wallet is not enabled" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Teleport *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Teleport1" Message="You are too close to a hostile zombie or animal. Command unavailable" />
+    <Phrase Name="Teleport2" Message="You are too close to a hostile player. Command unavailable" />
+    <Phrase Name="Teleport3" Message="You can not teleport with a vehicle" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Weather_Vote ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="WeatherVote1" Message="A vote to change the weather has begun and will close in 60 seconds" />
+    <Phrase Name="WeatherVote2" Message="Weather vote complete but no votes were cast. No changes were made" />
+    <Phrase Name="WeatherVote3" Message="Weather vote complete. Most votes went to {Weather}" />
+    <Phrase Name="WeatherVote4" Message="Weather vote was a tie. No changes were made" />
+    <Phrase Name="WeatherVote5" Message="Type {Command_Prefix1}{Command_sun}, {Command_Prefix1}{Command_rain} or {Command_Prefix1}{Command_snow} to cast your vote" />
+    <Phrase Name="WeatherVote6" Message="Not enough players are online to start a weather vote" />
+    <Phrase Name="WeatherVote7" Message="Wait sixty minutes before starting a new vote to change the weather. Time remaining {Value}" />
+    <Phrase Name="WeatherVote8" Message="There is a vote already open" />
+    <Phrase Name="WeatherVote9" Message="Clear skies ahead" />
+    <Phrase Name="WeatherVote10" Message="Light rain has started" />
+    <Phrase Name="WeatherVote11" Message="A rain storm has started" />
+    <Phrase Name="WeatherVote12" Message="A heavy rain storm has started" />
+    <Phrase Name="WeatherVote13" Message="Light snow has started" />
+    <Phrase Name="WeatherVote14" Message="A snow storm has started" />
+    <Phrase Name="WeatherVote15" Message="A heavy snow storm has started" />
+    <Phrase Name="WeatherVote16" Message="Not enough votes were cast in the weather vote. No changes were made" />
+    <Phrase Name="WeatherVote17" Message="Vote cast for clear" />
+    <Phrase Name="WeatherVote18" Message="You have already voted" />
+    <Phrase Name="WeatherVote19" Message="There is no active weather vote. Type {Command_Prefix1}{Command_weathervote} to open a new vote" />
+    <Phrase Name="WeatherVote20" Message="Vote cast for rain" />
+    <Phrase Name="WeatherVote21" Message="Vote cast for snow" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************** Give_Item *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="GiveItem1" Message="{Value} {ItemName} was sent to your inventory. If your bag is full, check the ground" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Mute_Vote ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="MuteVote1" Message="A vote to mute {PlayerName} in chat has begun and will close in 60 seconds" />
+    <Phrase Name="MuteVote2" Message="Type {Command_Prefix1}{Command_yes} to cast your vote" />
+    <Phrase Name="MuteVote3" Message="{PlayerName} has been muted for 60 minutes" />
+    <Phrase Name="MuteVote4" Message="Type {Command_Prefix1}{Command_mutevote} # to start a vote to mute that player from chat." />
+    <Phrase Name="MuteVote5" Message="This player is already muted" />
+    <Phrase Name="MuteVote6" Message="Player id was not found" />
+    <Phrase Name="MuteVote7" Message="Not enough players are online to start a vote to mute" />
+    <Phrase Name="MuteVote8" Message="Player = {PlayerName}, # = {Id}" />
+    <Phrase Name="MuteVote9" Message="No other users were found online" />
+    <Phrase Name="MuteVote10" Message="There is a vote already open" />
+    <Phrase Name="MuteVote11" Message="There are now {Value} of {VotesNeeded} votes" />
+    <Phrase Name="MuteVote12" Message="You have already voted" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************** Chat_Color ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="ChatColor1" Message="Your chat color prefix time has expired" />
+    <Phrase Name="ChatColor2" Message="Your chat color tags are: {PrefixTags} and {NameTags}. They expire at {DateTime}" />
+    <Phrase Name="ChatColor3" Message="Improper format given for new color. Use HTML color tags. Example: [FF0000] or [FF0000],[FFCC00]" />
+    <Phrase Name="ChatColor4" Message="Your chat prefix color has been set to {Tags}" />
+    <Phrase Name="ChatColor5" Message="Your chat name color has been set to {Tags}" />
+    <Phrase Name="ChatColor6" Message="The chat color list is empty. Unable to rotate to a new color" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Info_Ticker ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="InfoTicker1" Message="You have turned off info ticker messages until the server restarts" />
+    <Phrase Name="InfoTicker2" Message="You have turned on info ticker messages" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************* Damage_Detector ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="DamageDetector1" Message="[FF0000]{PlayerName} has been banned for exceeding the damage limit" />
+    <Phrase Name="DamageDetector2" Message="Auto detection has banned you for exceeding the damage limit. Damage recorded: {Value}" />
+    <Phrase Name="DamageDetector3" Message="Auto detection has banned you for exceeding the block damage limit. Damage recorded: {Value}" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************** Spectator *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Spectator1" Message="[FF0000]{PlayerName} has been banned for spectator mode" />
+    <Phrase Name="Spectator2" Message="Auto detection has banned you for spectator mode" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************* Godmode_Detector ******************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="GodMode1" Message="[FF0000]{PlayerName} has been banned for godmode" />
+    <Phrase Name="GodMode2" Message="Auto detection has banned you for godmode" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************* Flying_Detector ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Flying1" Message="[FF0000]{PlayerName} has been banned for flying" />
+    <Phrase Name="Flying2" Message="Auto detection has banned you for flying" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* Player_Stats ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="PlayerStats1" Message="Auto detection has kicked you for illegal player stat health" />
+    <Phrase Name="PlayerStats2" Message="[FF0000]{PlayerName} was detected and kicked for illegal player stat health" />
+    <Phrase Name="PlayerStats3" Message="Auto detection has banned you for illegal player stat health" />
+    <Phrase Name="PlayerStats4" Message="[FF0000]{PlayerName} was detected and banned for illegal player stat health" />
+    <Phrase Name="PlayerStats5" Message="Auto detection has kicked you for illegal player stat stamina" />
+    <Phrase Name="PlayerStats6" Message="[FF0000]{PlayerName} was detected and kicked for illegal player stat stamina" />
+    <Phrase Name="PlayerStats7" Message="Auto detection has banned you for illegal player stat stamina" />
+    <Phrase Name="PlayerStats8" Message="[FF0000]{PlayerName} was detected and banned for illegal player stat stamina" />
+    <Phrase Name="PlayerStats9" Message="Auto detection has kicked you for illegal player stat jump strength" />
+    <Phrase Name="PlayerStats10" Message="[FF0000]{PlayerName} was detected and kicked for illegal player stat jump strength" />
+    <Phrase Name="PlayerStats11" Message="Auto detection has banned you for illegal player stat jump strength" />
+    <Phrase Name="PlayerStats12" Message="[FF0000]{PlayerName} was detected and banned for illegal player stat jump strength" />
+    <Phrase Name="PlayerStats13" Message="Auto detection has kicked you for illegal player height" />
+    <Phrase Name="PlayerStats14" Message="[FF0000]{PlayerName} was detected and kicked for illegal player height" />
+    <Phrase Name="PlayerStats15" Message="Auto detection has banned you for illegal player height" />
+    <Phrase Name="PlayerStats16" Message="[FF0000]{PlayerName} was detected and banned for illegal player height" />
+    <Phrase Name="PlayerStats17" Message="Auto detection has kicked you for illegal player stat run speed" />
+    <Phrase Name="PlayerStats18" Message="[FF0000]{PlayerName} was detected and kicked for illegal player stat run speed" />
+    <Phrase Name="PlayerStats19" Message="Auto detection has banned you for illegal player stat run speed" />
+    <Phrase Name="PlayerStats20" Message="[FF0000]{PlayerName} was detected and banned for illegal player stat run speed" />
+
+    <!-- ******************************************************** -->
+    <!-- ********************* POI_Protection ******************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="POI1" Message="You can not place a bed in a POI" />
+    <Phrase Name="POI2" Message="You can not place a claim in a POI" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************* Travel *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Travel1" Message="You have traveled to {Destination}" />
+    <Phrase Name="Travel2" Message="You are not in a travel location" />
+    <Phrase Name="Travel3" Message="You can only use {Command_Prefix1}{Command_travel} once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+    <Phrase Name="Travel4" Message="You do not have enough {CoinName} in your wallet to run this command" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Auto_Backup ******************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="AutoBackup1" Message="Starting auto backup. You might experience periods of lag and slow down until complete" />
+    <Phrase Name="AutoBackup2" Message="Auto backup completed successfully" />
+
+    <!-- ******************************************************** -->
+    <!-- ****************** New_Player_Protection *************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="NewPlayerProtection1" Message="This player is under the level required for PvP. No damage inflicted" />
+    <Phrase Name="NewPlayerProtection2" Message="You are under the level required for PvP. No damage inflicted" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************ Level_Up ********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="LevelUp1" Message="Hooray! {PlayerName} has reached level {Value}" />
+
+    <!-- ******************************************************** -->
+    <!-- ************************* Gamble *********************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="Gamble1" Message="You are on round {Value1} with a total of {Value2}. Type {Command_Prefix1}{Command_gamble_payout} to collect it or {Command_Prefix1}{Command_gamble_bet} to gamble" />
+    <Phrase Name="Gamble2" Message="You have not started to gamble. Type {Command_Prefix1}{Command_gamble_bet} to gamble {Value} {CoinName}" />
+    <Phrase Name="Gamble3" Message="You do not have enough {Value} {CoinName} in your wallet to gamble" />
+    <Phrase Name="Gamble4" Message="Added {Value} {CoinName} to your wallet from gambling. Congratulations" />
+    <Phrase Name="Gamble5" Message="Round {Number} won! Collect {Value} using {Command_Prefix1}{Command_gamble_payout} or increase your bet using {Command_Prefix1}{Command_gamble_bet}" />
+    <Phrase Name="Gamble6" Message="Round {Number} lost! You can start a new gamble with {Command_Prefix1}{Command_gamble_bet}" />
+    <Phrase Name="Gamble7" Message="You can only use the gamble system once every {DelayBetweenUses} minutes. Time remaining: {TimeRemaining} minute" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************* Auto_Party_Invite ****************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="AutoPartyInvite1" Message="Player id {Value} named {Name}" />
+    <Phrase Name="AutoPartyInvite2" Message="You do not have any players on your auto party list" />
+    <Phrase Name="AutoPartyInvite3" Message="This player id is already on your list" />
+    <Phrase Name="AutoPartyInvite4" Message="Added player id {Value} named {Name} to your party list" />
+    <Phrase Name="AutoPartyInvite5" Message="Removed player id {Value} named {Name} from your party list" />
+    <Phrase Name="AutoPartyInvite6" Message="Player id {Value} was not found on your party list" />
+    <Phrase Name="AutoPartyInvite7" Message="Received auto party invitation from {PlayerName}" />
+
+    <!-- ******************************************************** -->
+    <!-- ***************** Dropped_Bag_Protection *************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="DroppedBagProtection1" Message="This bag is protected. Unable to access" />
+
+    <!-- ******************************************************** -->
+    <!-- *********************** Anti-Cheat ********************* -->
+    <!-- ******************************************************** -->
+    <Phrase Name="AntiCheat1" Message="Banned for using a speed hack" />
+    <Phrase Name="AntiCheat2" Message="Banned for using a infinite ammo hack" />
+    <Phrase Name="AntiCheat3" Message="Banned {PlayerName} for using a speed hack" />
+    <Phrase Name="AntiCheat4" Message="Bonk! Hitting your head on blocks will lose your vision" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************** Workstation_Lock ****************** -->
+    <!-- ******************************************************** -->
+    <Phrase Name="WorkstationLock1" Message="Workstation is locked" />
+
+    <!-- ******************************************************** -->
+    <!-- ******************************************************** -->
+    <!-- ******************************************************** -->
+</Phrases>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandList>
+<ST Version="19.6.9" />
+    <!-- Leave the default alone. Only edit the replacement to your desired command -->
+    <!-- All capital letters in commands will be reduced to lowercase -->
+
+
+    <Command Default="home" Replacement="home" />
+    <Command Default="fhome" Replacement="fhome" />
+    <Command Default="home save" Replacement="home save" />
+    <Command Default="home del" Replacement="home del" />
+    <Command Default="go home" Replacement="go home" />
+    <Command Default="sethome" Replacement="sethome" />
+    <Command Default="go way" Replacement="go way" />
+    <Command Default="top3" Replacement="top3" />
+    <Command Default="score" Replacement="score" />
+    <Command Default="buy life" Replacement="buy life" />
+    <Command Default="hardcore" Replacement="hardcore" />
+    <Command Default="hardcore on" Replacement="hardcore on" />
+    <Command Default="mute" Replacement="mute" />
+    <Command Default="unmute" Replacement="unmute" />
+    <Command Default="mutelist" Replacement="mutelist" />
+    <Command Default="commands" Replacement="commands" />
+    <Command Default="day7" Replacement="day7" />
+    <Command Default="day" Replacement="day" />
+    <Command Default="bloodmoon" Replacement="bloodmoon" />
+    <Command Default="bm" Replacement="bm" />
+    <Command Default="killme" Replacement="killme" />
+    <Command Default="wrist" Replacement="wrist" />
+    <Command Default="hang" Replacement="hang" />
+    <Command Default="suicide" Replacement="suicide" />
+    <Command Default="gimme" Replacement="gimme" />
+    <Command Default="gimmie" Replacement="gimmie" />
+    <Command Default="set jail" Replacement="set jail" />
+    <Command Default="jail" Replacement="jail" />
+    <Command Default="unjail" Replacement="unjail" />
+    <Command Default="forgive" Replacement="forgive" />
+    <Command Default="setspawn" Replacement="setspawn" />
+    <Command Default="ready" Replacement="ready" />
+    <Command Default="trackanimal" Replacement="trackanimal" />
+    <Command Default="track" Replacement="track" />
+    <Command Default="claim" Replacement="claim" />
+    <Command Default="clan add" Replacement="clan add" />
+    <Command Default="clan del" Replacement="clan del" />
+    <Command Default="clan invite" Replacement="clan invite" />
+    <Command Default="clan accept" Replacement="clan accept" />
+    <Command Default="clan decline" Replacement="clan decline" />
+    <Command Default="clan remove" Replacement="clan remove" />
+    <Command Default="clan promote" Replacement="clan promote" />
+    <Command Default="clan demote" Replacement="clan demote" />
+    <Command Default="clan leave" Replacement="clan leave" />
+    <Command Default="clan commands" Replacement="clan commands" />
+    <Command Default="clan chat" Replacement="clan chat" />
+    <Command Default="clan rename" Replacement="clan rename" />
+    <Command Default="clan request" Replacement="clan request" />
+    <Command Default="cc" Replacement="cc" />
+    <Command Default="clanlist" Replacement="clanlist" />
+    <Command Default="reward" Replacement="reward" />
+    <Command Default="shutdown" Replacement="shutdown" />
+    <Command Default="adminlist" Replacement="adminlist" />
+    <Command Default="travel" Replacement="travel" />
+    <Command Default="marketback" Replacement="marketback" />
+    <Command Default="mback" Replacement="mback" />
+    <Command Default="setmarket" Replacement="setmarket" />
+    <Command Default="market" Replacement="market" />
+    <Command Default="lobbyback" Replacement="lobbyback" />
+    <Command Default="lback" Replacement="lback" />
+    <Command Default="setlobby" Replacement="setlobby" />
+    <Command Default="lobby" Replacement="lobby" />
+    <Command Default="wallet" Replacement="wallet" />
+    <Command Default="shop" Replacement="shop" />
+    <Command Default="shop buy" Replacement="shop buy" />
+    <Command Default="friend" Replacement="friend" />
+    <Command Default="accept" Replacement="accept" />
+    <Command Default="died" Replacement="died" />
+    <Command Default="restartvote" Replacement="restartvote" />
+    <Command Default="mutevote" Replacement="mutevote" />
+    <Command Default="kickvote" Replacement="kickvote" />
+    <Command Default="yes" Replacement="yes" />
+    <Command Default="reserved" Replacement="reserved" />
+    <Command Default="auction" Replacement="auction" />
+    <Command Default="auction cancel" Replacement="auction cancel" />
+    <Command Default="auction buy" Replacement="auction buy" />
+    <Command Default="auction sell" Replacement="auction sell" />
+    <Command Default="fps" Replacement="fps" />
+    <Command Default="loc" Replacement="loc" />
+    <Command Default="recall" Replacement="recall" />
+    <Command Default="recall del" Replacement="recall del" />
+    <Command Default="report" Replacement="report" />
+    <Command Default="bounty" Replacement="bounty" />
+    <Command Default="lottery" Replacement="lottery" />
+    <Command Default="lottery enter" Replacement="lottery enter" />
+    <Command Default="playerlist" Replacement="playerlist" />
+    <Command Default="stuck" Replacement="stuck" />
+    <Command Default="poll yes" Replacement="poll yes" />
+    <Command Default="poll no" Replacement="poll no" />
+    <Command Default="poll" Replacement="poll" />
+    <Command Default="bank" Replacement="bank" />
+    <Command Default="deposit" Replacement="deposit" />
+    <Command Default="withdraw" Replacement="withdraw" />
+    <Command Default="wallet deposit" Replacement="wallet deposit" />
+    <Command Default="wallet withdraw" Replacement="wallet withdraw" />
+    <Command Default="transfer" Replacement="transfer" />
+    <Command Default="join" Replacement="event" />
+    <Command Default="infoticker" Replacement="infoticker" />
+    <Command Default="session" Replacement="session" />
+    <Command Default="waypoint" Replacement="waypoint" />
+    <Command Default="way" Replacement="way" />
+    <Command Default="wp" Replacement="wp" />
+    <Command Default="fwaypoint" Replacement="fwaypoint" />
+    <Command Default="fway" Replacement="fway" />
+    <Command Default="fwp" Replacement="fwp" />
+    <Command Default="waypoint save" Replacement="waypoint save" />
+    <Command Default="way save" Replacement="way save" />
+    <Command Default="ws" Replacement="ws" />
+    <Command Default="waypoint del" Replacement="waypoint del" />
+    <Command Default="way del" Replacement="way del" />
+    <Command Default="wd" Replacement="wd" />
+    <Command Default="admin" Replacement="admin" />
+    <Command Default="pmessage" Replacement="pmessage" />
+    <Command Default="pm" Replacement="pm" />
+    <Command Default="rmessage" Replacement="rmessage" />
+    <Command Default="rm" Replacement="rm" />
+    <Command Default="pray" Replacement="pray" />
+    <Command Default="scoutplayer" Replacement="scoutplayer" />
+    <Command Default="scout" Replacement="scout" />
+    <Command Default="exit" Replacement="exit" />
+    <Command Default="quit" Replacement="quit" />
+    <Command Default="ccc" Replacement="ccc" />
+    <Command Default="ccpr" Replacement="ccpr" />
+    <Command Default="ccnr" Replacement="ccnr" />
+    <Command Default="gamble" Replacement="gamble" />
+    <Command Default="gamble bet" Replacement="gamble bet" />
+    <Command Default="gamble payout" Replacement="gamble payout" />
+    <Command Default="party" Replacement="party" />
+    <Command Default="party add" Replacement="party add" />
+    <Command Default="party remove" Replacement="party remove" />
+</CommandList>

@@ -1,0 +1,1558 @@
+﻿ServerTools - How to setup ServerTools
+This was drafted for version 19.6.7
+
+If you find mistakes or the file is out of date, let the dev team know.
+
+ServerTools was coded and tested under a Windows operating system. If you find bugs, report them to
+https://github.com/dmustanger/7dtd-ServerTools/issues
+
+You can join the discord channel with this link https://discord.gg/6G8VZQg
+
+After running your server with ServerTools installed, you will be able to access the ServerToolsConfig.xml found in the ServerTools folder located in your dedicated server installation directory.
+You will need to enable and set each tools options to match your server preferences. Changes to this file are live and typically do not require the Server to be restarted.
+
+
+
+<Tool Name="Admin_Chat_Commands" />
+
+Set True or False for Enable
+
+Adminstrators can use chat to send administrators a ingame chat message. Type @admins (message) to use. Only online administrators will receive the message.
+
+
+
+<Tool Name="Admin_List" />
+
+Set True or False for Enable
+Set a numeric value for Admin_Level
+Set a numeric value for Mod_Level
+
+Type /admins or !admins in chat to get a response showing the currently online administrators and moderators based on the ServerAdmin.xml. Setting Admin_Level to 2 would show all online administrators
+tier 0-2 as admin in the chat response. Setting Mod_Level to 6 would show all online moderators tier 3 through 6 as mods in the chat response.
+
+
+
+<Tool Name="Animal_Tracking" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Uses
+Set a numeric value for Minimum_Spawn_Radius
+Set a numeric value for Maximum_Spawn_Radius
+Set a numeric values for EntityId
+Set a numeric values for Command_Cost
+
+Type /animaltracking or /track  in chat to get a animal to spawn with in the radius set.
+Set the animal id based on the entity id list found in game. Type spawnentity or se in console to view them. Choose any id you wish.
+The delay is the time that must pass before the command can be used again. The delay is in minutes.
+Players will receive an in game message saying they have tracked down an animal to with in the radius it spawned at.
+Experiment with the radius to find one that suits your preference.
+Command cost controls how much must be in a player's wallet to use the command.
+
+
+
+<Tool Name="Auction" />
+
+Set True or False for Enable
+Set True or False for No_Admins
+Set a numeric value for Admin_Level
+Set a numeric value for Total_Items
+Set a numeric value for Tax
+
+Players can sell items by putting it into the first slot of a secure chest they own and typing /auction sell #. The number is how much the price is.
+Typing /auction shows available items in the auction. /auction buy # will attempt to purchase the corresponding item # from the auction.
+Profits are sent to the sellers wallet.
+A player can cancel their auction by typing /auction cancel but it must have been longer than the cancel time.
+Total_Items controls how many items they may have in the auction
+Tax controls the perfect removed from sale for taxes
+
+
+
+<Tool Name="Auto_Backup" />
+
+Set True or False for Enable
+Set a numeric value for Time_Between_Saves
+Set your desired save folder location for Destination
+Set a numeric value for Compression_Level
+Set a numeric value for Backup_Count
+
+An automatic backup of the world files will be created in a zip file.
+Time_Between_Saves controls how many minutes will pass between backups.
+You can allow the default location or specify a save directory you would like your backups to go with Destination.
+Be careful to put the entire location if inputing a custom one. Example C:/MyFiles/7DaysBackups/
+Set the compression level to 0, 1 or 2. 0 is none, 1 is optimal, 2 is maximum.
+Backup_Count controls how many backups it will keep in total.
+
+
+
+<Tool Name="Auto_Party_Invite" />
+
+Set True or False for Enable
+
+Allows a player to make a list of other players in game using entity id.
+It is recommended that you enable Player_List tool so players can view a list of other players entity id.
+If a player on this list joins the game while the list creator is the leader of a group that is not full or they are not in a group, it will auto invite the joining player.
+Both players must be friends for the invitation to be sent.
+
+
+
+<Tool Name="Auto_Save_World" />
+
+Set True or False for Enable
+
+Automatically begins a timer on world start that will start a world save every time the Delay_Between_Saves expires.
+This timer and save process will repeat.
+
+
+
+<Tool Name="Bad_Word_Filter" />
+
+Set True or False for Enable
+Set True or False for Invalid_Name
+
+Enabling will create a BadWords.xml in your main installation folder in a ServerTools folder
+Filters out bad words or symbols from chat matching the list in BadWords.xml
+Enabling Invalid_Name will block users from using chat if their name contains a word or symbol from the BadWords.xml
+
+
+
+<Tool Name="Bank" />
+
+Set True or False for Enable
+Set True or False for Inside_Claim
+Set a numeric value for Deposit_Fee_Percent
+Set True or False for Player_Transfers
+
+Inside_Claim controls whether players must be inside their own claim to use the bank commands.
+The bank will use the same currency as the Wallet. It defaults to the casinoCoin but this can be changed via the items.xml provided in the Config folder with the latest release.
+Deposit_Fee controls how much is withdrawn from a deposit to the bank. Withdraw has no fee. Set 0 for none.
+Players can type /bank to see their bank value.
+Tranferring from the Wallet to the Bank will take coins from the players bag.
+/deposit # takes from the players bag and adds it to their bank.
+/withdraw # takes from the players bank and adds it to their bag.
+Turn on and off player transfer to allow players to transfer between bank accounts.
+
+
+
+<Tool Name="Block_Logger" />
+
+Set True or False for Enable
+
+Logs the placement of all blocks in the world, by whom and where
+
+
+
+<Tool Name="Bloodmoon" />
+
+Set True or False for Enable
+Set True or False for Show_On_Respawn
+Set True or False for Auto_Show
+Set a numeric value for Delay
+
+Displays the amount of days before the next bloodmoon in chat.
+Typing /bloodmoon in chat will respond with the remaining days until the next bloodmoon.
+If the tool is on, it will always display upon entry to the server.
+Setting Show_On_Respawn will display the remaining days to a player that has died and respawn.
+Auto_Show will enable it to display periodically in chat while playing.
+Delay is the time between chat reminders based if Auto_Show is enabled. Time is in minutes
+
+
+
+<Tool Name="Bloodmoon_Warrior" />
+
+Set True or False for Enable
+Set a numeric value for Zombie_Kills
+Set a numeric value for Chance
+Set True or False for Reduce_Death_Count
+
+Players online during the start of the bloodmoon may randomly be invited to an event.
+They must survive the entire bloodmoon, can not die and must kill enough zombies.
+Set home many zombies they must kill to succeed.
+Created an xml file called BloodmoonWarrior.xml.
+Set the potential items players can be rewarded by adding or removing them from BloodmoonWarrior.xml.
+If Reduce_Death_Count is set to true, their death count will reduce by one if successful. They will always receive one item from the list.
+Players can not log out or disconnect during the event or they will fail. There is no penalty for failure.
+
+
+
+<Tool Name="Bot_Response" />
+
+Set True or False for Enable
+
+Creates a BotResponse.xml to customize bot responses.
+Set the message that must be typed in to chat to trigger an auto response from the bot by adding it to the BotResponse.xml.
+
+
+
+<Tool Name="Bounties" />
+
+Set True or False for Enable
+Set a numeric value for Minimum_Bounty
+Set a numeric value for Kill_Streak
+Set a numeric value for Bonus
+
+Players can see the online players and their id by using /bounty. It also shows the current bounty on each player.
+The cost of the bounty is based on what the player inputs in chat and is available in their wallet.
+Players are awarded the bounty value upon killing the target and a chat message is shown.
+If a player goes over the Kill_Streak by killing enough players without dying, they automatically receive the bounty value to their value on each kill.
+If a player is on a kill streak and another player kills them, the killer will receive this bonus value to their wallet.
+
+
+
+<Tool Name="Break_Reminder" />
+
+Set True or False for Enable
+Set a numeric value for Break_Time
+Set your desired message sent to players
+
+Players will be reminded every set amount of minutes to take a break.
+Break_Time is in minutes.
+Break_Message controls your desired message players receive upon reaching the specified break time.
+
+
+
+<Tool Name="Chat_Color" />
+
+Set True or False for Enable
+
+Enabling will create a ChatColor.xml file. Use this define each players html color tags and prefix as desired.
+The colors must be entered as an HTML color or from the ColorList.xml. Example:[FF0000] or [FF0000],[FFCC00] or Red
+Expiration date controls when their prefix and color will stop working in chat.
+Optionally, players can be added via console with the donor commands which adds them to this and the reserved slots list at the same time.
+
+
+
+<Tool Name="Chat_Command_Log" Enable ="False" />
+
+Set True or False for Enable
+
+Logs all chat commands to an external file. Example /gimme.
+
+
+
+<Tool Name="Chat_Command_Response" />
+
+Set a server response name to Chat_Command_Response
+Set a color using a html value in brackets for Main_Color
+Set a symbol ServerTools will use for chat based commands
+Set a symbol ServerTools will use for chat based commands
+
+Set a server response name to chat commands and server responses from servertools
+The color all general response messages will display as in chat.
+Chat_Command_Prefix is the symbol used as a prefix to chat based commands.
+Chat_Command_Prefix2 is the symbol used as a prefix to chat based commands.
+*Note* Do not use @ or \ for a command prefix.
+
+
+
+<Tool Name="Chat_Command_Response_Extended" />
+
+Set a color using a html value in brackets for Friend_Chat_Color
+Set a color using a html value in brackets for Party_Chat_Color
+Set True or False for Passthrough
+
+The color that all friend chat will show as for their name and prefix.
+The color that all party chat will show as for their name and prefix.
+Passthrough controls whether unrecognized commands will pass through the chat for other mods and managers to use.
+
+
+
+<Tool Name="Chat_Flood_Protection" />
+
+Set True or False for Enable
+Set a numeric value for Max_Length
+Set a numeric value for Messages_Per_Min
+Set a numeric value for Wait_Time
+
+Protect the chat from being flooded from a player's chat spam.
+Set the maximum amount of characters that can be in a single chat message.
+Set the maximum amount of message a player can send in a single minute.
+Set the time a player must wait if they reach the max count per minute. Time is in seconds.
+
+
+
+<Tool Name="Chat_Logger" />
+
+Set True or False for Enable
+
+Logs all chat to a external file.
+
+
+
+<Tool Name="Clan_Manager" />
+
+Set True or False for Enable
+Set a color using a html value in brackets for Private_Chat_Color
+
+Enables the clan manager. Players can control it via chat.
+Clan commands are shown in chat based on their availability by typing /clancommands
+Players can create and manage a clan with these various commands.
+If a player sends a clan chat, it will use the Private_Chat_Color.
+
+
+
+<Tool Name="Clean_Bin" />
+
+Set True or False for Enable
+Set True or False for Auction
+Set True or False for Bank
+Set True or False for Bounties
+Set True or False for Delays
+
+Enabling will clean the ServerTools.bin file on the next server start and then disable the tool automatically.
+Each option controls which data is removed from the ServerTools.bin file
+The options are labeled by the tool name the data corresponds to
+
+
+
+<Tool Name="Clean_Bin_Extended1" />
+
+Set True or False for Homes
+Set True or False for Jail
+Set True or False for Lobby
+Set True or False for Market
+Set True or False for New_Spawn_Tele
+
+Each option controls which data is removed from the ServerTools.bin file
+The options are labeled by the tool name the data corresponds to
+
+
+
+<Tool Name="Clean_Bin_Extended2" />
+
+Set True or False for Poll
+Set True or False for Protected_Spaces
+Set True or False for Vehicles
+Set True or False for Wallet
+Set True or False for Waypoints
+
+Each option controls which data is removed from the ServerTools.bin file
+The options are labeled by the tool name the data corresponds to
+
+
+
+<Tool Name="Console_Command_Log" />
+
+Set True or False for Enable
+
+All console commands will be logged to its own file
+This only logs the command, user that has issued it and time. It does not log the response
+
+
+
+<Tool Name="Country_Ban" />
+
+Set True or False for Enable
+Add what countries you do not want to allow to join the server seperated with a comma
+You must specify the country using the 2 digit iso code. You can get the 2 digit iso code here at countrycode.org
+
+
+
+<Tool Name="Credentials" />
+
+Set True or False for Enable
+Set True or False for No_Family_Share
+Set True or False for No_Bad_Id
+Set True or False for No_Internal
+Set a numeric value for Admin_Level
+
+No family share will stop players from joining your server if their id do not match between steamId and ownerId. Many hackers use this to prevent their main accounts
+from being banned.
+No_Bad_Id checks for steam Id and owner Id to be 17 numbers in length and to start with 7656119 as all steam id are like this.
+No_Internal checks for an ip that is an internal address such as 192.168.*.* . This is commonly done to prevent their own ip from getting banned. It will kick
+an administrator or server owner if they are playing on a server they are networked to.
+Admins will be skipped if they are the right permission level.
+
+
+
+<Tool Name="Custom_Commands" />
+
+Set True or False for Enable
+
+Enabling will create a CustomCommands.xml in your main installation folder in a ServerTools folder
+Allows custom commands to be used via chat. Example: The player can type /tpmarket and it runs "tele {SteamId} 0 -1 5" based on the response the admin has setup.
+Separate command response with a ^. Example: tele {EntityId} 10 -1 50 ^ whisper You are now in the market.
+A delay in the operation of the response can be done with {Delay} #. Example: tele {EntityId} 10 -1 50 ^ {Delay} 3 ^ whisper {PlayerName} you are now in the market.
+Delays between command use are available for the first twenty entries in the list only.
+Run a permission check on the player using the command by setting it via the xml file to true or false. Users must be the right permission level in the serveradmin.xml
+Responses in chat can include whisper or global with a message. Whisper will send it to the player that triggers the command, while global will send the message
+to the entire server.
+
+
+
+<Tool Name="Damage_Detector" />
+
+Set True or False for Enable
+Set a numeric value for Entity_Damage_Limit
+Set a numeric value for Block_Damage_Limit
+Set a numeric value for Admin_Level
+
+Watches for damage done to players and blocks.
+If the damage is too high, they will be banned. Set the max damage a person can commit.
+Admins will be skipped if they are the right level.
+
+
+
+<Tool Name="Day7" />
+
+Set True or False for Enable
+
+Enables the chat commands /day and /day7. Using these will respond with the days left until a horde night as well as the current server FPS, count of mobs, animals,
+minibikes, and supply crates spawned in the world.
+
+
+
+<Tool Name="Died" />
+
+Set True or False for Enable
+Set a numeric value for Time
+Set a numeric value for Delay_Between_Uses
+Set a numeric values for Command_Cost
+
+After a player dies, they have to type /died within the Time limit you have set to be brought back to their death position.
+Delay_Between_Uses controls the time a player must wait before being able to use the command again.
+Command cost controls how much must be in a player's wallet to use the command.
+
+
+
+<Tool Name="Discord_Bot" />
+
+Set True or False for Enable
+Set a value for Webhook
+
+Enables communications through Discordian discord bot.
+Requires Web_API be enabled.
+Webhook must match the webhook token from Discord. Instructions are provided with the bot.
+The bot is downloaded separately on Github.
+
+
+
+<Tool Name="Discord_Bot_Extended" />
+
+Set a value for Prefix
+Set a value for Prefix_Color
+Set a value for Name_Color
+Set a value for Message_Color
+
+Prefix controls the prefix shown in chat from Discord messages.
+Prefix_Color controls the color of the prefix shown in chat.
+Name_Color controls the color of the name shown in chat.
+Message_Color controls the color of the message shown in chat.
+
+
+
+<Tool Name="Dropped_Bag_Protection" />
+
+Set True or False for Enable
+Set True or False for Friend_Acceess
+
+Enables protection on dropped bags when a player dies. Other players can not open this bag until someone with permission does.
+Friend_Acceess allows friends of the bag owner to access it.
+The tool must be enabled to apply. Bags dropped before enabling will not be protected.
+
+
+
+<Tool Name="Dupe_Log" />
+
+Set True or False for Enable
+
+If a player adds a duplicate item or stack into their inventory, it will be logged for review.
+This does not guarantee they have duped anything as the tool is not streaming data from the player live.
+Example: Player buys 5 stacks of concrete blocks from a trader or takes them out of their chest.
+This will show up in the log because they all appeared together.
+Creates a file named DuplicateItems.xml. Items in this list will not be logged when found in player's inventory.
+
+
+
+<Tool Name="Entity_Cleanup" />
+
+Set True or False for Enable
+Set True or False for Blocks
+Set True or False for Falling_Tree
+Set True or False for Entity_Underground
+Set True or False for Delete_Bicycles
+
+If any of these are active, they are triggered every 15 seconds.
+Blocks will automatically clean up falling blocks.
+Falling_Tree will automatically clean up a falling tree that gets stuck at 0 health and does not disappear.
+Entity_Underground will automatically send entities to the surface except falling blocks are removed.
+Delete_Bicycles will automatically remove a bicycle if found in the world.
+
+
+
+<Tool Name="Entity_Cleanup_Extended" />
+
+Set True or False for Delete_MiniBikes
+Set True or False for Delete_MotorBikes
+Set True or False for Delete_Jeeps
+Set True or False for Delete_Gyros
+
+Delete_MiniBikes will automatically remove a minibike if found in the world.
+Delete_MotorBikes will automatically remove a motor bike if found in the world.
+Delete_Jeeps will automatically remove a jeep if found in the world.
+Delete_Gyros will automatically remove a gyro  if found in the world.
+
+
+
+<Tool Name="Exit_Command" />
+
+Set True or False for Enable
+Set True or False for All
+Set True or False for Belt
+Set True or False for Bag
+Set True or False for Equipment
+
+Enabling will require players to type /exit to leave the server or else drop things.
+All will make players drop equipment, backpack and toolbelt.
+Belt will make a player drop just their toolbelt.
+Bag will make a player drop just their backpack.
+Equipment will make a player drop just their equipment.
+
+
+
+<Tool Name="Exit_Command_Extended" />
+
+Set a numeric value for Admin_Level
+Set a numeric value for Exit_Time
+
+Admin_Level is the permission level where typing /exit will not count down and exit.
+Admins do not require typing /exit to leave. No penalty is applied to them.
+Exit time is the time a player must stand still after running the command before exit.
+
+
+
+<Tool Name="Falling_Blocks_Remover" />
+
+Set True or False for Enable
+Set True or False for Log
+Set a numeric value for Max_Blocks
+
+Attempts to remove all falling blocks in the game for performance improvements.
+If the log is enabled, it will log the general location of the falling blocks when it goes over the Max_Blocks count. It will also attempt to log the closest player id and name
+Set the Max_Blocks to control how many blocks must be detected falling at one time for the log to engage. This can be used to detect large collapses.
+
+
+
+<Tool Name="First_Claim_Block" />
+
+Set True or False for Enable
+
+Players can type /claim to receive a claim block but only once.
+This is used to help prevent claim block grief with noobs especially on PVP servers.
+Recommend removing the claim block given to new players by the base game when in use to help prevent lost claims.
+It will not interfere with the initial item spawn.
+
+
+
+<Tool Name="Flying_Detector" />
+
+Set True or False for Flying_Detector
+Set a numeric value for Admin_Level
+Set a numeric value for Flags
+
+Automatically detects players flying in the air or using no collision underground.
+Players are automatically banned and given the reason detected for flying.
+Detected players are added to the detection log.
+Admins are skipped if the right level.
+Flags controls how many times a player can be flagged as flying in a row before considered detected.
+
+
+
+<Tool Name="FPS" />
+
+Set True or False for Enable
+
+Players can type /fps to show the fps read out from /day7 command.
+Set_Target controls the fps target the server will be set to on load up.
+Set_Target reportedly helps with blocks collapsing.
+
+
+
+<Tool Name="Friend_Teleport" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Uses
+Set a numeric values for Command_Cost
+Set True or False for Player_Check
+Set True or False for Zombie_Check
+
+Friends can type /friend to see a list of their current online friends and their Id #.
+/friend # will send a request to teleport to the friend with that Id.
+The other player will receive the request and can type /accept to verify the request.
+A request will only last for one minute before a player must make a new request.
+Command cost controls how much the command will take from the wallet to use the command.
+Player_Check controls whether the player can be close to another player before using this command.
+Zombie_Check controls whether the player can be close to a zombie and targeted by them before using this command.
+
+
+
+<Tool Name="Gamble" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Uses
+Set a numeric values for Command_Cost
+
+Allows players to gamble Wallet currency using chat commands.
+It will begin a 50/50 draw with 1 in 2 chance of winning. The player must spend the Command_Cost to enter. If they win, they can collect the winnings or bet again.
+If the player wins in sequencial rounds, the winnings increase but their chance of success decreases.
+Round 1: 1 in 2 chance. Round 2: 1 in 3. Round 3: 1 in 4. Round 4: 1 in 5, and so on.
+
+
+
+<Tool Name="Gimme" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Uses
+Set True or False for Zombies
+Set a numeric value for Zombie_Id
+Set a numeric values for Command_Cost
+
+Enabling will create a Gimme.xml in your main installation folder in a ServerTools folder.
+Players can type /gimme to initiate a free item from the gimme list.
+The gimme.xml contains a list of all the items a player can receive from using /gimme.
+A delay can be set with Delay_Between_Uses so players must wait that period of time before using /gimme again.
+Zombies will control whether a zombie can be spawned instead of an item from the list. Chances are 1 in 8.
+Zombie_Id controls which zombie can potentially be spawned instead of an item.
+Command cost controls how much must be in a player's wallet to use the command.
+
+
+
+<Tool Name="Godmode_Detector" />
+
+Set True or False for Enable
+Set a numeric value for Admin_Level
+
+Starts an automatic check for players using god mode.
+Set the admin level required to use god mode.
+
+
+
+<Tool Name="Hardcore" />
+
+Set True or False for Enable
+Set True or False for Optional
+Set a numeric value for Max_Deaths
+Set a numeric value for Max_Extra_Lives
+Set a numeric value for Life_Price
+
+Be careful enabling this feature.
+Players have a limited amount of lives. If they run out, their stats are recorded and they are kicked, then their player profile is deleted.
+Setting optional allows players to type /hardcore on to enable the mode at any point while playing but this can not be reversed.
+When a player is kicked, they are given their stats and score.
+When the player joins again, they can check their last stats/score or check the top 3 playtime and top 3 scores on the server.
+Set Max_Extra_Lives above 0 to allow players to buy lives and how many.
+Set the Life_Price to purchase a life. The price is multiplied by the amount of lives they have bought.
+
+
+
+<Tool Name="High_Ping_Kicker" />
+
+Set True or False for Enable
+Set a numeric value for Max_Ping
+Set a numeric value for Flags
+
+Players who have too high of a ping will be kicked from the server automatically.
+Max_Ping is the limit a player can ping at before being flagged for kick.
+Flags control the amount of times in a row a player must fail the ping check before the auto kick initiates.
+
+
+
+<Tool Name="Homes" />
+
+Set True or False for Enable
+Set a numeric value for Max_Homes
+Set a numeric value for Reserved_Max_Homes
+Set a numeric value for Delay_Between_Uses
+Set a numeric values for Command_Cost
+
+While enabled, players can use chat commands /sethome 'name', /home save 'name', /home, /fhome 'name' and /home del 'name'.
+/sethome 'name' and /home save 'name' will save the player's current location as the name they specify.
+/home lists their saved homes.
+/home 'name' will teleport the player to the specified location.
+/fhome 'name' will teleport the player and send an invitation to nearby friends to teleport with them.
+/home del 'name' will delete the specified home location.
+Delay_Between_Uses controls the delay before a player can use /home and /fhome. This is set in minutes.
+Command_Cost controls how much must be in a player's wallet to use the command.
+
+
+
+<Tool Name="Homes_Extended" />
+
+Set True or False for Player_Check
+Set True or False for Zombie_Check
+Set True or False for Vehicle
+
+Set Player_Check to true so they must be far enough from players to use this command.
+Set Zombie_Check to true so they must be far enough from zombies to use this command.
+Vehicle will check if they are attached to a vehicle and deny the command.
+
+
+
+<Tool Name="Hordes" />
+
+Set True or False for Enable
+
+Automatically starts a horde every 20 minutes if player count is over 5 and zombie count is less than 30.
+This will not trigger during a bloodmoon.
+
+
+
+<Tool Name="Info_Ticker" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Messages
+Set True or False for Random
+
+Enabling will create a InfoTicker.xml in your main installation folder in a ServerTools folder
+Each entry in InfoTicker.xml is a message that will disply in game.
+Delay_Between_Messages controls the time before the next message is displayed.
+Setting Random to true will show the messages in a random order until all have been displayed. The list will repeat again but in a new random order.
+Leaving Random to false will display each message in order of the list until all have been displayed. The list will repeat.
+
+
+
+<Tool Name="Invalid_Items" />
+
+Set True or False for Enable
+Set True or False for Ban
+Set a numeric value for Admin_Level
+Set True or False for Check_Storage
+
+Enabling will create a InvalidItems.xml in your main installation folder in a ServerTools folder
+Each entry in InvalidItems.xml is checked against each players inventory.
+If any items in a player's inventory match the invalid items list, a message will show in the server alerting everyone. The player is also warned.
+If Ban is set to true it will ban the player instead of kicking them for their illegal items.
+Setting a Admin_Level will ignore all admins and mods based on the ServerAdmin.xml level they are set to.
+Setting Admin_Level to 5 will ignore all admins and mods level 0-5 from the serveradmin.xml permission list.
+Check_Storage will check inside secure chests for invalid items and remove them every 5 minutes.
+
+
+
+<Tool Name="Invalid_Item_Stack" />
+
+Set True or False for Enable
+
+Automatically checks players inventory for invalid stack sizes. The player will receive a message telling them they have an invalid stack and a log will be made to the output_log.
+
+
+
+<Tool Name="Jail" />
+
+Set True or False for Enable
+Set a numeric value for Jail_Size
+Set a numeric value set of x, y, z position for Jail_Position
+Set True or False for Jail_Shock
+
+Enables the jail system for naughty players. This must be enabled to utilize other tools that send a player to jail.
+Jail_Size controls how far a player can stray from the jail before it teleports them back to the Jail_Position.
+Jail_Position controls where a jailed player is sent to. This is the x, y, z position.
+Jail shock will apply the shock buff to them if they try to leave the prison area.
+If you send a player to jail via chat commands, are sent to jail for 60 minutes. Players sent via console can be adjusted to suit your needs.
+
+
+
+<Tool Name="Kick_Vote" />
+
+Set True or False for Enable
+Set True or False for Players_Online
+Set True or False for Votes_Needed
+
+Allows players to start a vote to kick a player from the game.
+Can only start a vote if 10 or more players and 8 must vote yes.
+Players_Online is the amount needed to start a vote.
+Votes_Needed is the amount of players that must vote yes.
+
+
+
+<Tool Name="Kill_Notice" />
+
+Set True or False for Enable
+Set True or False for PvP
+Set True or False for Zombie_Kills
+Set True or False for Show_Level
+Set True or False for Show_Damage
+
+If a player kills another player or zombie kills a player, a chat notice will show it.
+PvP controls whether it shows players killing a player.
+Zombie_Kills controls whether it shows zombies killing a player.
+Show_Level controls if the player level is shown in the notice.
+Show_Damage controls if the final damage that killed them is shown in the notice.
+
+
+
+<Tool Name="Level_Up" />
+
+Set True or False for Enable
+Set True or False for Xml_Only
+
+Enabling will create a LevelUp.xml.
+If enabled, chat will display a message about a player reaching a new level.
+You can set what will happen when a player reaches specific levels in the xml file.
+Commands in LevelUp.xml will accept console commands.
+If Xml_Only is enabled, the only levels that will show a chat notice are the ones listed in the LevelUp.xml.
+
+
+
+<Tool Name="Lobby" />
+
+Set True or False for Enable
+Set True or False for Return
+Set a numeric value for Delay_Between_Uses
+Set a numeric value for Lobby_Size
+Set a numeric value set of x, y, z position for Lobby_Position
+
+Typing /lobby will send a player to the lobby if the position is set.
+Delay_Between_Uses controls how long a player must wait before using /lobby again.
+If return is enabled, players are alert upon using /lobby that they can type /return to be sent back to the location they came from.
+They must be within range of the lobby position based on the Lobby_Size
+Lobby_Position controls where they will be teleport to when using /lobby.
+
+
+
+<Tool Name="Lobby_Extended" />
+
+Set True or False for Reserved_Only
+Set a numeric values for Command_Cost
+Set True or False for Player_Check
+Set True or False for Zombie_Check
+Set True or False for PvE
+
+Reserved only locks the lobby commands to only reserved players
+Command cost controls how much must be in a player's wallet to use the command.
+Set Player_Check to true so they must be far enough from players to use this command.
+Set Zombie_Check to true so they must be far enough from zombies to use this command.
+Set PvE to true so they can not damage each other while inside the lobby.
+
+
+
+<Tool Name="Location" />
+
+Set True or False for Enable
+
+Players can type /loc to show their x, y, z coordinates in chat.
+This is adjusted to match the in game map. The true world location is different in height value. Use console command lp to check true locations.
+
+
+
+<Tool Name="Login_Notice" />
+
+Set True or False for Enable
+
+Enabling will create a file named LoginNotice.xml in your main installation folder in a ServerTools folder
+Add players steam id under the id and whatever message of your choice for message.
+If the player matching the listed id enters the game, the message will be displayed to all players.
+
+
+
+<Tool Name="Logs" />
+
+Set a numeric value for Delay_Between_Uses
+
+Controls how old a log file can be before it is automatically deleted from the logs folder.
+
+
+
+<Tool Name="Lottery" />
+
+Set True or False for Enable
+Set a numeric value for Bonus
+
+Players can start a new lottery by typing /lottery #. They can check the current lotto with /lottery.
+To enter a lottery, players must match what the first player opened the lottery value as.
+When an hour has passed or ten players have entered the lottery, it will draw the winner.
+If the lottery is full, the winner also gets the Bonus.
+
+
+
+<Tool Name="Market" />
+
+Set True or False for Enable
+Set True or False for Return
+Set a numeric value for Delay_Between_Uses
+Set a numeric value for Market_Size
+Set a numeric value set of x,y,z position for Market_Position
+
+Typing /market will send a player to the market if the position is set.
+Delay_Between_Uses controls how long a player must wait before using /market again.
+If return is enabled, players are alert upon using /market that they can type /return to be sent back to the location they came from.
+They must be within range of the market position based on the Market_Size
+Market_Position controls where they will be teleport to when using /market.
+
+
+
+<Tool Name="Market_Extended" />
+
+Set True or False for Reserved_Only
+Set a numeric values for Command_Cost
+Set True or False for Player_Check
+Set True or False for Zombie_Check
+Set True or False for PvE
+
+Reserved only locks the market commands to only donor/reserved players
+Command cost controls how much must be in a player's wallet to use the command.
+Set Player_Check to true so they must be far enough from players to use this command.
+Set Zombie_Check to true so they must be far enough from zombies to use this command.
+Set PvE to true so they can not damage each other while inside the market.
+
+
+
+<Tool Name="Message_Color" />
+
+Set True or False for Enable
+Set a color using a html value in brackets for Color
+
+General chat message color can be controlled with this.
+The color must be entered as an HTML color. Example:[FF0000]
+This does not effect their name or add a prefix to it. It only changes the color of the message.
+Command responses are a different color and controled by a different option.
+
+
+
+<Tool Name="Motd" />
+
+Set True or False for Enable
+Set True or False for Show_On_Respawn
+
+Enabling will create a Motd.xml in your main installation folder in a ServerTools folder
+Message of the day or Motd entries will show to the player upon joining the server.
+Each entry in the Motd.xml will show as a separate message in game.
+
+
+
+<Tool Name="Mute" />
+
+Set True or False for Enable
+
+Enables the in game mute tool to shut up players that talk too much.
+
+
+
+<Tool Name="Mute_Vote" />
+
+Set True or False for Enable
+Set a numeric value for Players_Online
+Set a numeric value for Votes_Needed
+
+Allows players to start a vote to mute a player in game from chat for 60 minutes.
+Players_Online is the amount needed to start a vote.
+Votes_Needed is the amount of players that must vote yes.
+
+
+
+<Tool Name="New_Player" />
+
+Set True or False for Enable
+Create an entry message for Entry_Message
+
+New players that join your server will trigger this message to show for everyone.
+It can contain {PlayerName} if you want their name to display.
+
+
+
+<Tool Name="New_Player_Extended" />
+
+Set True or False for Block_During_Bloodmoon
+
+Block_During_Bloodmoon controls if a new player can join during the bloodmoon.
+
+
+
+<Tool Name="New_Player_Protection" />
+
+Set True or False for Enable
+Set a numeric value for Level
+
+This will block all PvP damages until the player reaches the desired level.
+Sets the level required for PvP damages to occur.
+Players taking zombie and animal damage will receive a small heal until they reach the desired level.
+
+
+
+<Tool Name="New_Spawn_Tele" />
+
+Set True or False for Enable
+Set a numeric value for New_Spawn_Tele_Position
+Set True or False for Return
+
+Teleports a new player upon joining to the New_Spawn_Tele_Position.
+Set New_Spawn_Tele_Position to control where a new player will spawn to.
+New_Spawn_Tele_Position is an x, y, z position.
+Enabling return will alert players upon teleport that they can type /ready to go back to their first spawn point.
+Players must be with 50 blocks of the new tele spawn to use /ready.
+
+
+
+<Tool Name="Night_Alert" />
+
+Set True or False for Enable
+Set a numeric value for Delay
+
+Enabling will automatically show the hours left until night time.
+Use Delay to control how often it shows.
+Does not display during night time.
+
+
+
+<Tool Name="No_Vehicle_Pickup" />
+
+Set True or False for Enable
+
+Players will no longer be able to pick up any vehicles will this is enabled.
+
+
+
+<Tool Name="Normal_Player_Color_Prefix" />
+
+Set True or False for Enable
+Set a value of your choice in paranthesis for Prefix
+Set a color using a html value in brackets for Color
+
+Enabling makes all standard players chat message show with a prefix and color.
+Prefix controls the prefix for the message.
+Color controls the color of the chat message.
+
+
+
+<Tool Name="Player_List" />
+
+Set True or False for Enable
+
+Enabling lets players type /list to see all the current online player names and entity id.
+
+
+
+<Tool Name="Player_Logs" />
+
+Set True or False for Enable
+Set a numeric value for Interval
+
+Starts a log that will keep track of multi stats and the player inventory.
+Setting the Interval will control how often these checks and logs and written to the file.
+
+
+
+<Tool Name="Player_Stats" />
+
+Set True or False for Enable
+Set a numeric value for Max_Speed
+Set a numeric value for Health
+Set a numeric value for Stamina
+Set a numeric value for Jump_Strength
+
+Automatically checks if a player has an illegal value for their speed, health, stamina or jump strength.
+Detected players who fail any of the checks will have a log created.
+Setting Kick_Enabled to true will kick the detected player.
+Setting Ban_Enabled to true will ban the detected player.
+
+
+
+<Tool Name="Player_Stats_Extended" />
+
+Set a numeric value for Height
+Set True or False for Kick
+Set True or False for Ban
+
+Automatically checks if a player has an illegal height value.
+Setting Kick_Enabled to true will kick the detected player.
+Setting Ban_Enabled to true will ban the detected player.
+
+
+
+<Tool Name="POI_Protection" />
+
+Set True or False for Enable
+Set True or False for Bed
+Set True or False for Claim
+
+Enable protection from placement of beds and claims on a POI(Place of interest).
+Set bed, claim or both to true to stop that specific block type from being placed.
+
+
+
+<Tool Name="Poll" />
+
+Set True or False for Enable
+
+Enables the polling tool for admins to start polls for players to vote on.
+
+
+
+<Tool Name="Prayer" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Uses
+Set a numeric value for Command_Cost
+
+Players can type /pray to receive a buff from a custom list called Prayer.xml.
+Set the time delay before players can use this command again. Time is in minutes.
+Set the cost to use this command with Command_Cost
+
+
+
+<Tool Name="Private_Message" />
+
+Set True or False for Enable
+
+Players can send a private message to each other by using their id or name in chat.
+Example: /pm 171 Hey buddy, lets meet up.
+In response, a player can return a message to the last private sender by using /rm.
+Example: /rm Sounds good. Lets meet by the town in the morning.
+
+
+
+<Tool Name="Protected_Zones" />
+
+Set True or False for Enable
+
+Enabling will create an xml file named ProtectedZones.xml.
+Use the console commands while in game to add protection to an area or add zones via the xml
+Use the console commands while in game to remove protection to an area or remove zones via the xml
+You can set the area protection to false so that you do not have to remove it from the list
+Use two opposing corner points to designate the protected space. This will form a square or rectangle depending on the locations chosen
+Protected spaces do not allow for any damage to the blocks nor for anyone to build inside of it including admins.
+You can list the protected spaces in console.
+You can disable the protection of a space while keeping it on the list to make it easy to reactivate.
+
+
+
+<Tool Name="Public_Waypoints" />
+
+Set True or False for Enable
+
+Allows you to setup a list of waypoints that all players can access.
+A command cost can be set for each waypoint.
+
+
+
+<Tool Name="PvE_Violations" />
+
+Set a numeric value for Jail
+Set a numeric value for Kill
+Set a numeric value for Kick
+Set a numeric value for Ban
+
+Players that violate PvE Lobby or Market space will be hit with a strike. If they get too many of them, it will apply a penalty.
+Set how many strikes a player can have before applying the penalties.
+Setting 0 will not apply the penalty.
+Jail will send the player to the designated jail space provided it is setup.
+Kill will kill the player.
+Kick will kick the player from the server.
+Ban will ban the player fro mthe server.
+
+
+
+<Tool Name="Real_World_Time" />
+
+Set True or False for Enable
+Set a numeric value for Delay
+Set a string value for Time_Zone
+Set a numeric value for Adjustment
+
+Enabling will show the real world time periodically based on the delay.
+Recommend changing the Time_Zone to match the time zone of the server host location. This will not adjust for the difference
+Use adjustment to match the time you prefer as some host are not located in your home country.
+
+
+
+<Tool Name="Report" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Uses
+Set a numeric value for Admin_Level
+
+Enabling will allow a player to type /report and their message.
+The message will be logged in a file called Report.xml under the Reports folder.
+Admins online at the time of sending, will be sent the message as well.
+Delay_Between_Uses controls how often a report can be made by a player in minutes.
+Admin_Level is the level an admin or mod must be to receive the message. Setting 4 would make 0-4 receive it.
+
+
+
+<Tool Name="Reserved_Slots" />
+
+Set True or False for Enable
+Set a numeric value for Session_Time
+Set a numeric value for Admin_Level
+Set a numeric value for Admin_Slots
+Set True or False for Reduced_Delay
+
+Enabling will create a ReservedSlots.xml in your main installation folder in a ServerTools folder
+Turns on an automatic reservation system. When the server is full, it will kick 1 player that is not listed in the ReservedSlots.xml or an admin
+The auto kick chooses based on the player's overall play session time. Setting zero runs it immediately.
+If a player is not reserved but also has not played longer than the Session_Time, they will not be kicked, except when set to zero.
+Admins lower or equal to tier Admin_Level are immune to the kick system. Default is 0. Setting 2 covers 0-2.
+Admins_Slots keeps one extra slot open for admins to rotate in to the server. A 30 player server will start kicking at 28 players.
+If Reduced_Delay is set to true, valid players on the list will have a reduced delay after using a relevant chat commands.
+Players can type /reserved which will respond with the players reservation expiration time.
+
+
+
+<Tool Name="Restart_Vote" />
+
+Set True or False for Enable
+Set True or False for Players_Online
+Set True or False for Votes_Needed
+Set a numeric value for Admin_Level
+
+Allows players to vote for a server restart. Initiates stopserver 1 if successful.
+Players_Online is the amount needed to start a vote.
+Votes_Needed is the amount of players that must vote yes.
+If an admin of tier Admin_Level is online during a call to vote, they will be alerted and no vote will begin.
+
+
+
+<Tool Name="Scout_Player" />
+
+Set True or False for Enable
+
+Players can type /scout to try and locate near by players. It gives no location data but will tell them if a non friend is found with 200 blocks.
+
+
+
+< Tool Name ="Shop" />
+
+Set True or False for Enable
+Set True or False for Inside_Market
+Set True or False for Inside_Traders
+
+While enabled, players can use chat command /shop while anywhere on the map.
+If you set Inside_Market or Inside_Traders to true, they must be inside one of these to use /shop and /buy.
+Players can buy an item multiple times from the shop with /buy # #. The second number controls how many times they want to buy it.
+Admins can customize the Shop.xml however they prefer with any items or blocks from the game.
+
+
+
+<Tool Name="Shutdown" />
+
+Set True or False for Enable
+Set a numeric value for Countdown
+Set a numeric value for Time
+Set True or False for Alert_On_Login
+Set a numeric value for Alert_Count
+
+Automatically begins the shutdown process for the server after the Time runs out or has been met.
+Begins a warning of the coming shutdown with a timer based on the Countdown after the Time has run out or been met.
+Saves the world at one minute remaining of the count down and gives the players a warning not to exchange items or build during the final minute.
+If the server is set as a service on the host hardware, it will automatically restart. ServerTools can not automatically restart a server.
+Alert on login announces the time remaining before the next scheduled shutdown when a player joins the server.
+Alert_Count controls how many times the alert messages post in chat on each event to help players see it.
+Bloodmoon nights and events are automatically detected. The shutdown will be extended. When the bloodmoon or event ends, the shutdown process will commence.
+
+
+
+<Tool Name="Shutdown_Extended" />
+
+Set True or False for UI_Lock
+
+Closes and locks access to all loot, storage, vendor, trader and workstations for the last 45 seconds of the shutdown process.
+A warning about the lock is given at the one minute remaining mark and when it applies.
+
+
+
+<Tool Name="Sleeper_Respawn" />
+
+Set True or False for Enable
+
+Sleeper spawn points will be reset on server restart.
+
+
+
+<Tool Name="Spectator_Detector" />
+
+Set True or False for Enable
+Set a numeric value for Admin_Level
+
+Automatically detects players using spectator mode without authorization.
+Admins lower or equal to tier Admin_Level are immune to the spectator check.
+
+
+
+<Tool Name="Speed_Detector" />
+
+Set True or False for Enable
+Set a numeric value for Admin_Level
+Set a numeric value for Flags
+
+Automatically detects players moving at speeds exceeding that of a flying admin.
+Admins lower or equal to tier Admin_Level are immune to the speed detection.
+Set the number of flags required to trigger the detection. This helps with lag and latency triggering false positives.
+
+
+
+<Tool Name="Starting_Items" />
+
+Set True or False for Enable
+
+Enabling will create a StartingItems.xml in your main installation folder inside the ServerTools folder
+All items listed in StartingItems.xml will be given to a new player when they first join the server.
+Use WalletCoin, walletCoin or walletcoin to give a player currency to their wallet.
+
+
+
+<Tool Name="Stuck" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Uses
+
+Players can type /stuck to send themself to the world surface.
+Can not be used inside other player's claim space.
+Set the Delay_Between_Uses to control how long a player must wait before stuck will work for them again.
+This is likely not a viable tool if the Flight tool is operating because they will likely be detected flying if stuck in a wall.
+
+
+
+<Tool Name="Suicide" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Uses
+Set True or False for Player_Check
+Set True or False for Zombie_Check
+
+Enables the chat commands /killme, /suicide, /wrist and /hang so players can kill themselves.
+Set the Delay_Between_Uses to control how long a player must wait before suicide will work for them again.
+Set Player_Check to true so they must be far enough from players to use this command.
+Set Zombie_Check to true so they must be far enough from zombies to use this command.
+
+
+
+<Tool Name="Tracking" />
+
+Set True or False for Enable
+
+Enables the tracking logger to create a database log of player positions.
+Use console commands to see the players and their positions from a specified location and time.
+
+
+
+<Tool Name="Travel" />
+
+Set True or False for Enable
+Set a numeric value for Delay_Between_Uses
+Set a numeric values for Command_Cost
+Set True or False for Player_Check
+Set True or False for Zombie_Check
+
+Enabling will create a TravelLocations.xml in your main installation folder in a ServerTools folder
+All locations listed in the TravelLocations.xml will allow a player to type /travel while inside one and teleport to the corresponding destination.
+Inside the TravelLocations.xml, destination is where the player will teleport to.
+The name will be the name of the travel zone, Corner1 is first corner of the zone, Corner2 is the opposite corner of the zone.
+Corner1, corner2 and destination are represented by x, y, z coordinates.
+Command cost controls how much must be in a player's wallet to use the command.
+Set Player_Check to true so they must be far enough from players to use this command.
+Set Zombie_Check to true so they must be far enough from zombies to use this command.
+
+
+
+<Tool Name="Vehicle_Recall" />
+
+Set True or False for Enable
+Set True or False for Inside_Claim
+Set a numeric value for Distance
+Set a numeric value for Delay_Between_Uses
+Set a numeric values for Command_Cost
+
+Inside_Claim controls whether they must be inside their claim space to save the vehicle.
+Distance controls how far a player can be from their vehicle to use the command. Distance is in blocks
+Delay_Between_Uses controls how often they can use the command. Delay is in minutes.
+Command cost controls how much must be in a player's wallet to use the command.
+
+
+
+<Tool Name="Vehicle_Recall_Extended" />
+
+Set a numeric value for Normal_Max
+Set a numeric value for Reserved_Max
+
+Normal_Max controls how many vehicles each normal player can save.
+Reserved_Max controls how many vehicles each reserved player can save.
+
+
+
+<Tool Name="Voting" />
+
+Set True or False for Enable
+Set your server https address value for Your_Voting_Site. This will match your registered server at https://7daystodie-servers.com
+Set your server API_Key value found at https://7daystodie-servers.com for API_Key
+Set a numeric value for Delay_Between_Rewards
+Set a numeric value for Reward_Count
+Set True or False for Reward_Entity
+Set a numeric value for Entity_Id
+
+Enabling allows players to use chat command /reward after voting at https://7daystodie-servers.com for your server.
+If a player has not voted, they will be told to vote at YourVotingSite value.
+The APIKey is attached to your registered server listed in your server details at https://7daystodie-servers.com
+DelayBetweenRewards controls how many hours a player must wait before being able to vote and receive a reward for voting.
+Reward count controls how many items a player will receive from the VoteRewards.xml each time they use /reward.
+Reward count does not control how many of a particular item you will receive, it controls how many entries from the VoteRewards.xml a player will receive.
+Setting Reward_Entity to true will not use the VoteReward.xml. Instead it will spawn a single entity based on the Entity_Id.
+
+
+
+<Tool Name="Voting_Extended" />
+
+Set True or False for Reward_Entity
+Set a numeric value for Entity_Id
+Set a numeric value for Weekly_Votes
+
+Set Reward_Entity to true so that players receive an entity spawned for their reward.
+Entity_Id controls which entity is spawned as a reward.
+Weekly_Votes controls how many times a player must vote in 7 days to receive an extra vote reward.
+
+
+
+< Tool Name ="Wallet" />
+
+Set True or False for Enable
+Set True or False for PvP
+Set a numeric value for Zombie_Kill
+Set a numeric value for Player_Kill
+Set True or False for Bank_Transfers
+
+Each kill will reward coins to the player. Set what they are worth in the ServerTools config.
+Set any values you want for zombie and player kills. If PvP is not set to true, player kills will earn nothing.
+Bank_Transfers let a player send and receive wallet funds with the bank.
+
+
+
+<Tool Name="Wallet_Extended" />
+
+Set a numeric value for Session_Bonus
+Set a value of your choice for Coin_Name
+
+While wallet is enabled, if a player leaves the game and has played over an hour, they will receive the session bonus to their wallet.
+Coin_Name is what you would like the server currency in your wallet to be called for responses.
+
+
+
+<Tool Name="Watch_List" />
+
+Set True or False for Enable
+Set a numeric value for Admin_Level
+Set a numeric value for Alert_Delay
+
+Enabling will create a Watchlist.xml in your main installation folder in a ServerTools folder.
+All user Id that matches those listed in the watchlist will trigger an ingame alert to all online admins.
+Admin_Level controls what level an admin must be to receive the alerts.
+Alert_Delay controls how many minutes between alerts.
+
+
+
+<Tool Name="Waypoints" />
+
+Set True or False for Enable
+Set a numeric value for Max_Waypoints
+Set a numeric value for Reserved_Max_Waypoints
+Set a numeric value for Command_Cost
+Set a numeric value for Delay_Between_Uses
+
+Allows players to save a waypoint for teleport.
+Players can list their own waypoints, add and delete them freely.
+Command_Cost is how much it costs to use a waypoint out of their wallet.
+Set the delay for players to use this command again. Time is in minutes.
+
+
+
+<Tool Name="Waypoints_Extended" />
+
+Set True or False for Player_Check
+Set True or False for Zombie_Check
+Set True or False for Vehicle
+
+Set Player_Check to true so they must be far enough from players to use this command.
+Set Zombie_Check to true so they must be far enough and not targeted from zombies to use this command.
+Players type /way to list existing. /way 'name' to use that waypoint. /way save 'name' to save where they are standing with that name. /waydel 'name' to remove the existing point.
+Command options are as follows. Waypoint 'name', way 'name', wp 'name', fwaypoint 'name', fway 'name', fwp 'name', waypoint save 'name', way save 'name', ws 'name', waypoint del 'name', way del 'name', wd 'name'
+Vehicle controls whether players can be in a vehicle and will stop them from teleporting while set to true.
+
+
+
+<Tool Name="Web_API" />
+
+Set True or False for Enable
+Set a value of your choice for Port
+
+Enabling will allow the Web Panel and Discord bot to communicate through the web api.
+Requires port forwarding. The web api requires an open port to function.
+Port will control which port the API attempts to open on.
+
+
+
+<Tool Name="Web_Panel" />
+
+Set True or False for Enable
+
+Enabling will start the web panel.
+The web panel requires Web_API be enabled.
+Set the port you wish the panel to utilize under the Web_API tool. It will be reported in the output log.
+Access via browser at http://IP:Port/st.html
+Example: http://123.123.123.123:8084/st.html
+Allow access to new clients by adding them via console command. A new password will be generated for them.
+The console command is st-web add userName.
+Clients can change their password upon successful sign in.
+Clients can monitor a player list with kick, ban, mute, jail and reward options available.
+Clients can alter the ServerToolsConfig.xml
+Clients can run console commands and monitor the output log.
+
+
+
+<Tool Name="Workstation_Lock" />
+
+Set True or False for Enable
+
+While enabled, players can only access a workstation inside of a claimed space if they are the owner or allied with the claim owner.
+This does not effect admin set at tier 0 permission.
+
+
+
+<Tool Name="World_Radius" />
+
+Set True or False for Enable
+Set a numeric value for Normal_Player
+Set a numeric value for Reserved
+Set a numeric value for Admin_Level
+
+Enabling will automatically check player locations vs specified block ranges from center.
+Normal_Player is the amount of blocks a non reserved player can travel from center before being teleport backwards away from the edge.
+Reserved is the amount of blocks a reserved player can travel from center before being teleport backwards away from the edge.
+Admin_Level controls the admin level required for the tool to skip them and allow travel outside of the block ranges.
+
+
+
+<Tool Name="XRay_Detector" />
+
+Set True or False for Enable
+Set a numeric value for Admin_Level
+
+Enabling will automatically check players head location and sets their screen black until it stops colliding with blocks.
+Admin_Level controls the tier required for the tool to skip specific players and allow them to view inside blocks.
+
+
+
+<Tool Name="Zones" />
+
+Set True or False for Enable
+Set True or False for Zone_Message
+Set a numeric value for Reminder_Notice_Delay
+Set True or False for Set_Home
+
+Enabling will create a Zones.xml in your main installation folder in a ServerTools folder.
+Automatically detects players locations to see if they match those listed in Zones.xml.
+Each zone can set the PvPvE mode which corresponds to the player killing mode.
+PvPvE: 0 = No Killing, 1 = Kill Allies Only, 2 = Kill Strangers Only, 3 = Kill Everyone
+If Zone_Message is false, players will not receive a message upon entering or exiting a protected zone.
+EntryCommand and ExitCommand will run console commands upon entering and exiting the zone.
+Multiple console commands can be run using ^ to separate them.
+Reminder notice is the message the player receives if they stay in the same zone long enough.
+Remove zombies from zones by setting No_Zombie to true.
+Set_Home controls whether players can set a home inside of zones.
+
+
+
+Console commands
+
+Type help to get a list of available console commands.
+Type help <command> to get more detailed information about a specific command.
+
+Chat commands
+
+Type /commands in chat to get a list of available chat commands.
+

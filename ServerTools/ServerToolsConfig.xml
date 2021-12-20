@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ServerTools>
+  <Version>
+    <Version Version="19.6.9" />
+  </Version>
+  <Tools>
+    <Tool Name="Admin_Chat_Commands" Enable="True" />
+    <Tool Name="Admin_List" Enable="True" Admin_Level="0" Moderator_Level="1" />
+    <Tool Name="Animal_Tracking" Enable="False" Delay_Between_Uses="60" Minimum_Spawn_Radius="40" Maximum_Spawn_Radius="60" Animal_Ids="85,86,87,88" />
+    <Tool Name="Animal_Tracking_Extended" Command_Cost="0" />
+    <Tool Name="Auction" Enable="False" No_Admins="False" Admin_Level="0" Total_Items="1" Tax="0" />
+    <Tool Name="Auto_Backup" Enable="False" Delay_Between_Saves="240" Destination="" Compression_Level="0" Backup_Count="5" />
+    <Tool Name="Auto_Party_Invite" Enable="True" />
+    <Tool Name="Auto_Save_World" Enable="True" Delay_Between_Saves="60" />
+    <Tool Name="Bad_Word_Filter" Enable="False" Invalid_Name="False" />
+    <Tool Name="Bank" Enable="False" Inside_Claim="False" Deposit_Fee_Percent="5" Player_Transfers="False" />
+    <Tool Name="Block_Logger" Enable="False" />
+    <Tool Name="Bloodmoon" Enable="False" Delay="60" Show_On_Respawn="False" />
+    <Tool Name="Bloodmoon_Warrior" Enable="False" Zombie_Kills="10" Chance="50" Reduce_Death_Count="False" Reward_Count="1" />
+    <Tool Name="Bot_Response" Enable="False" />
+    <Tool Name="Bounties" Enable="False" Minimum_Bounty="5" Kill_Streak="0" Bonus="25" />
+    <Tool Name="Break_Reminder" Enable="False" Break_Time="60" Message="It has been {Time} minutes since the last break reminder. Stretch and get some water." />
+    <Tool Name="Chat_Color" Enable="False" Rotate="False" Custom_Color="False" />
+    <Tool Name="Chat_Command_Log" Enable="True" />
+    <Tool Name="Chat_Command_Response" Server_Response_Name="[FFCC00]ServerTools" Main_Color="[00FF00]" Chat_Command_Prefix1="/" Chat_Command_Prefix2="!" />
+    <Tool Name="Chat_Command_Response_Extended" Friend_Chat_Color="[33CC33]" Party_Chat_Color="[FFCC00]" Passthrough="True" />
+    <Tool Name="Chat_Flood_Protection" Enable="False" Max_Length="250" Messages_Per_Min="8" Wait_Time="60" />
+    <Tool Name="Chat_Logger" Enable="True" />
+    <Tool Name="Clan_Manager" Enable="False" Max_Name_Length="6" Private_Chat_Color="[00FF00]" />
+    <Tool Name="Clean_Bin" Enable="False" Auction="False" Bank="False" Bounties="False" Delays="False" />
+    <Tool Name="Clean_Bin_Extended1" Homes="False" Jail="False" Lobby="False" Market="False" New_Spawn_Tele="False" />
+    <Tool Name="Clean_Bin_Extended2" Poll="False" Protected_Spaces="False" Vehicles="False" Wallet="False" Waypoints="False" />
+    <Tool Name="Console_Command_Log" Enable="True" />
+    <Tool Name="Country_Ban" Enable="True" Countries_Not_Allowed="CN,IL" />
+    <Tool Name="Credentials" Enable="False" No_Family_Share="False" No_Bad_Id="False" No_Internal="False" Admin_Level="0" />
+    <Tool Name="Custom_Commands" Enable="True" />
+    <Tool Name="Damage_Detector" Enable="False" Entity_Damage_Limit="500" Block_Damage_Limit="4000" Player_Damage_Limit="3000" Admin_Level="0" />
+    <Tool Name="Day7" Enable="False" />
+    <Tool Name="Died" Enable="False" Time="2" Delay_Between_Uses="120" Command_Cost="0" />
+    <Tool Name="Discord_Bot" Enable="True" Webhook="https://discord.com/api/webhooks/888015354222223360/eCM-ee6tXxk1ivLtu7qJ1ZxuRyfMPd3_3jv_XQFYyYUeOzYBM-udtBHR-QNTOQOKq5ak" />
+    <Tool Name="Discord_Bot_Extended" Prefix="[##7Days]" Prefix_Color="[FFFFFF]" Name_Color="[FFFFFF]" Message_Color="[FFFFFF]" />
+    <Tool Name="Dropped_Bag_Protection" Enable="False" Friend_Access="False" />
+    <Tool Name="Dupe_Log" Enable="False" />
+    <Tool Name="Entity_Cleanup" Enable="False" Falling_Blocks="False" Falling_Tree="False" Entity_Underground="False" Delete_Bicycles="False" />
+    <Tool Name="Entity_Cleanup_Extended" Delete_MiniBikes="False" Delete_MotorBikes="False" Delete_Jeeps="False" Delete_Gyros="False" />
+    <Tool Name="Exit_Command" Enable="False" All="False" Belt="False" Bag="False" Equipment="False" />
+    <Tool Name="Exit_Command_Extended" Admin_Level="0" Exit_Time="15" />
+    <Tool Name="Falling_Blocks_Remover" Enable="False" Log="False" Max_Blocks="10" />
+    <Tool Name="First_Claim_Block" Enable="False" />
+    <Tool Name="Flying_Detector" Enable="False" Admin_Level="0" Flags="3" />
+    <Tool Name="FPS" Enable="True" Set_Target="60" Low_FPS="5" />
+    <Tool Name="Friend_Teleport" Enable="False" Delay_Between_Uses="60" Command_Cost="0" Player_Check="False" Zombie_Check="False" />
+    <Tool Name="Gamble" Enable="False" Delay_Between_Uses="10" Command_Cost="20" />
+    <Tool Name="Gimme" Enable="False" Delay_Between_Uses="60" Zombies="False" Zombie_Id="4,9,11" Command_Cost="0" />
+    <Tool Name="Godmode_Detector" Enable="False" Admin_Level="0" />
+    <Tool Name="Hardcore" Enable="False" Optional="True" Max_Deaths="9" Max_Extra_Lives="3" Life_Price="2000" />
+    <Tool Name="High_Ping_Kicker" Enable="False" Max_Ping="250" Flags="2" />
+    <Tool Name="Homes" Enable="True" Max_Homes="2" Reserved_Max_Homes="4" Command_Cost="0" Delay_Between_Uses="0" />
+    <Tool Name="Homes_Extended" Player_Check="False" Zombie_Check="False" Vehicle="False" />
+    <Tool Name="Hordes" Enable="False" />
+    <Tool Name="Infinite_Ammo" Enable="False" />
+    <Tool Name="Info_Ticker" Enable="True" Delay="30" Random="False" />
+    <Tool Name="Invalid_Items" Enable="False" Ban="False" Admin_Level="0" Check_Storage="False" />
+    <Tool Name="Invalid_Item_Stack" Enable="False" />
+    <Tool Name="Jail" Enable="False" Jail_Size="8" Jail_Position="0,0,0" Jail_Shock="False" />
+    <Tool Name="Kick_Vote" Enable="False" Players_Online="5" Votes_Needed="3" />
+    <Tool Name="Kill_Notice" Enable="False" PvP="False" Zombie_Kills="False" Show_Level="False" Show_Damage="False" />
+    <Tool Name="Level_Up" Enable="False" Xml_Only="False" />
+    <Tool Name="Lobby" Enable="False" Return="False" Delay_Between_Uses="5" Lobby_Size="25" Lobby_Position="0,0,0" />
+    <Tool Name="Lobby_Extended" Reserved_Only="False" Command_Cost="0" Player_Check="False" Zombie_Check="False" PvE="False" />
+    <Tool Name="Location" Enable="False" />
+    <Tool Name="Login_Notice" Enable="True" />
+    <Tool Name="Logs" Days_Before_Log_Delete="30" />
+    <Tool Name="Lottery" Enable="False" Bonus="0" />
+    <Tool Name="Market" Enable="False" Return="False" Delay_Between_Uses="5" Market_Size="25" Market_Position="0,0,0" />
+    <Tool Name="Market_Extended" Reserved_Only="False" Command_Cost="0" Player_Check="False" Zombie_Check="False" PvE="False" />
+    <Tool Name="Message_Color" Enable="False" Color="[FFFFFF]" />
+    <Tool Name="Motd" Enable="True" Show_On_Respawn="False" />
+    <Tool Name="Mute" Enable="False" Block_Commands="False" />
+    <Tool Name="Mute_Vote" Enable="False" Players_Online="5" Votes_Needed="3" />
+    <Tool Name="New_Player" Enable="True" Entry_Message="*The stench of young flesh bares itself upon the world*...{PlayerName} has entered the world for the first time." />
+    <Tool Name="New_Player_Extended" Block_During_Bloodmoon="False" />
+    <Tool Name="New_Player_Protection" Enable="True" Level="5" />
+    <Tool Name="New_Spawn_Tele" Enable="False" New_Spawn_Tele_Position="0,0,0" Return="False" />
+    <Tool Name="Night_Alert" Enable="False" Delay="60" />
+    <Tool Name="No_Vehicle_Pickup" Enable="False" />
+    <Tool Name="Normal_Player_Color_Prefix" Enable="False" Prefix="NOOB" Name_Color="[00B3B3]" Prefix_Color="[FFFFFF]" />
+    <Tool Name="Player_List" Enable="True" />
+    <Tool Name="Player_Logs" Enable="True" Vehicle="False" Interval="60" />
+    <Tool Name="Player_Stats" Enable="True" Max_Speed="28" Health="255" Stamina="255" Jump_Strength="1.5" />
+    <Tool Name="Player_Stats_Extended" Height="1.8" Admin_Level="0" Kick_Enabled="False" Ban_Enabled="False" />
+    <Tool Name="POI_Protection" Enable="False" Bed="False" Claim="False" />
+    <Tool Name="Poll" Enable="False" />
+    <Tool Name="Prayer" Enable="False" Delay_Between_Uses="30" Command_Cost="10" />
+    <Tool Name="Private_Message" Enable="False" />
+    <Tool Name="Protected_Zones" Enable="False" />
+    <Tool Name="Public_Waypoints" Enable="False" />
+    <Tool Name="PvE_Violations" Jail="4" Kill="6" Kick="8" Ban="10" />
+    <Tool Name="Real_World_Time" Enable="False" Delay="60" Time_Zone="UTC" Adjustment="0" />
+    <Tool Name="Report" Enable="True" Delay_Between_Uses="60" Length="150" Admin_Level="0" />
+    <Tool Name="Reserved_Slots" Enable="True" Session_Time="30" Admin_Level="0" Reduced_Delay="False" Bonus_Exp="False" />
+    <Tool Name="Restart_Vote" Enable="False" Players_Online="5" Votes_Needed="3" Admin_Level="0" />
+    <Tool Name="Scout_Player" Enable="False" Delay_Between_Uses="60" Command_Cost="10" />
+    <Tool Name="Shop" Enable="False" Inside_Market="False" Inside_Traders="False" />
+    <Tool Name="Shutdown" Enable="true" Countdown="2" Time="360" Alert_On_Login="true" Alert_Count="2" />
+    <Tool Name="Shutdown_Extended" UI_Lock="true" />
+    <Tool Name="Sleeper_Respawn" Enable="False" />
+    <Tool Name="Spectator_Detector" Enable="False" Admin_Level="0" />
+    <Tool Name="Speed_Detector" Enable="False" Admin_Level="0" Flags="4" />
+    <Tool Name="Starting_Items" Enable="False" />
+    <Tool Name="Stuck" Enable="False" Delay_Between_Uses="60" />
+    <Tool Name="Suicide" Enable="True" Delay_Between_Uses="60" Player_Check="False" Zombie_Check="False" />
+    <Tool Name="Tracking" Enable="False" />
+    <Tool Name="Travel" Enable="False" Delay_Between_Uses="60" Command_Cost="0" Player_Check="False" Zombie_Check="False" />
+    <Tool Name="Vehicle_Recall" Enable="False" Inside_Claim="False" Distance="50" Delay_Between_Uses="120" Command_Cost="0" />
+    <Tool Name="Vehicle_Recall_Extended" Normal_Max="2" Reserved_Max="4" />
+    <Tool Name="Voting" Enable="False" Your_Voting_Site="https://7daystodie-servers.com/server/12345" API_Key="xxxxxxxx" Delay_Between_Uses="24" />
+    <Tool Name="Voting_Extended" Reward_Count="1" Reward_Entity="False" Entity_Id="73" Weekly_Votes="5" />
+    <Tool Name="Wallet" Enable="False" PVP="False" Zombie_Kill="10" Player_Kill="25" Bank_Transfers="False" />
+    <Tool Name="Wallet_Extended" Session_Bonus="5" Currency_Name="coin" />
+    <Tool Name="Watch_List" Enable="False" Admin_Level="0" Delay="5" />
+    <Tool Name="Waypoints" Enable="False" Max_Waypoints="2" Reserved_Max_Waypoints="4" Command_Cost="0" Delay_Between_Uses="0" />
+    <Tool Name="Waypoints_Extended" Player_Check="False" Zombie_Check="False" Vehicle="False" Public_Waypoints="False" />
+    <Tool Name="Web_API" Enable="True" Port="8084" />
+    <Tool Name="Web_Panel" Enable="True" />
+    <Tool Name="Workstation_Lock" Enable="False" />
+    <Tool Name="World_Radius" Enable="False" Normal_Player="8000" Reserved="10000" Admin_Level="0" />
+    <Tool Name="XRay_Detector" Enable="False" Admin_Level="0" />
+    <Tool Name="Zones" Enable="False" Zone_Message="False" Reminder_Delay="20" Set_Home="False" />
+  </Tools>
+</ServerTools>

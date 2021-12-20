@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<InfoTicker>
+<ST Version="19.6.9" />
+    
+        <!-- possible variables {EntityId} {SteamId} {PlayerName}-->
+        <Ticker Message="Have a suggestion or complaint? Post on discord and let us know." />
+		<Ticker Message="Homepage https://www.gaming-fun.de" />
+		<Ticker Message="Discord https://discord.gg/WPasM83eF2" />
+		<Ticker Message="Wenn ihr hilfe braucht schreibt Admin hilfe in den Chat" />
+		<Ticker Message="Tippt /command in den chat dann seht ihr alle Befehle" />
+		<Ticker Message="!!!!Der Server Startet alle 6 Std Neu!!!!" />
+    
+</InfoTicker>

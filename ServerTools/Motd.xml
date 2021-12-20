@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Motds>
+<ST Version="19.6.9" />
+    <!-- Possible variables {EntityId} {SteamId} {PlayerName} -->
+    <Server Message="Willkommen {PlayerName} bei Gaming-Fun viel Spaß" /> 
+	<Server Message="Mod Infos Join Discord über www.gaming-fun.de" /> 
+
+
+</Motds>

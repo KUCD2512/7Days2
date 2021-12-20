@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomCommands>
+<ST Version="19.6.9" />
+    <!-- Possible variables {EntityId}, {SteamId}, {PlayerName}, {Delay}, {RandomPlayerId}, whisper, global -->
+    <!-- <Custom Trigger="Example" Command="whisper Server Info... ^ whisper You have triggered the example" DelayBetweenUses="0" Hidden="false" Reserved="false" Permission="false" Cost="0" /> -->
+    <!-- <Custom Trigger="" Command="" DelayBetweenUses="" Hidden="" Reserved="false" Permission="" Cost="" /> -->
+
+
+</CustomCommands>

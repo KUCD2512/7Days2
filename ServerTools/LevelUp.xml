@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Levels>
+<ST Version="19.6.9" />
+    <!-- Command triggers console commands. Use ^ to separate multiple commands -->
+    <!-- Possible variables for commands include whisper, global, {PlayerName}, {EntityId}, {PlayerId}, {Delay} -->
+    <!-- <Level Required="300" Command="global MAX LEVEL! Congratulations {PlayerName}!" /> -->
+
+
+</Levels>

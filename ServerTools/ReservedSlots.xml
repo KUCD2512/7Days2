@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ReservedSlots>
+<ST Version="19.6.9" />
+    <!-- <Player SteamId="76561191234567891" Name="Tron" Expires="10/29/2050 7:30:00 AM" /> -->
+<Player SteamId="76561197982198403" Name="Highlander" Expires="10/29/2090 7:30:00 AM" />
+<Player SteamId="76561199104741041" Name="Brunhilde" Expires="10/29/2090 7:30:00 AM" />
+<Player SteamId="76561198084410324" Name="Silverridge" Expires="10/29/2090 7:30:00 AM" />
+
+    <!-- <Player SteamId="" Name="" Expires="" /> -->
+</ReservedSlots>

@@ -44,9 +44,9 @@
   <admins>
     <!-- <user steamID="76561198021925107" name="Hint on who this user is" permission_level="0" /> -->
     <!-- <group steamID="103582791434672565" name="Steam Universe" permission_level_default="1000" permission_level_mod="0" /> -->
-    <user steamID="76561197982198403" name="Hint on who this user is" permission_level="0" />
-    <user steamID="76561199104741041" name="Hint on who this user is" permission_level="0" />
-    <user steamID="76561198084410324" name="Hint on who this user is" permission_level="0" />
+    <user steamID="76561197982198403" name="Highlander" permission_level="0" />
+    <user steamID="76561199104741041" name="Brunhilde" permission_level="0" />
+    <user steamID="76561198084410324" name="Silverridge" permission_level="0" />
   </admins>
   <permissions>
     <!-- <permission cmd="dm" permission_level="0" /> -->
@@ -61,13 +61,13 @@
     <permission cmd="getgamepref" permission_level="1000" />
     <permission cmd="getgamestat" permission_level="1000" />
     <permission cmd="getoptions" permission_level="1000" />
-    <permission cmd="gettime" permission_level="1000" />
-    <permission cmd="gfx" permission_level="1000" />
+    <permission cmd="gettime" permission_level="0" />
+    <permission cmd="gfx" permission_level="0" />
     <permission cmd="help" permission_level="1000" />
     <permission cmd="listplayerids" permission_level="1000" />
     <permission cmd="listthreads" permission_level="1000" />
-    <permission cmd="memcl" permission_level="1000" />
-    <permission cmd="settempunit" permission_level="1000" />
+    <permission cmd="memcl" permission_level="0" />
+    <permission cmd="settempunit" permission_level="0" />
   </permissions>
   <whitelist>
     <!-- ONLY PUT ITEMS IN WHITELIST IF YOU WANT WHITELIST ONLY ENABLED!!! -->

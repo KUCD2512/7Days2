@@ -1,0 +1,26 @@
+{
+  "_comment": "Keep this file secure as it contains sensitive information.",
+  "_comment2": "If arguments are used in run.bat/run.sh, this config file will be ignored.",
+  "_comment3": "See README.md for the config documentation.",
+
+  "password": "02082512",
+  "token": "ODg5NDY1NDY5NjI5NzYzNjA0.YUhpRQ.SFOl2d7zuhtbt_tE6q6zZFzKHl0",
+  "channel": "888015271929999380",
+  "port": "8081",
+  "ip": "162.55.90.104",
+
+  "allow-exec-command": false,
+  "allow-multiple-instances": true,
+  "disable-commands": false,
+  "disable-chatmsgs": false,
+  "disable-join-leave-gmsgs": false,
+  "disable-misc-gmsgs": false,
+  "disable-non-player-chatmsgs": false,
+  "show-private-chat": false,
+  "disable-status-updates": false,
+  "disable-version-check": false,
+  "hide-prefix": false,
+  "log-messages": false,
+  "log-telnet": false,
+  "prefix": "7d!"
+}
